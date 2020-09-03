@@ -8,9 +8,6 @@ class Claims extends Component {
         return (
             <div>
                 <Navbar />
-                <br></br>
-                <br></br>
-                <br></br>
                 <div className="claims-intro-container">
                     <div className="claims-intro-textbox">
                         <h1>Making a claim with GTIC</h1>

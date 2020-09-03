@@ -14,7 +14,7 @@ class Home extends Component {
     }
     componentDidMount() {
         Aos.init({
-            duration: 3000
+            duration: 1000
         });
     }
     render() {
@@ -31,32 +31,34 @@ class Home extends Component {
                     <button className="btn">BOOK A FREE CONSULTATION</button>
                 </div>
                 <div className="intro-background">
-                    <div className="container" data-aos="fade-up">
-                        <div className="text-box grey top-left">
-                            <h1>Preparing your platform for innovation</h1>
+                    <div className="container">
+                        <div className="text-box grey top-left" data-aos="fade-up">
+                            <h2>Preparing your platform for innovation</h2>
                             <hr></hr>
                             <h3>At Gov Tax Incentive Consultants, we provide expert advice to pioneering UK businesses, 
                                 helping them to compliantly capitalise on available government grants and incentives.</h3>
-                            <button className="intro-btn">
-                                <Link to="/about" style={{ textDecoration: 'none', color: '#ffffff' }}>About Us ></Link>
-                            </button>
+                            <Link to="/about" className="intro-link">
+                                <button className="intro-btn"><span>About Us </span></button>
+                            </Link>
                         </div>
-                        <div className="image-container bottom-right">
+                        <div className="decoration white"></div>
+                        <div className="image-container bottom-right" data-aos="fade-left">
                             <img src={about} alt="About us" className="intro-img"></img>
                         </div>
                     </div>
                 </div>
                 <div className="intro-background grey">
-                    <div className="container" data-aos="fade-up">
-                        <div className="text-box white top-right">
-                            <h1>Never miss an opportunity with GTIC</h1>
+                    <div className="container">
+                        <div className="text-box white top-right" data-aos="fade-up">
+                            <h2>Never miss an opportunity with GTIC</h2>
                             <hr></hr>
                             <h3>Our goal is to reward companies of all sectors, sizes and structures for the pioneering 
                                 work that they undertake. Achieving this requires specialist knowledge of a broad range 
                                 of incentives that few other consultancies possess.</h3>
-                            <button className="intro-btn float-right">Opportunities ></button>
+                            <button className="intro-btn float-right white">Opportunities </button>
                         </div>
-                        <div className="image-container bottom-left">
+                        <div className="decoration grey"></div>
+                        <div className="image-container bottom-left" data-aos="fade-right">
                             <img src={opportunities} alt="Opportunities" className="intro-img"></img>
                         </div>
                     </div>

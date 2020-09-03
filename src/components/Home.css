@@ -5,7 +5,9 @@
 }
 
 .banner-text {
+    box-sizing: border-box; 
     margin: auto;
+    padding: 30px;
     max-width: 800px;
     position: absolute;
     top: 50%;
@@ -68,6 +70,18 @@
     -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    z-index: 1;
+}
+
+.decoration{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+    background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    z-index: 0;
 }
 
 .white{
@@ -110,12 +124,47 @@
 }
 
 .intro-btn{
+    width: 150px;
     padding: 15px;
-    background: #206020;
-    color: #ffffff;
+    color: #206020;
     font-size: 20px;
-    border: none;
+    border: 2px solid #206020;
     cursor: pointer;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    transition: 0.5s;
+}
+
+.intro-btn:hover{
+    color: #ffffff;
+    background-color: #206020;
+    border: 2px solid #ffffff;
+    transition: 0.5s;
+}
+
+.intro-btn span{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.intro-btn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.intro-btn:hover span{
+    padding-right: 20px;
+}
+
+.intro-btn:hover span:after{
+    opacity: 1;
+    right: 0;
 }
 
 .float-right{
@@ -128,4 +177,15 @@
     -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+}
+
+.intro-link{
+    text-decoration: none;
+    color: #206020;
+    transition: 0.5s;
+}
+
+.intro-link:hover{
+    color: #ffffff;
+    transition: 0.5s;
 }
