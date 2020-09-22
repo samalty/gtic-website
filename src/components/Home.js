@@ -47,7 +47,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="intro-background grey">
+                <div className="intro-background reverse">
                     <div className="container">
                         <div className="text-box white top-right" data-aos="fade-up">
                             <h2>Never miss an opportunity with GTIC</h2>
