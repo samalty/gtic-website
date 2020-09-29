@@ -1,23 +1,23 @@
 .claims-intro-container{
-    position: relative;
-    max-width: 1000px;
+    display: flex;
+    max-width: 1200px;
     margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
     padding-top: 60px;
-    height: 450px;
 }
 
-.claims-intro-textbox{
-    float: left;
-    text-align: left;
-    display: block;
-    max-width: 480px;
+.claims-intro-container > div {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
 }
 
 .claims-img{
-    max-width: 500px;
+    width: 100%;
     height: auto;
-    float: right;
-    margin-top: 25px;
+    margin-top: 30px;
     -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
@@ -26,7 +26,7 @@
 .claims-container{
     position: relative;
     max-width: 1000px;
-    padding: 30px 0px;
+    padding: 30px;
     margin: auto;
 }
 
@@ -35,33 +35,41 @@
     display: block;
     width: 500px;
     left: 25%;
-    border-radius: 10%;
-    border-bottom: 8px solid #006600;
+    border-radius: 20%;
+    border-bottom: 8px solid #004d00;
     z-index: -100;
 }
 
 .one-two{
-    top: 0px;
-    height: 425px;
-    border-left: 8px solid #006600;
+    top: 130px;
+    height: 325px;
+    border-left: 8px solid #004d00;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
 }
 
 .two-three{
-    top: 425px;
-    height: 365px;
-    border-right: 8px solid #006600;
+    top: 455px;
+    height: 375px;
+    border-right: 8px solid #004d00;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 0%;
 }
 
 .three-four{
-    top: 790px;
+    top: 830px;
     height: 290px;
-    border-left: 8px solid #006600;
+    border-left: 8px solid #004d00;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
 }
 
 .four-five{
-    top: 1080px;
+    top: 1125px;
     height: 295px;
-    border-right: 8px solid #006600;
+    border-right: 8px solid #004d00;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 0%;
 }
 
 .step{
@@ -88,16 +96,44 @@
 }
 
 .three{
-    top: 650px;
+    top: 660px;
     left: 0px;
 }
 
 .four{
-    top: 985px;
+    top: 1015px;
     right: 0px;
 }
 
 .five{
-    top: 1225px;
+    top: 1240px;
     left: 0px;
+}
+
+/*.arrow-down{
+    display: none;
+}*/
+
+@media screen and (max-width: 1000px) {
+    .link,
+    .one-two,
+    .two-three,
+    .three-four,
+    .four-five{
+        display: none;
+    }
+    .arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid #004d00;
+        margin: auto;
+    }
+    .step{
+        position: relative;
+        top: 0px;
+        padding-top: 20px;
+        margin: auto;
+    }
 }
