@@ -85,6 +85,18 @@
     box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
 }
 
+.step-title{
+    background-color: #004d00;
+    color: #ffffff;
+    width: auto;
+    padding-left: 10px;
+    margin-left: -45px;
+    margin-top: -40px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+}
+
 .one{
     top: 0px;
     left: 0px;
@@ -110,10 +122,6 @@
     left: 0px;
 }
 
-/*.arrow-down{
-    display: none;
-}*/
-
 @media screen and (max-width: 1000px) {
     .link,
     .one-two,
@@ -135,5 +143,11 @@
         top: 0px;
         padding-top: 20px;
         margin: auto;
+    }
+    .img-container{
+        display: none;
+    }
+    .claims-intro-container > div {
+        width: 100%;
     }
 }

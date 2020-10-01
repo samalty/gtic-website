@@ -4,6 +4,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Home.css';
 import HomeNavbar from './HomeNavbar';
+import Footer from './Footer';
+import logo from '../media/logo.png';
 import home from '../media/home.jpg';
 import about from '../media/about.jpg';
 import opportunities from '../media/opportunities.jpg';
@@ -23,8 +25,8 @@ class Home extends Component {
                 <HomeNavbar />
                 <img src={home} alt="Banner" className="banner-img"></img>
                 <div className="banner-text">
-                    <h1>Gov Tax Incentive Consultants</h1>
-                    <h2>Attentive, accessible, affordable tax incentive consultancy.</h2>
+                    <img src={logo} alt="GITC" className="logo-header"></img>
+                    <h1>Attentive, accessible, affordable tax incentive consultancy.</h1>
                     <h3>We provide pioneering UK companies with optimised, tailored guidance, helping them 
                         to supplement growth and innovation by leveraging government support for their work.</h3>
                     <br></br>
@@ -63,6 +65,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

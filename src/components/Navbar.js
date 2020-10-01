@@ -1,36 +1,34 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../media/logo-small.png';
 
 class Navbar extends Component {
     render() {
         return (
             <div>
                 <nav className="navbar">
+                    <Link to="/">
+                        <img src={logo} alt="GTIC" className="navbar-logo"></img>
+                    </Link>
                     <ul>
-                        <li className="nav-links">
-                            <Link to="/" className="navbar-link"><b>HOME</b></Link>
+                        <li>
+                            <Link to="/about" className="navbar-link">ABOUT US</Link>
                         </li>
-                        <li className="nav-links">
-                            <Link to="/about" className="navbar-link"><b>ABOUT US</b></Link>
+                        <li>
+                            OPPORTUNITIES
                         </li>
-                        <li className="nav-links">
-                            <b>OPPORTUNITIES</b>
+                        <li>
+                            <Link to="/making_a_claim" className="navbar-link">MAKING A CLAIM</Link>
                         </li>
-                        <li className="nav-links">
-                            <Link to="/making_a_claim" className="navbar-link"><b>MAKING A CLAIM</b></Link>
+                        <li>
+                            R&D EXPLAINED
                         </li>
-                        <li className="nav-links">
-                            <b>R&D EXPLAINED</b>
+                        <li>
+                            INSIGHTS
                         </li>
-                        <li className="nav-links">
-                            <b>CASE STUDIES</b>
-                        </li>
-                        <li className="nav-links">
-                            <b>INSIGHTS</b>
-                        </li>
-                        <li className="nav-links">
-                            <Link to="/contact" className="navbar-link"><b>CONTACT</b></Link>
+                        <li>
+                            <Link to="/contact" className="navbar-link">CONTACT</Link>
                         </li>
                     </ul>
                 </nav>

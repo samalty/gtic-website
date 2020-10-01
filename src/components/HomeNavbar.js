@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './HomeNavbar.css';
+import logo from '../media/logo-small.png';
 
 class HomeNavbar extends Component {
     constructor(){
@@ -26,30 +27,27 @@ class HomeNavbar extends Component {
         return (
             <div>
                 <nav className={this.state.scrolled ? 'home-navbar scrolled' : 'home-navbar'}>
+                    <Link to="/">
+                        <img src={logo} alt="GTIC" className="navbar-logo"></img>
+                    </Link>
                     <ul>
-                        <li className="nav-links">
-                            <Link to="/" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}><b>HOME</b></Link>
+                        <li>
+                            <Link to="/about" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}>ABOUT US</Link>
                         </li>
-                        <li className="nav-links">
-                            <Link to="/about" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}><b>ABOUT US</b></Link>
+                        <li>
+                            OPPORTUNITIES
                         </li>
-                        <li className="nav-links">
-                            <b>OPPORTUNITIES</b>
+                        <li>
+                            <Link to="/making_a_claim" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}>MAKING A CLAIM</Link>
                         </li>
-                        <li className="nav-links">
-                            <Link to="/making_a_claim" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}><b>MAKING A CLAIM</b></Link>
+                        <li>
+                            R&D EXPLAINED
                         </li>
-                        <li className="nav-links">
-                            <b>R&D EXPLAINED</b>
+                        <li>
+                            INSIGHTS
                         </li>
-                        <li className="nav-links">
-                            <b>CASE STUDIES</b>
-                        </li>
-                        <li className="nav-links">
-                            <b>INSIGHTS</b>
-                        </li>
-                        <li className="nav-links">
-                            <Link to="/contact" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}><b>CONTACT</b></Link>
+                        <li>
+                            <Link to="/contact" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}>CONTACT</Link>
                         </li>
                     </ul>
                 </nav>
