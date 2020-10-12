@@ -1,6 +1,7 @@
 {
   "name": "gtic-website",
-  "homepage": "https://samalty.github.io/gtic-website",
+  //"homepage": "https://samalty.github.io/gtic-website",
+  "homepage": "https://samalty.co.uk/gtic-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
