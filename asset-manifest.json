@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/gtic-demo/static/css/main.9f7df079.chunk.css",
-    "main.js": "/gtic-demo/static/js/main.8077574a.chunk.js",
-    "main.js.map": "/gtic-demo/static/js/main.8077574a.chunk.js.map",
-    "runtime-main.js": "/gtic-demo/static/js/runtime-main.9355e885.js",
-    "runtime-main.js.map": "/gtic-demo/static/js/runtime-main.9355e885.js.map",
-    "static/css/2.4707e12a.chunk.css": "/gtic-demo/static/css/2.4707e12a.chunk.css",
-    "static/js/2.12c8e563.chunk.js": "/gtic-demo/static/js/2.12c8e563.chunk.js",
-    "static/js/2.12c8e563.chunk.js.map": "/gtic-demo/static/js/2.12c8e563.chunk.js.map",
-    "index.html": "/gtic-demo/index.html",
-    "precache-manifest.a542816858e2d681f2905eb7f22efc43.js": "/gtic-demo/precache-manifest.a542816858e2d681f2905eb7f22efc43.js",
-    "service-worker.js": "/gtic-demo/service-worker.js",
-    "static/css/2.4707e12a.chunk.css.map": "/gtic-demo/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.9f7df079.chunk.css.map": "/gtic-demo/static/css/main.9f7df079.chunk.css.map",
-    "static/js/2.12c8e563.chunk.js.LICENSE.txt": "/gtic-demo/static/js/2.12c8e563.chunk.js.LICENSE.txt",
-    "static/media/about.jpg": "/gtic-demo/static/media/about.ef8736a8.jpg",
-    "static/media/claims.jpg": "/gtic-demo/static/media/claims.d3b2ad14.jpg",
-    "static/media/home.jpg": "/gtic-demo/static/media/home.915979ee.jpg",
-    "static/media/logo.png": "/gtic-demo/static/media/logo.4a16871f.png",
-    "static/media/opportunities.jpg": "/gtic-demo/static/media/opportunities.1868f763.jpg"
+    "main.css": "/gtic-website/static/css/main.9f7df079.chunk.css",
+    "main.js": "/gtic-website/static/js/main.6b97bcc2.chunk.js",
+    "main.js.map": "/gtic-website/static/js/main.6b97bcc2.chunk.js.map",
+    "runtime-main.js": "/gtic-website/static/js/runtime-main.0cfb8a98.js",
+    "runtime-main.js.map": "/gtic-website/static/js/runtime-main.0cfb8a98.js.map",
+    "static/css/2.4707e12a.chunk.css": "/gtic-website/static/css/2.4707e12a.chunk.css",
+    "static/js/2.12c8e563.chunk.js": "/gtic-website/static/js/2.12c8e563.chunk.js",
+    "static/js/2.12c8e563.chunk.js.map": "/gtic-website/static/js/2.12c8e563.chunk.js.map",
+    "index.html": "/gtic-website/index.html",
+    "precache-manifest.0aa5667ff48017edd3c60df29df388ca.js": "/gtic-website/precache-manifest.0aa5667ff48017edd3c60df29df388ca.js",
+    "service-worker.js": "/gtic-website/service-worker.js",
+    "static/css/2.4707e12a.chunk.css.map": "/gtic-website/static/css/2.4707e12a.chunk.css.map",
+    "static/css/main.9f7df079.chunk.css.map": "/gtic-website/static/css/main.9f7df079.chunk.css.map",
+    "static/js/2.12c8e563.chunk.js.LICENSE.txt": "/gtic-website/static/js/2.12c8e563.chunk.js.LICENSE.txt",
+    "static/media/about.jpg": "/gtic-website/static/media/about.ef8736a8.jpg",
+    "static/media/claims.jpg": "/gtic-website/static/media/claims.d3b2ad14.jpg",
+    "static/media/home.jpg": "/gtic-website/static/media/home.915979ee.jpg",
+    "static/media/logo.png": "/gtic-website/static/media/logo.4a16871f.png",
+    "static/media/opportunities.jpg": "/gtic-website/static/media/opportunities.1868f763.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9355e885.js",
+    "static/js/runtime-main.0cfb8a98.js",
     "static/css/2.4707e12a.chunk.css",
     "static/js/2.12c8e563.chunk.js",
     "static/css/main.9f7df079.chunk.css",
-    "static/js/main.8077574a.chunk.js"
+    "static/js/main.6b97bcc2.chunk.js"
   ]
 }
