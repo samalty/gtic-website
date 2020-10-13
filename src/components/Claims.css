@@ -1,10 +1,22 @@
+.header-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 30px;
+    padding-top: 80px;
+    border-bottom: 5px solid #004d00;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0px 0px 0px 25px;
+}
+
 .claims-intro-container{
     display: flex;
     max-width: 1200px;
     margin: auto;
     box-sizing: border-box;
     padding: 10px;
-    padding-top: 60px;
 }
 
 .claims-intro-container > div {
@@ -122,6 +134,10 @@
     left: 0px;
 }
 
+.material-icons{
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .link,
     .one-two,
@@ -130,13 +146,15 @@
     .four-five{
         display: none;
     }
-    .arrow-down {
-        width: 0;
-        height: 0;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-        border-top: 40px solid #004d00;
+    .material-icons{
+        display: block;
+        color: #004d00;
+        transform: rotateZ(90deg);
+        width: 60px;
         margin: auto;
+    }
+    .md-60{
+        font-size: 60px;
     }
     .step{
         position: relative;
@@ -149,5 +167,15 @@
     }
     .claims-intro-container > div {
         width: 100%;
+    }
+    h1{
+        font-size: 52px;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 44px;
     }
 }

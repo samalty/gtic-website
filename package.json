@@ -1,6 +1,5 @@
 {
   "name": "gtic-website",
-  "homepage": "https://samalty.co.uk/gtic-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^2.3.4",
     "google-maps-react": "^2.0.6",
+    "material-design-icons": "^3.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
