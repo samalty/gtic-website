@@ -63,7 +63,7 @@ class Claims extends Component {
                         </ul>
                         <p>Depending on your preference, our workshops can be carried out in person or via video conference.</p>
                     </div>
-                    <i class="material-icons md-60">double_arrow</i>
+                    <i className="material-icons md-60">double_arrow</i>
                     <div className="step three" data-aos="flip-up">
                         <div className="step-title">
                             <h2>3. Project qualification</h2>
@@ -74,7 +74,7 @@ class Claims extends Component {
                         <p>At the end of this stage, we will have enough information to write the technical narrative of your claim 
                             report and you will be a step closer to a valuable reward for your R&D efforts.</p>
                     </div>
-                    <i class="material-icons md-60">double_arrow</i>
+                    <i className="material-icons md-60">double_arrow</i>
                     <div className="step four" data-aos="flip-up">
                         <div className="step-title">
                             <h2>4. Expenditure analysis</h2>
@@ -83,7 +83,7 @@ class Claims extends Component {
                             to calculate the available R&D Tax Relief benefit. This is where you find out the eligible costs and discover 
                             the financial value of your claim.</p>
                     </div>
-                    <i class="material-icons md-60">double_arrow</i>
+                    <i className="material-icons md-60">double_arrow</i>
                     <div className="step five" data-aos="flip-up">
                         <div className="step-title">
                             <h2>5. Reporting and submission</h2>
