@@ -2,7 +2,7 @@ import React, { Component, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import './Home.css';
+import './Home.scss';
 import HomeNavbar from './HomeNavbar';
 import Footer from './Footer';
 import logo from '../media/logo.png';
@@ -26,15 +26,15 @@ class Home extends Component {
                 <img src={home} alt="Banner" className="banner-img"></img>
                 <div className="banner-text">
                     <img src={logo} alt="GITC" className="logo-header"></img>
-                    <h1>Attentive, accessible, affordable tax incentive consultancy.</h1>
-                    <h3>We provide pioneering UK companies with optimised, tailored guidance, helping them 
+                    <h1 className="tagline">Attentive, accessible, affordable tax incentive consultancy.</h1>
+                    <h3 className="intro-text">We provide pioneering UK companies with optimised, tailored guidance, helping them 
                         to supplement growth and innovation by leveraging government support for their work.</h3>
                     <br></br>
                     <button className="btn">BOOK A FREE CONSULTATION</button>
                 </div>
                 <div className="intro-background">
-                    <div className="container">
-                        <div className="text-box grey top-left" data-aos="fade-up">
+                    <div className="link-container" data-aos="fade-left">
+                        <div className="text-box grey top-left">
                             <h2>Preparing your platform for innovation</h2>
                             <hr></hr>
                             <h3>At Gov Tax Incentive Consultants, we provide expert advice to pioneering UK businesses, 
@@ -44,14 +44,14 @@ class Home extends Component {
                             </Link>
                         </div>
                         <div className="decoration white"></div>
-                        <div className="image-container bottom-right" data-aos="fade-left">
+                        <div className="image-container bottom-right">
                             <img src={about} alt="About us" className="intro-img"></img>
                         </div>
                     </div>
                 </div>
                 <div className="intro-background reverse">
-                    <div className="container">
-                        <div className="text-box white top-right" data-aos="fade-up">
+                    <div className="link-container" data-aos="fade-right">
+                        <div className="text-box white top-right">
                             <h2>Never miss an opportunity with GTIC</h2>
                             <hr></hr>
                             <h3>Our goal is to reward companies of all sectors, sizes and structures for the pioneering 
@@ -60,7 +60,7 @@ class Home extends Component {
                             <button className="intro-btn float-right white">Opportunities </button>
                         </div>
                         <div className="decoration grey"></div>
-                        <div className="image-container bottom-left" data-aos="fade-right">
+                        <div className="image-container bottom-left">
                             <img src={opportunities} alt="Opportunities" className="intro-img"></img>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Claims.css';
+import './Claims.scss';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import claims from '../media/claims.jpg';
@@ -19,9 +19,9 @@ class Claims extends Component {
                 <div className="header-container">
                     <h1>Making a claim with GTIC</h1>
                 </div>
-                <div className="claims-intro-container">
-                    <img src={claims} alt="Making a claim" className="claims-img"></img>
-                    <div className="claims-intro">
+                <div className="intro-container">
+                    <img src={claims} alt="Making a claim" className="img"></img>
+                    <div className="intro">
                         <div className="opening-para">
                             <h3>A claim with GTIC promises maximum value and total transparency. We have developed a rigorous claims process 
                                 blueprint which is designed to identify and capitalise on all available opportunities, while keeping you in 
@@ -35,7 +35,7 @@ class Claims extends Component {
                     </div>
                 </div>
                 <br></br>
-                <div className="claims-container">
+                <div className="container">
                     <div className="link one-two" data-aos="fade-in" data-aos-delay="1000"></div>
                     <div className="link two-three" data-aos="fade-in" data-aos-delay="1000"></div>
                     <div className="link three-four" data-aos="fade-in" data-aos-delay="1000"></div>
@@ -48,7 +48,7 @@ class Claims extends Component {
                             This helps us to ascertain whether your projects or initiatives qualify for R&D Tax Relief. If your 
                             business is eligible, we will send you an engagement agreement and enrol you onto a workshop.</p>
                     </div>
-                    <i class="material-icons md-60">double_arrow</i>
+                    <i className="material-icons md-60">double_arrow</i>
                     <div className="step two" data-aos="flip-up">
                         <div className="step-title">
                             <h2>2. Workshops to identify opportunities</h2>
@@ -95,6 +95,7 @@ class Claims extends Component {
                             of closing down enquiries at no extra cost.</p>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

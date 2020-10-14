@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './HomeNavbar.css';
+import './HomeNavbar.scss';
 import logo from '../media/logo-small.png';
 
 class HomeNavbar extends Component {

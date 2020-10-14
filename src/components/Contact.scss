@@ -1,0 +1,19 @@
+@import "./Themes";
+
+/* Header */
+
+.header-container{
+    @include titleContainer();
+}
+
+h1{
+    @include pageTitle();
+}
+
+.intro-container{
+    @include introContainer();
+}
+
+.map-container{
+    
+}

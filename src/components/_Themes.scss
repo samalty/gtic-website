@@ -1,0 +1,135 @@
+/* Navbar */
+
+@mixin navbarLogo {
+    margin: 5px;
+    display: inline-block;
+    float: left;
+}
+
+@mixin navbarUl {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    width: 80%;
+    @media screen and (min-width: 1300px) {
+        width: 85%;
+    }
+}
+
+@mixin navbarLi {
+    list-style: none;
+    display: inline-block;
+    color: #666666;
+    margin: 0px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+    @media screen and (min-width: 1300px) {
+        margin-top: 4px;
+        font-size: 20px;
+    }
+    @media screen and (min-width: 1400px) {
+        margin-top: 3px;
+        font-size: 22px;
+    }
+}
+
+@mixin navbarLink {
+    text-decoration: none;
+    color: #666666;
+}
+
+/* Home page */
+
+@mixin homepageContainers {
+    position: relative;
+    max-width: 1000px;
+    height: 670px;
+    margin: auto;
+}
+
+/* Pages */
+
+@mixin titleContainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 30px;
+    padding-top: 80px;
+    border-bottom: 5px solid #004d00;
+}
+
+@mixin pageTitle {
+    font-size: 44px;
+    margin: 0px;
+    @media screen and (min-width: 700px) {
+        font-size: 52px;
+    }
+    @media screen and (min-width: 1000px) {
+        font-size: 60px;
+        margin: 0px 0px 0px 25px;
+    }
+}
+
+@mixin introContainer {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+@mixin introImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    @media screen and (min-width: 1000px) {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        margin-top: 40px;
+        float: right;
+    }
+}
+
+@mixin introText {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    transform: translate(-0%, -25%);
+    text-align: center;
+    box-sizing: border-box;
+    @media screen and (min-width: 1000px) {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        padding: 20px;
+        transform: none;
+        text-align: left;
+        float: left;
+    }
+}
+
+@mixin openingPara {
+    background-color: #004d00;
+    opacity: 0.8;
+    width: 90%;
+    margin: auto;
+    color: #ffffff;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    @media screen and (min-width: 1000px) {
+        background-color: #ffffff;
+        color: #000000;
+        width: 100%;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
