@@ -3,8 +3,9 @@ import { Route, Link } from 'react-router-dom';
 import './App.scss';
 import Home from './components/Home';
 import About from './components/About';
-import Contact from './components/Contact';
+import Opportunities from './components/Opportunities';
 import Claims from './components/Claims';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
@@ -12,8 +13,9 @@ class App extends Component {
       <div className="App">
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/opportunities" component={Opportunities} />
         <Route exact path="/making_a_claim" component={Claims} />
+        <Route exact path="/contact" component={Contact} />
       </div>
     )
   }

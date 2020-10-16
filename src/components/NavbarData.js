@@ -13,7 +13,7 @@ export const NavbarData = [
     },
     {
         title: 'OPPORTUNITIES',
-        path: '/',
+        path: '/opportunities',
         cName: 'nav-text'
     },
     {

@@ -1,0 +1,139 @@
+@import "./Themes";
+
+/* Header */
+
+.header-container{
+    @include titleContainer();
+}
+
+h1{
+    @include pageTitle();
+}
+
+/* Intro */
+    
+.intro-container{
+    @include introContainer();
+}
+
+.img{
+    @include introImage();
+}
+
+.intro{
+    @include introText();
+}
+
+.opening-para{
+    @include openingPara();
+}
+
+/* Incentives */
+
+.incentives-browser{
+    display: none;
+    @media screen and (min-width: 1000px) {
+        display: table;
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: center;
+        overflow: auto;
+        border: 1px solid red;
+    }
+}
+
+.incentives-browser > div{
+    display: inline-table;
+    position: relative;
+    margin-top: 0px;
+    color: #ffffff;
+    width: 49%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.incentives-browser > div:nth-child(1),
+.incentives-browser > div:nth-child(4) {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #004d00, #006600);
+}
+
+.incentives-browser > div:nth-child(2),
+.incentives-browser > div:nth-child(3) {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #666666, #808080);
+}
+
+.fas,
+.far{
+    font-size: 34px;
+}
+
+.find-out{
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    -webkit-box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
+    -moz-box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
+    box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
+    transition: 0.5s;
+}
+.find-out:hover{
+    cursor: pointer;
+    color: #004d00;
+    background: #ffffff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.incentives-mobile{
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}
+
+/* Accordion */
+
+.accordion {
+    color: #000000;
+    background-color: #d3d3d3;
+    cursor: pointer;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #666666;
+    outline: none;
+    transition: 0.5s;
+  }
+
+  .accordion-content {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+    overflow: hidden;
+  }
+
+  .open{
+      display: block;
+      padding: 60px;
+      text-align: center;
+      transition: all 2s ease-in-out;
+  }
+
+  .accordion-title{
+      float: left;
+  }
+
+  .fa-arrow-alt-circle-down{
+      float: right;
+      margin: 20px;
+      font-size: 30px;
+  }

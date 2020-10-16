@@ -57,7 +57,9 @@ class Home extends Component {
                             <h3>Our goal is to reward companies of all sectors, sizes and structures for the pioneering 
                                 work that they undertake. Achieving this requires specialist knowledge of a broad range 
                                 of incentives that few other consultancies possess.</h3>
-                            <button className="intro-btn float-right white">Opportunities </button>
+                            <Link to="/opportunities" className="intro-link">
+                                <button className="intro-btn float-right white">Opportunities </button>
+                            </Link>
                         </div>
                         <div className="decoration grey"></div>
                         <div className="image-container bottom-left">

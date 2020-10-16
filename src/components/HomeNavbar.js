@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './HomeNavbar.scss';
+import Navbar from './Navbar';
+import './Navbar.scss';
 import logo from '../media/logo-small.png';
 
 class HomeNavbar extends Component {
@@ -22,35 +23,11 @@ class HomeNavbar extends Component {
     }
     //componentWillUnmount(){
     //    window.removeEventListener('scroll');
-    //}
+    //}className={this.state.scrolled ? 'navbar' : 'navbar unscrolled'}
     render() {
         return (
             <div>
-                <nav className={this.state.scrolled ? 'home-navbar scrolled' : 'home-navbar'}>
-                    <Link to="/">
-                        <img src={logo} alt="GTIC" className="navbar-logo"></img>
-                    </Link>
-                    <ul>
-                        <li>
-                            <Link to="/about" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}>ABOUT US</Link>
-                        </li>
-                        <li>
-                            OPPORTUNITIES
-                        </li>
-                        <li>
-                            <Link to="/making_a_claim" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}>MAKING A CLAIM</Link>
-                        </li>
-                        <li>
-                            R&D EXPLAINED
-                        </li>
-                        <li>
-                            INSIGHTS
-                        </li>
-                        <li>
-                            <Link to="/contact" className={this.state.scrolled ? 'scrolledText' : 'unscrolledText'}>CONTACT</Link>
-                        </li>
-                    </ul>
-                </nav>
+                <Navbar className={this.state.scrolled ? 'navbar' : 'navbar unscrolled'} />
             </div>
         )
     }

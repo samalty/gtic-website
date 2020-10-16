@@ -17,7 +17,7 @@ function Navbar() {
                     <i className="fas fa-bars" onClick={showSidebar}></i>
                 </Link>
                 <ul>
-                    {NavbarData.filter(NavbarData => NavbarData.title != 'HOME').map((item, index) => {
+                    {NavbarData.filter(NavbarData => NavbarData.title !== 'HOME').map((item, index) => {
                         return (
                             <li key={index}>
                                 <Link to={item.path} className="navbar-link">{item.title}</Link>
