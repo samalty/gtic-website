@@ -112,9 +112,9 @@ h1{
     position: relative;
     background-color: #d3d3d3;
     margin: 0px;
-    padding-left: 15px;
+    padding: 0px 20px;
     border: 1px solid #ffffff;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 
 .incentive-title:hover{
@@ -123,11 +123,12 @@ h1{
     transition: 0.5s;
 }
 
-.incentive-title::after{
-    background-image: url('../media/arrow-circle-down-solid.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.incentive-title h2{
+    display: inline-block;
+}
+
+.expand-icon{
+    float: right;
 }
 
 .accordion .incentive-info{
@@ -135,7 +136,7 @@ h1{
     max-height: 0;
     overflow-y: hidden;
     text-align: center;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 
 .accordion.open .incentive-info{
