@@ -26,12 +26,13 @@ class Opportunities extends Component {
                     <img src={opportunities} alt="Making a claim" className="img"></img>
                     <div className="intro">
                         <div className="opening-para">
-                                <h3>Our goal is to reward companies of all sectors, sizes and structures for the pioneering work that they 
-                                    undertake. Achieving this requires specialist knowledge of a broad range of incentives that few other 
-                                    consultancies possess.</h3>
-                                <h3>From IT to engineering, manufacturing to property, our rare combination of expertise has helped businesses 
-                                    across various industries identify and maximise relevant opportunities.</h3>
+                            <h3>Our goal is to reward companies of all sectors, sizes and structures for the pioneering work that they 
+                                undertake. Achieving this requires specialist knowledge of a broad range of incentives that few other 
+                                consultancies possess.</h3>
                         </div>
+                        <p>From IT to engineering, manufacturing to property, our rare combination of expertise has helped businesses 
+                            across various industries identify and maximise relevant opportunities. Check out some of our areas of 
+                            expertise below to see whether we may be able to help you make the most of your work.</p>
                     </div>
                 </div>
                 <br></br>

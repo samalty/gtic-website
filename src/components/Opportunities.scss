@@ -34,21 +34,21 @@ h1{
     display: none;
     @media screen and (min-width: 1000px) {
         display: table;
+        width: 100%;
         max-width: 1200px;
         margin: auto;
         margin-bottom: 30px;
         text-align: center;
         overflow: auto;
-        border: 1px solid red;
     }
 }
 
 .incentives-browser > div{
     display: inline-table;
-    position: relative;
-    margin-top: 0px;
-    color: #ffffff;
+    vertical-align: top;
+    height: 100%;
     width: 49%;
+    color: #ffffff;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -94,13 +94,11 @@ h1{
 /* Mobile view */
 
 .incentives-mobile{
-    transform: translate(-0%, -15%);
+    transform: translate(-0%, -20%);
     @media screen and (min-width: 1000px) {
         display: none;
     }
 }
-
-/* Accordion */
 
 .accordion{
     padding: 0px;
@@ -159,8 +157,6 @@ h1{
     font-size: 30px;
     z-index: 2000;
 }
-
-/* Accordion find out button */
 
 .find-out-accordion{
     color: #ffffff;

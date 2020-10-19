@@ -9,6 +9,7 @@ import logo from '../media/logo.png';
 import home from '../media/home.jpg';
 import about from '../media/about.jpg';
 import opportunities from '../media/opportunities.jpg';
+import claims from '../media/claims.jpg';
 
 class Home extends Component {
     constructor(props) {
@@ -58,12 +59,30 @@ class Home extends Component {
                                 work that they undertake. Achieving this requires specialist knowledge of a broad range 
                                 of incentives that few other consultancies possess.</h3>
                             <Link to="/opportunities" className="intro-link">
-                                <button className="intro-btn float-right white">Opportunities </button>
+                                <button className="intro-btn float-right white"><span>Opportunities </span></button>
                             </Link>
                         </div>
                         <div className="decoration grey"></div>
                         <div className="image-container bottom-left">
                             <img src={opportunities} alt="Opportunities" className="intro-img"></img>
+                        </div>
+                    </div>
+                </div>
+                <div className="intro-background">
+                    <div className="link-container" data-aos="fade-left">
+                        <div className="text-box grey top-left">
+                            <h2>Making a claim with GTIC</h2>
+                            <hr></hr>
+                            <h3>We promise maximum value and total transparency. Our rigorous claims process blueprint 
+                                is designed to identify and capitalise on all available opportunities, while keeping 
+                                you in the loop every step of the way.</h3>
+                            <Link to="/making_a_claim" className="intro-link">
+                                <button className="intro-btn"><span>Making a claim </span></button>
+                            </Link>
+                        </div>
+                        <div className="decoration white"></div>
+                        <div className="image-container bottom-right">
+                            <img src={claims} alt="Making a claim" className="intro-img"></img>
                         </div>
                     </div>
                 </div>
