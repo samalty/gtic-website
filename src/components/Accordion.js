@@ -4,29 +4,36 @@ import './Opportunities.scss';
 import { OpportunitiesData } from './OpportunitiesData';
 
 function Accordion() {
-    const [incentives, setIncentives] = useState(OpportunitiesData);
+    const [items, setItems] = useState(OpportunitiesData);
     const toggleAccordion = index => {
-        setIncentives(incentives.map((incentive, i) => {
+        setItems(items.map((item, i) => {
             if (i === index) {
-                incentive.open = !incentive.open;
+                item.open = !item.open;
             } else {
-                incentive.open = false;
+                item.open = false;
             }
-            return incentive;
+            return item;
         }))
     }
     return (
         <div>
             {OpportunitiesData.map((item, index) => {
                 return (
-                    <div>
-                        <button className="accordion" onClick={() => toggleAccordion(index)}><h2 className="accordion-title">{item.title}</h2><i class="fas fa-arrow-alt-circle-down"></i></button>
-                        <div className={"accordion-content" + (item.open ? 'open': '')} key={index}>
+                    <div className={"accordion" + (item.open ? ' open': '')} 
+                         key={index}
+                         onClick={() => toggleAccordion(index)}>
+                        <div className="incentive-title">
+                            <h2>{item.title}</h2>
+                        </div>
+                        <div className="incentive-info">
                             <i className={item.icon}></i>
-                            <p>{item.description1}</p>
-                            <p>{item.description2}</p>
+                            <br></br>
+                            <br></br>
+                            <hr></hr>
+                            <p className="accordion-desc">{item.description1}</p>
+                            <p className="accordion-desc">{item.description2}</p>
                             <Link to={item.path}>
-                                <button className="find-out">Find out more</button>
+                                <button className="find-out-accordion">Find out more</button>
                             </Link>
                         </div>
                     </div>

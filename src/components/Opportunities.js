@@ -38,7 +38,7 @@ class Opportunities extends Component {
                 <div className="incentives-browser">
                     {OpportunitiesData.map((item, index) => {
                         return (
-                            <div>
+                            <div key={index}>
                                 <h2>{item.title}</h2>
                                 <i className={item.icon}></i>
                                 <br></br>

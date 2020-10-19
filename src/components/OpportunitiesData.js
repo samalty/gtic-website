@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const OpportunitiesData = [
     {
         title: 'R&D Tax Relief',
