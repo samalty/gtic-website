@@ -1,8 +1,10 @@
 @import "./Themes";
 
+/* Banner */
+
 .banner-img {
     height: 100vh;
-    width: 99.1vw;
+    width: 99vw;
     opacity: 0.7;
     overflow: hidden;
     margin: auto;
@@ -88,6 +90,8 @@ h1,h2,h3,h4,h5,p{
     transition: 0.5s;
 }
 
+/* Page intros */
+
 .intro-background{
     background-image: linear-gradient(-175deg, #ffffff 50%, #f2f2f2 50%);
     padding: 30px;
@@ -112,6 +116,12 @@ h1,h2,h3,h4,h5,p{
     -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     z-index: 1;
+    @media screen and (max-width: 1000px) {
+        position: relative;
+        display: block;
+        padding-top: 10px;
+        width: auto;
+    }
 }
 
 .decoration{
@@ -123,6 +133,9 @@ h1,h2,h3,h4,h5,p{
     background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     z-index: 0;
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
 }
 
 .white{
@@ -138,6 +151,16 @@ h1,h2,h3,h4,h5,p{
     display: inline-block;
     width: 60%;
     z-index: 100;
+    @media screen and (max-width: 1000px) {
+        position: relative;
+        display: block;
+        width: auto;
+        text-align: center;
+        transform: translate(-0%, -5%);
+    }
+    @media screen and (max-width: 850px) {
+        transform: translate(-0%, -10%);
+    }
 }
 
 .bottom-right{
@@ -155,6 +178,9 @@ h1,h2,h3,h4,h5,p{
     right: 0px;
     border-top: 3px solid #004d00;
     border-right: 3px solid #004d00;
+    @media screen and (max-width: 1000px) {
+        border: none;
+    }
 }
 
 .top-left{
@@ -162,6 +188,9 @@ h1,h2,h3,h4,h5,p{
     left: 0px;
     border-top: 3px solid #004d00;
     border-left: 3px solid #004d00;
+    @media screen and (max-width: 1000px) {
+        border: none;
+    }
 }
 
 .intro-btn{
@@ -220,15 +249,42 @@ h1,h2,h3,h4,h5,p{
     -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    @include imageMobileWidth();
 }
 
 .intro-link{
     text-decoration: none;
     color: #004d00;
     transition: 0.5s;
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
 }
 
 .intro-link:hover{
     color: #ffffff;
     transition: 0.5s;
+}
+
+.intro-link-mobile{
+    position: relative;
+    display: block;
+    margin: 0px;
+    text-align: center;
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}
+
+.intro-btn-mobile{
+    color: #ffffff;
+    background-color: #004d00;
+    padding: 10px;
+    font-size: 22px;
+    position: relative;
+    @include imageMobileWidth();
+}
+
+.intro-btn-mobile:hover{
+    cursor: pointer;    
 }

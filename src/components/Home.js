@@ -34,24 +34,27 @@ class Home extends Component {
                     <button className="btn">BOOK A FREE CONSULTATION</button>
                 </div>
                 <div className="intro-background">
-                    <div className="link-container" data-aos="fade-left">
+                    <div className="link-container" data-aos="fade-up">
                         <div className="text-box grey top-left">
                             <h2>Preparing your platform for innovation</h2>
                             <hr></hr>
                             <h3>At Gov Tax Incentive Consultants, we provide expert advice to pioneering UK businesses, 
                                 helping them to compliantly capitalise on available government grants and incentives.</h3>
                             <Link to="/about" className="intro-link">
-                                <button className="intro-btn"><span>About Us </span></button>
+                                <button className="intro-btn"><span>About us </span></button>
                             </Link>
                         </div>
                         <div className="decoration white"></div>
                         <div className="image-container bottom-right">
                             <img src={about} alt="About us" className="intro-img"></img>
                         </div>
+                        <Link to="/about" className="intro-link-mobile">
+                            <button className="intro-btn-mobile">About us</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="intro-background reverse">
-                    <div className="link-container" data-aos="fade-right">
+                    <div className="link-container" data-aos="fade-up">
                         <div className="text-box white top-right">
                             <h2>Never miss an opportunity with GTIC</h2>
                             <hr></hr>
@@ -66,10 +69,13 @@ class Home extends Component {
                         <div className="image-container bottom-left">
                             <img src={opportunities} alt="Opportunities" className="intro-img"></img>
                         </div>
+                        <Link to="/opportunities" className="intro-link-mobile">
+                            <button className="intro-btn-mobile">Opportunities</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="intro-background">
-                    <div className="link-container" data-aos="fade-left">
+                    <div className="link-container" data-aos="fade-up">
                         <div className="text-box grey top-left">
                             <h2>Making a claim with GTIC</h2>
                             <hr></hr>
@@ -84,6 +90,9 @@ class Home extends Component {
                         <div className="image-container bottom-right">
                             <img src={claims} alt="Making a claim" className="intro-img"></img>
                         </div>
+                        <Link to="/making_a_claim" className="intro-link-mobile">
+                            <button className="intro-btn-mobile">Making a claim</button>
+                        </Link>
                     </div>
                 </div>
                 <Footer />
