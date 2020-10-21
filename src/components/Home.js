@@ -49,7 +49,7 @@ class Home extends Component {
                             <img src={about} alt="About us" className="intro-img"></img>
                         </div>
                         <Link to="/about" className="intro-link-mobile">
-                            <button className="intro-btn-mobile">About us</button>
+                            <button className="intro-btn-mobile"><span>About us </span></button>
                         </Link>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ class Home extends Component {
                             <img src={opportunities} alt="Opportunities" className="intro-img"></img>
                         </div>
                         <Link to="/opportunities" className="intro-link-mobile">
-                            <button className="intro-btn-mobile">Opportunities</button>
+                            <button className="intro-btn-mobile"><span>Opportunities </span></button>
                         </Link>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ class Home extends Component {
                             <img src={claims} alt="Making a claim" className="intro-img"></img>
                         </div>
                         <Link to="/making_a_claim" className="intro-link-mobile">
-                            <button className="intro-btn-mobile">Making a claim</button>
+                            <button className="intro-btn-mobile"><span>Making a claim </span></button>
                         </Link>
                     </div>
                 </div>

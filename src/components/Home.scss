@@ -179,7 +179,7 @@ h1,h2,h3,h4,h5,p{
     border-top: 3px solid #004d00;
     border-right: 3px solid #004d00;
     @media screen and (max-width: 1000px) {
-        border: none;
+        border-right: none;
     }
 }
 
@@ -189,7 +189,7 @@ h1,h2,h3,h4,h5,p{
     border-top: 3px solid #004d00;
     border-left: 3px solid #004d00;
     @media screen and (max-width: 1000px) {
-        border: none;
+        border-left: none;
     }
 }
 
@@ -287,4 +287,8 @@ h1,h2,h3,h4,h5,p{
 
 .intro-btn-mobile:hover{
     cursor: pointer;    
+}
+
+.intro-btn-mobile span::after{
+    content: '\00bb';
 }
