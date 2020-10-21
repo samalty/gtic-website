@@ -4,7 +4,8 @@
 
 .banner-img {
     height: 100vh;
-    width: 99vw;
+    width: 98vw;
+    margin: auto;
     opacity: 0.7;
     overflow: hidden;
     margin: auto;
@@ -25,6 +26,33 @@
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: linear;
+
+    .logo-header{
+        width: 100%;
+        height: auto;
+    }
+
+    .tagline {
+        font-size: 24px;
+        @media screen and (min-width: 700px) {
+            font-size: 32px;
+        }
+        @media screen and (min-width: 1400px) {
+            font-size: 40px;
+        }
+    }
+    
+    .intro-text{
+        display: none;
+        @media screen and (min-width: 700px) {
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        @media screen and (min-width: 900px) {
+            font-size: 20px;
+        }
+    }
 }
 
 @keyframes fadeIn {
@@ -36,32 +64,8 @@
     }
 }
 
-.tagline {
-    font-size: 24px;
-    @media screen and (min-width: 700px) {
-        font-size: 32px;
-    }
-    @media screen and (min-width: 1400px) {
-        font-size: 40px;
-    }
-}
-
-.intro-text{
-    display: none;
-    @media screen and (min-width: 1000px) {
-        display: block;
-        font-size: 20px;
-        font-weight: 600;
-    }
-}
-
 h1,h2,h3,h4,h5,p{
     font-weight: 200;
-}
-
-.logo-header{
-    width: 100%;
-    height: auto;
 }
 
 .btn{
@@ -74,23 +78,22 @@ h1,h2,h3,h4,h5,p{
     -moz-box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
     box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
     transition: 0.5s;
+    &:hover{
+        background: #666666;
+        color: #ffffff;
+        cursor: pointer;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        transition: 0.5s;
+    }
     @media screen and (min-width: 1000px) {
         padding: 25px;
         font-size: 20px;
     }
 }
 
-.btn:hover{
-    background: #666666;
-    color: #ffffff;
-    cursor: pointer;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    transition: 0.5s;
-}
-
-/* Page intros */
+/* Background */
 
 .intro-background{
     background-image: linear-gradient(-175deg, #ffffff 50%, #f2f2f2 50%);
@@ -99,42 +102,86 @@ h1,h2,h3,h4,h5,p{
 
 .reverse{
     background-image: linear-gradient(175deg, #f2f2f2 50%, #ffffff 50%);
+    padding: 30px;
 }
+
+/* Page intros */
 
 .link-container{
     @include homepageContainers();
-}
 
-.text-box{
-    position: absolute;
-    display: inline-block;
-    width: 50%;
-    padding: 0px 25px 25px 25px;
-    padding-top: 0px;
-    text-align: left;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    z-index: 1;
-    @media screen and (max-width: 1000px) {
+    .text-box{
         position: relative;
         display: block;
-        padding-top: 10px;
         width: auto;
+        max-width: 600px;
+        margin: auto;
+        padding: 0px 25px 25px 25px;
+        padding-top: 10px;
+        text-align: left;
+        z-index: 1;
+        h3{
+            font-weight: 200;
+        }
+        @include boxShadow();
+        @media screen and (min-width: 1000px) {
+            position: absolute;
+            display: inline-block;
+            width: 50%;
+            padding-top: 0px;
+        }
     }
-}
 
-.decoration{
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    left: 25%;
-    top: 25%;
-    background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    z-index: 0;
-    @media screen and (max-width: 1000px) {
+    .top-right{
+        top: 0px;
+        right: 0px;
+        border-top: 3px solid #004d00;
+        border-right: none;
+        @media screen and (min-width: 1000px) {
+            border-right: 3px solid #004d00;
+        }
+    }
+    
+    .top-left{
+        top: 0px;
+        left: 0px;
+        border-top: 3px solid #004d00;
+        border-left: none;
+        @media screen and (min-width: 1000px) {
+            border-left: 3px solid #004d00;
+        }
+    }
+
+    .decoration{
         display: none;
+        @media screen and (min-width: 1000px) {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            left: 25%;
+            top: 25%;
+            background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
+            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            z-index: 0;
+        }
+    }
+
+    .image-container{
+        position: relative;
+        display: block;
+        width: auto;
+        text-align: center;
+        z-index: 100;
+        transform: translate(-0%, -10%);
+        @media screen and (min-width: 850px) {
+            transform: translate(-0%, -5%);
+        }
+        @media screen and (min-width: 1000px) {
+            position: absolute;
+            display: inline-block;
+            width: 60%;
+            transform: none;
+        }
     }
 }
 
@@ -144,23 +191,6 @@ h1,h2,h3,h4,h5,p{
 
 .grey{
     background-color: #f2f2f2;
-}
-
-.image-container{
-    position: absolute;
-    display: inline-block;
-    width: 60%;
-    z-index: 100;
-    @media screen and (max-width: 1000px) {
-        position: relative;
-        display: block;
-        width: auto;
-        text-align: center;
-        transform: translate(-0%, -5%);
-    }
-    @media screen and (max-width: 850px) {
-        transform: translate(-0%, -10%);
-    }
 }
 
 .bottom-right{
@@ -173,98 +203,7 @@ h1,h2,h3,h4,h5,p{
     left: 0px;
 }
 
-.top-right{
-    top: 0px;
-    right: 0px;
-    border-top: 3px solid #004d00;
-    border-right: 3px solid #004d00;
-    @media screen and (max-width: 1000px) {
-        border-right: none;
-    }
-}
-
-.top-left{
-    top: 0px;
-    left: 0px;
-    border-top: 3px solid #004d00;
-    border-left: 3px solid #004d00;
-    @media screen and (max-width: 1000px) {
-        border-left: none;
-    }
-}
-
-.intro-btn{
-    min-width: 200px;
-    width: auto;
-    padding: 15px;
-    color: #004d00;
-    font-size: 20px;
-    border: 2px solid #004d00;
-    cursor: pointer;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    transition: 0.5s;
-}
-
-.intro-btn:hover{
-    color: #ffffff;
-    background-color: #004d00;
-    border: 2px solid #ffffff;
-    transition: 0.5s;
-}
-
-.intro-btn span{
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.intro-btn span:after{
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.intro-btn:hover span{
-    padding-right: 20px;
-}
-
-.intro-btn:hover span:after{
-    opacity: 1;
-    right: 0;
-}
-
-.float-right{
-    float: right;
-}
-
-.intro-img{
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-    @include imageMobileWidth();
-}
-
-.intro-link{
-    text-decoration: none;
-    color: #004d00;
-    transition: 0.5s;
-    @media screen and (max-width: 1000px) {
-        display: none;
-    }
-}
-
-.intro-link:hover{
-    color: #ffffff;
-    transition: 0.5s;
-}
+/* Page links */
 
 .intro-link-mobile{
     position: relative;
@@ -274,21 +213,82 @@ h1,h2,h3,h4,h5,p{
     @media screen and (min-width: 1000px) {
         display: none;
     }
+    .intro-btn-mobile{
+        color: #ffffff;
+        background-color: #004d00;
+        border: none;
+        padding: 15px;
+        font-size: 20px;
+        position: relative;
+        @include imageMobileWidth();
+        @include boxShadow();
+        &:hover{
+            cursor: pointer;  
+            box-shadow: none;
+        }
+        span{
+            &:after{
+                content: '\00bb';
+            }
+        }
+    }
 }
 
-.intro-btn-mobile{
-    color: #ffffff;
-    background-color: #004d00;
-    padding: 10px;
-    font-size: 22px;
-    position: relative;
+.intro-link{
+    display: none;
+    @media screen and (min-width: 1000px) {
+        display: block;
+    }
+    .intro-btn{
+        min-width: 200px;
+        width: auto;
+        padding: 15px;
+        color: #004d00;
+        font-size: 20px;
+        border: 2px solid #004d00;
+        cursor: pointer;
+        transition: 0.5s;
+        @include boxShadow();
+        span{
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            &:after{
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+        }
+        &:hover{
+            color: #ffffff;
+            background-color: #004d00;
+            border: 2px solid #ffffff;
+            transition: 0.5s;
+            box-shadow: none;
+            span{
+                padding-right: 30px;
+                &:after{
+                    opacity: 1;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+.float-right{
+    float: right;
+}
+
+/* Intro images */
+
+.intro-img{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    @include boxShadow();
     @include imageMobileWidth();
-}
-
-.intro-btn-mobile:hover{
-    cursor: pointer;    
-}
-
-.intro-btn-mobile span::after{
-    content: '\00bb';
 }
