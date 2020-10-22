@@ -140,6 +140,11 @@ class Home extends Component {
                 </div>
                 <div className="intro-background reverse">
                     <div className="link-container" data-aos="fade-up">
+                        <h1>What our clients say about us</h1>
+                    </div>
+                </div>
+                <div className="intro-background">
+                    <div className="link-container" data-aos="fade-up">
                         <CaseStudies />
                     </div>
                 </div>

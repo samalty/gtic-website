@@ -7,19 +7,12 @@ class CaseStudies extends Component {
     state = {
         items: [CaseStudiesData]
     }
-    myArrow({ type, onClick, isEdge }) {
-        const pointer = type === consts.PREV ? '👈' : '👉'
-        return (
-          <Button onClick={onClick} disabled={isEdge}>
-            {pointer}
-          </Button>
-        )
-    }
     render() {
         const { items } = this.state;
         return(
             <div>
-                <Carousel renderArrow={this.myArrow}>
+                <h1>Success stories</h1>
+                <Carousel>
                     {CaseStudiesData.map((item, index) => {
                         return (
                             <div className="carousel-card" key={index}>
