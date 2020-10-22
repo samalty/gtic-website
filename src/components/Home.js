@@ -4,6 +4,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Home.scss';
 import HomeNavbar from './HomeNavbar';
+import CaseStudies from './CaseStudies';
 import Footer from './Footer';
 import logo from '../media/logo.png';
 import home from '../media/home.jpg';
@@ -93,6 +94,53 @@ class Home extends Component {
                         <Link to="/making_a_claim" className="intro-link-mobile">
                             <button className="intro-btn-mobile"><span>Making a claim </span></button>
                         </Link>
+                    </div>
+                </div>
+                <div className="intro-background reverse">
+                    <div className="link-container" data-aos="fade-up">
+                        <div className="text-box white top-right">
+                            <h2>R&D Tax Relief explained</h2>
+                            <hr></hr>
+                            <h3>A generous initiative rewarding innovation within UK industry, Research & Development 
+                                (R&D) Tax Relief could provide your business with a competitive advantage and firm 
+                                foundations for future growth.</h3>
+                            <Link to="/" className="intro-link">
+                                <button className="intro-btn float-right white"><span>How it works </span></button>
+                            </Link>
+                        </div>
+                        <div className="decoration grey"></div>
+                        <div className="image-container bottom-left">
+                            <img src={opportunities} alt="Opportunities" className="intro-img"></img>
+                        </div>
+                        <Link to="/" className="intro-link-mobile">
+                            <button className="intro-btn-mobile"><span>How it works </span></button>
+                        </Link>
+                    </div>
+                </div>
+                <div className="intro-background">
+                    <div className="link-container" data-aos="fade-up">
+                        <div className="text-box grey top-left">
+                            <h2>Insights</h2>
+                            <hr></hr>
+                            <h3>Insights is where we share much of our expertise directly with you. If you have a 
+                                query relating to a particular tax incentive or grant, here is where we will  
+                                hopefully have you covered.</h3>
+                            <Link to="/" className="intro-link">
+                                <button className="intro-btn"><span>Insights </span></button>
+                            </Link>
+                        </div>
+                        <div className="decoration white"></div>
+                        <div className="image-container bottom-right">
+                            <img src={claims} alt="Making a claim" className="intro-img"></img>
+                        </div>
+                        <Link to="/" className="intro-link-mobile">
+                            <button className="intro-btn-mobile"><span>Insights </span></button>
+                        </Link>
+                    </div>
+                </div>
+                <div className="intro-background reverse">
+                    <div className="link-container" data-aos="fade-up">
+                        <CaseStudies />
                     </div>
                 </div>
                 <Footer />

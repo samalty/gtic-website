@@ -155,6 +155,7 @@ h1,h2,h3,h4,h5,p{
     .decoration{
         display: none;
         @media screen and (min-width: 1000px) {
+            display: block;
             position: absolute;
             width: 50%;
             height: 50%;

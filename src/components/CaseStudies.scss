@@ -1,0 +1,33 @@
+@import "./Themes";
+
+.carousel-card{
+    display: inline-block;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 10px 15px;
+    @include boxShadow();
+}
+
+.card-header{
+    background-image: linear-gradient(to bottom, #004d00, #006600);
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    @include boxShadow();
+    div{
+        width: 33%;
+        display: inline-block;
+        border-left: 1px solid #ffffff;
+        h3{
+            margin-left: 20%;
+        }
+    }
+}
+
+.card-detail{
+    padding: 10px 30px;
+}
