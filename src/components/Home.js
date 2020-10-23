@@ -58,9 +58,7 @@ class Home extends Component {
                     })}
                 </div>
                 <div className="case-studies">
-                    <div className="link-container" data-aos="fade-up">
-                        <CaseStudies />
-                    </div>
+                    <CaseStudies />
                 </div>
                 <div className="testimonials">
                     <div className="overlay">
