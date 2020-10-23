@@ -138,7 +138,7 @@ class Home extends Component {
                         </Link>
                     </div>
                 </div>
-                <div className="intro-background reverse">
+                <div className="case-studies">
                     <div className="link-container" data-aos="fade-up">
                         <CaseStudies />
                     </div>
@@ -148,6 +148,7 @@ class Home extends Component {
                         <div className="testimonials-container">
                             <div className="testimonials-text">
                                 <h1>What our clients say about us</h1>
+                                <hr></hr>
                                 <div data-aos="fade-up">
                                     <h2>"GTIC has been professional throughout. They learnt about our business, 
                                         met us many times and have cleverly put in place plans for the future."</h2>
