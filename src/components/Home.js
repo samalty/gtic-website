@@ -140,12 +140,32 @@ class Home extends Component {
                 </div>
                 <div className="intro-background reverse">
                     <div className="link-container" data-aos="fade-up">
-                        <h1>What our clients say about us</h1>
+                        <CaseStudies />
                     </div>
                 </div>
-                <div className="intro-background">
-                    <div className="link-container" data-aos="fade-up">
-                        <CaseStudies />
+                <div className="testimonials">
+                    <div className="overlay">
+                        <div className="testimonials-container">
+                            <div className="testimonials-text">
+                                <h1>What our clients say about us</h1>
+                                <div data-aos="fade-up">
+                                    <h2>"GTIC has been professional throughout. They learnt about our business, 
+                                        met us many times and have cleverly put in place plans for the future."</h2>
+                                    <h4>Engineering Consultancy, East Midlands</h4>
+                                </div>
+                                <div data-aos="fade-up">
+                                    <h2>"The team cares about our business and has helped us reclaim significant 
+                                        sums from R&D. They also worked quickly when we needed it and turned around 
+                                        our claim in under two weeks."</h2>
+                                    <h4>Software Development House, London</h4>
+                                </div>
+                                <div data-aos="fade-up">
+                                    <h2>"GTIC managed our R&D tax credit from start to finish, they were better at 
+                                        finding eligible projects than our previous providers."</h2>
+                                    <h4>Packaging Manufacturer, Kent</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Footer />
