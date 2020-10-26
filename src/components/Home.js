@@ -83,6 +83,7 @@ class Home extends Component {
                                     <h4>Packaging Manufacturer, Kent</h4>
                                 </div>
                             </div>
+                            <button className="consultation">BOOK A FREE CONSULTATION</button>
                         </div>
                     </div>
                 </div>

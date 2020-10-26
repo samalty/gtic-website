@@ -15,39 +15,41 @@ function CaseStudies() {
         } else setX(x - 100);
     };
     return(
-        <div>
+        <div className="carousel-container">
             <h1>Success stories</h1>
             <div className="carousel">
                 {CaseStudiesData.map((item, index) => {
                     return (
                         <div className="card" key={index} style={{transform:`translateX(${x}%)`}}>
-                            <div className="card-header">
-                                <div>
-                                    <h3>Industry:</h3>
-                                    <h3>{item.industry}</h3>
+                            <div className="inner-card">
+                                <div className="card-header">
+                                    <div>
+                                        <h3>Industry:</h3>
+                                        <h3>{item.industry}</h3>
+                                    </div>
+                                    <div>
+                                        <h3>Turnover:</h3>
+                                        <h3>{item.turnover}</h3>
+                                    </div>
+                                    <div>
+                                        <h3>Employees:</h3>
+                                        <h3>{item.employees}</h3>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3>Turnover:</h3>
-                                    <h3>{item.turnover}</h3>
-                                </div>
-                                <div>
-                                    <h3>Employees:</h3>
-                                    <h3>{item.employees}</h3>
+                                <div className="card-detail">
+                                    <h3><b>Background</b></h3>
+                                    <p>{item.background}</p>
+                                    <h3><b>How we helped</b></h3>
+                                    <p>{item.action}</p>
+                                    <h3><b>Result</b></h3>
+                                    <p>{item.result}</p>
                                 </div>
                             </div>
-                            <div className="card-detail">
-                                <h3><b>Background</b></h3>
-                                <p>{item.background}</p>
-                                <h3><b>How we helped</b></h3>
-                                <p>{item.action}</p>
-                                <h3><b>Result</b></h3>
-                                <p>{item.result}</p>
-                            </div> 
                         </div>
                     )
                 })}
-                <button className="left" onClick={handleLeft}>left</button>
-                <button className="right" onClick={handleRight}>right</button>
+                <button className="carousel-btn left" onClick={handleLeft}><span></span></button>
+                <button className="carousel-btn right" onClick={handleRight}><span></span></button>
             </div>
         </div>
     )
