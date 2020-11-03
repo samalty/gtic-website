@@ -45,7 +45,7 @@ class Home extends Component {
                                             <button className="intro-btn"><span>{item.buttonText}</span></button>
                                         </Link>
                                     </div>
-                                    <div className="decoration white"></div>
+                                    <div className="decoration"></div>
                                     <div className="image-container bottom-right">
                                         <img src={item.img} alt={item.buttonText} className="intro-img"></img>
                                     </div>

@@ -24,15 +24,19 @@
     height: auto;
     margin: 0;
     transition: 0.5s;
+    vertical-align: top;
 }
 
 .inner-card{
     vertical-align: top;
     background-color: #ffffff;
-    width: 80%;
+    width: 95%;
     margin: auto;
     margin-bottom: 10px;
     @include boxShadow();
+    @media screen and (min-width: 1200px) {
+        width: 80%;
+    }
 }
 
 .card-header{
@@ -63,6 +67,7 @@
     font-size: 20px;
     color: #ffffff;
     background-color: #262626;
+    opacity: 0.5;
     border: none;
     border-radius: 50%;
     cursor: pointer;

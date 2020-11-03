@@ -56,25 +56,25 @@
 
 @mixin imageMobileWidth {
     @media screen and (max-width: 1000px) {
-        width: 60%;
-    }
-    @media screen and (max-width: 925px) {
         width: 65%;
     }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 925px) {
         width: 70%;
     }
-    @media screen and (max-width: 775px) {
+    @media screen and (max-width: 850px) {
         width: 75%;
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 775px) {
         width: 80%;
     }
-    @media screen and (max-width: 625px) {
+    @media screen and (max-width: 700px) {
         width: 85%;
     }
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 625px) {
         width: 90%;
+    }
+    @media screen and (max-width: 550px) {
+        width: 95%;
     }
 }
 
