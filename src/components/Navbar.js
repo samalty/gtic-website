@@ -4,12 +4,21 @@ import './Navbar.scss';
 import logo from '../media/logo-small.png';
 import { NavbarData } from './NavbarData';
 
+
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
+    window.addEventListener('scroll', () => {
+        const element = document.getElementById("nav");
+        if (window.scrollY > 100) {
+            element.classList.add('scrolled');
+        } else {
+            element.classList.remove('scrolled');
+        }
+    });
     return (
         <div>
-            <div className="navbar">
+            <div className="navbar" id="nav">
                 <Link to="/">
                     <img src={logo} alt="GTIC" className="navbar-logo"></img>
                 </Link>

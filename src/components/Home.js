@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Home.scss';
-import HomeNavbar from './HomeNavbar';
+import Navbar from './Navbar';
 import CaseStudies from './CaseStudies';
 import { HomeData } from './HomeData';
 import Footer from './Footer';
@@ -11,9 +11,6 @@ import logo from '../media/logo.png';
 import home from '../media/home.jpg';
 
 class Home extends Component {
-    constructor(props) {
-        super(props);
-    }
     componentDidMount() {
         Aos.init({
             duration: 1000
@@ -22,7 +19,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <HomeNavbar />
+                <Navbar />
                 <img src={home} alt="Banner" className="banner-img"></img>
                 <div className="banner-text">
                     <img src={logo} alt="GITC" className="logo-header"></img>
