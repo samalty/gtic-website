@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe3fb3269b24f8b3a334758293c9f2f8",
+    "revision": "c923f0474be1693ca0d78b639243cd5c",
     "url": "/gtic-website/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gtic-website/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "3df643e85c79818ce917",
+    "revision": "94e592efa4e90e9f1138",
     "url": "/gtic-website/static/css/main.bd00ada8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gtic-website/static/js/2.3ddb640c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3df643e85c79818ce917",
-    "url": "/gtic-website/static/js/main.3f855fa6.chunk.js"
+    "revision": "94e592efa4e90e9f1138",
+    "url": "/gtic-website/static/js/main.2ca8c55e.chunk.js"
   },
   {
     "revision": "9eefdd66463abf114441",
