@@ -9,6 +9,7 @@
     opacity: 0.7;
     overflow: hidden;
     margin: auto;
+    object-fit: cover;
 }
 
 .banner-text {
@@ -159,6 +160,9 @@ h1,h2,h3,h4,h5,p{
 .testimonials{
     background-image: url('../media/engineering.jpg');
     background-repeat: round;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     .overlay{
         background-color: rgba(102, 102, 102, 0.5);
     }
@@ -308,6 +312,7 @@ h1,h2,h3,h4,h5,p{
     width: 100%;
     height: auto;
     opacity: 0.8;
+    object-fit: cover;
     @include boxShadow();
     @include imageMobileWidth();
 }
