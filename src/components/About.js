@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './About.scss';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import about from '../media/about.jpg';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 class About extends Component {
-    componentDidMount() {
-        Aos.init({
-            duration: 1000
-        });
-    }
     render() {
         return (
             <div>
@@ -38,15 +30,19 @@ class About extends Component {
                            effect that government intended.</p>
                     </div>
                 </div>
-                <div className="subhead-title">
+                <div className="subhead-container-browser">
                     <div className="title-overlay">
-                        <div className="subhead-container">
+                        <div className="subhead-title">
                             <h1>Partnering with GTIC</h1>
                         </div>
                     </div>
                 </div>
                 <div className="about-container">
-                    <div className="intro">
+                    <div className="subhead-container-mobile">
+                        <h1>Partnering with GTIC</h1>
+                    </div>
+                    <img src={about} alt="About us" className="about-img"></img>
+                    <div className="about-text">
                         <p>We partner with emerging and established companies of all sizes that aspire to add something new to their industry. 
                            Specialising in the IT, engineering and manufacturing sectors, our team of experts has helped more than 250 
                            businesses secure various forms of valuable relief, providing a gateway to growth and further development.</p>
@@ -58,7 +54,6 @@ class About extends Component {
                            processes. We circumvent the labour associated with manual processes and the expense incurred through outsourcing 
                            that many consultancies are bound by, before passing these savings onto you via our modest fees.</p>
                     </div>
-                    <img src={about} alt="About us" className="img"></img>
                 </div>
                 <Footer />
             </div>

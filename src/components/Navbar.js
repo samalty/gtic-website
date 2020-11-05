@@ -10,7 +10,7 @@ function Navbar() {
     const showSidebar = () => setSidebar(!sidebar);
     window.addEventListener('scroll', () => {
         const element = document.getElementById("nav");
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
             element.classList.add('scrolled');
         } else {
             element.classList.remove('scrolled');
