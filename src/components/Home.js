@@ -67,18 +67,18 @@ class Home extends Component {
                                 <h1>What our clients say about us</h1>
                                 <hr></hr>
                                 <div data-aos="fade-up">
-                                    <h2><i><i class="fas fa-quote-left"></i> GTIC have been professional throughout. They learnt about our business, 
-                                        met us many times and have cleverly put in place plans for the future. <i class="fas fa-quote-right"></i></i></h2>
+                                    <h2><i><i className="fas fa-quote-left"></i> GTIC have been professional throughout. They learnt about our business, 
+                                        met us many times and have cleverly put in place plans for the future. <i className="fas fa-quote-right"></i></i></h2>
                                     <h4>Engineering Consultancy, East Midlands</h4>
                                 </div>
                                 <div data-aos="fade-up">
-                                    <h2><i><i class="fas fa-quote-left"></i> The team cares about our business and has helped us reclaim significant 
-                                        sums from R&D. They also worked quickly when we needed it and turned around our claim in under two weeks.  <i class="fas fa-quote-right"></i></i></h2>
+                                    <h2><i><i className="fas fa-quote-left"></i> The team cares about our business and has helped us reclaim significant 
+                                        sums from R&D. They also worked quickly when we needed it and turned around our claim in under two weeks.  <i className="fas fa-quote-right"></i></i></h2>
                                     <h4>Software Development House, London</h4>
                                 </div>
                                 <div data-aos="fade-up">
-                                    <h2><i><i class="fas fa-quote-left"></i> GTIC managed our R&D tax credit from start to finish, they were better at 
-                                        finding eligible projects than our previous providers.  <i class="fas fa-quote-right"></i></i></h2>
+                                    <h2><i><i className="fas fa-quote-left"></i> GTIC managed our R&D tax credit from start to finish, they were better at 
+                                        finding eligible projects than our previous providers.  <i className="fas fa-quote-right"></i></i></h2>
                                     <h4>Packaging Manufacturer, Kent</h4>
                                 </div>
                             </div>
