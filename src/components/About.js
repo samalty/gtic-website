@@ -13,7 +13,10 @@ class About extends Component {
                     <h1>Preparing your platform for innovation</h1>
                 </div>
                 <div className="intro-container">
-                    <img src={about} alt="About us" className="img"></img>
+                    <div className="background-img one">
+                        <div className="title-overlay"></div>
+                    </div>
+                    <img src={about} alt="About us" className="about-img"></img>
                     <div className="intro">
                         <div className="opening-para">
                             <h3>At Gov Tax Incentive Consultants, we provide expert advice to pioneering UK businesses, helping them 
@@ -41,7 +44,9 @@ class About extends Component {
                     <div className="subhead-container-mobile">
                         <h1>Partnering with GTIC</h1>
                     </div>
-                    <img src={about} alt="About us" className="about-img"></img>
+                    <div className="background-img">
+                        <div className="title-overlay"></div>
+                    </div>
                     <div className="about-text">
                         <p>We partner with emerging and established companies of all sizes that aspire to add something new to their industry. 
                            Specialising in the IT, engineering and manufacturing sectors, our team of experts has helped more than 250 

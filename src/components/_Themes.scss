@@ -107,10 +107,6 @@
     height: auto;
     box-sizing: border-box;
     overflow: auto;
-    padding-bottom: 30px;
-    @media screen and (min-width: 1000px) {
-        padding-bottom: none;
-    }
 }
 
 @mixin introImage {
@@ -126,6 +122,7 @@
         margin-top: 40px;
         float: right;
         margin-right: 30px;
+        margin-bottom: 30px;
         box-shadow: 30px 30px #bfbfbf;
     }
 }

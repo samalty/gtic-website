@@ -35,9 +35,11 @@ h1{
 
 .form-container{
     display: block;
-    width: 100%;
+    width: 90%;
+    max-width: 800px;
     height: auto;
-    margin: 0px;
+    margin: 0px auto;
+    margin-bottom: 30px;
     @media screen and (min-width: 1000px) {
         position: relative;
         display: inline-block;
@@ -85,13 +87,7 @@ h1{
         }
     }
 }
-/*
-.map-container{
-    display: block;
-    height: 450px;
-    margin: 20px 0px;
-}
-*/
+
 .contact-details{
     display: block;
     box-sizing: border-box;
