@@ -30,9 +30,7 @@ class Contact extends Component {
                         </form>
                     </div>
                 </div>
-                <div className="map-container">
-                    <MapComponent />
-                </div>
+                <MapComponent />
                 <div className="contact-details">
                     <p>hello@govtaxincentives.com</p>
                     <p>Suite 2.10, easyHub Croydon, 22 Addiscombe Road, Croydon, CR0 5PE</p>
