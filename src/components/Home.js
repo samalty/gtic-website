@@ -8,7 +8,6 @@ import CaseStudies from './CaseStudies';
 import { HomeData } from './HomeData';
 import Footer from './Footer';
 import logo from '../media/logo.png';
-import home from '../media/home.jpg';
 
 class Home extends Component {
     componentDidMount() {

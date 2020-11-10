@@ -10,12 +10,17 @@ function Navbar() {
     const showSidebar = () => setSidebar(!sidebar);
     window.addEventListener('scroll', () => {
         const element = document.getElementById("nav");
+        const button = document.getElementById("scrollTop");
         if (window.scrollY > 50) {
             element.classList.add('scrolled');
-        } else {
-            element.classList.remove('scrolled');
-        }
+        } else element.classList.remove('scrolled');
+        if (window.pageYOffset > 1000) {
+            button.classList.add('visible');
+        } else button.classList.remove('visible');
     });
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, scrollBehaviour: 'smooth' });
+    }
     return (
         <div>
             <div className="navbar" id="nav">
@@ -51,6 +56,9 @@ function Navbar() {
                     })}
                  </ul>
             </nav>
+            <button id="scrollTop" className="scroll-top" onClick={scrollTop}>
+                <i class="fas fa-arrow-up"></i>
+            </button>
         </div>
     )
 }

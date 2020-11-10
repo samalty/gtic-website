@@ -149,3 +149,30 @@
     justify-content: start;
     align-items: center;
 }
+
+/* Scroll top button */
+
+.scroll-top{
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #004d00;
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+    transition: 1s;
+    opacity: 0.7;
+    z-index: 2000;
+    border: none;
+    outline: none;
+    display: none;
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.visible{
+    display: block;
+    transition: 1s;
+}

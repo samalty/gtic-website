@@ -14,7 +14,7 @@ class About extends Component {
                 </div>
                 <div className="intro-container">
                     <div className="background-img one">
-                        <div className="title-overlay"></div>
+                        <div className="subhead-container-overlay"></div>
                     </div>
                     <img src={about} alt="About us" className="about-img"></img>
                     <div className="intro">
@@ -34,7 +34,7 @@ class About extends Component {
                     </div>
                 </div>
                 <div className="subhead-container-browser">
-                    <div className="title-overlay">
+                    <div className="subhead-container-overlay">
                         <div className="subhead-title">
                             <h1>Partnering with GTIC</h1>
                         </div>
@@ -45,7 +45,7 @@ class About extends Component {
                         <h1>Partnering with GTIC</h1>
                     </div>
                     <div className="background-img">
-                        <div className="title-overlay"></div>
+                        <div className="subhead-container-overlay"></div>
                     </div>
                     <div className="about-text">
                         <p>We partner with emerging and established companies of all sizes that aspire to add something new to their industry. 
