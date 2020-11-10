@@ -57,7 +57,7 @@ function Navbar() {
                  </ul>
             </nav>
             <button id="scrollTop" className="scroll-top" onClick={scrollTop}>
-                <i class="fas fa-arrow-up"></i>
+                <i className="fas fa-arrow-up"></i>
             </button>
         </div>
     )

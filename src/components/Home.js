@@ -49,13 +49,15 @@ class Home extends Component {
                                     <div className="decoration"></div>
                                     <div className="image-container bottom-right">
                                         <img src={item.img} alt={item.buttonText} className="intro-img"></img>
-                                        <div className="intro-img-background" style={{backgroundImage: `url(${item.img})`}}>
-                                            <div className="intro-img-overlay" data-aos="zoom-out">
-                                                <h2>{item.title}</h2>
-                                                <hr></hr>
-                                                <h3>{item.description}</h3>
+                                        <Link to={item.path} className="intro-link-mobile">
+                                            <div className="intro-img-background" style={{backgroundImage: `url(${item.img})`}}>
+                                                <div className="intro-img-overlay" data-aos="zoom-out">
+                                                    <h2>{item.title}</h2>
+                                                    <hr></hr>
+                                                    <h3>{item.description}</h3>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                     </div>
                                     <Link to={item.path} className="intro-link-mobile">
                                         <button className="intro-btn-mobile"><span>{item.buttonText}</span></button>
