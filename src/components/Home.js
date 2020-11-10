@@ -38,8 +38,10 @@ class Home extends Component {
                                 <div className="link-container" data-aos="fade-up">
                                     <div className="text-box">
                                         <h2>{item.title}</h2>
-                                        <hr></hr>
-                                        <h3>{item.description}</h3>
+                                        <div className="desc-container">
+                                            <hr></hr>
+                                            <h3>{item.description}</h3>
+                                        </div>
                                         <Link to={item.path} className="intro-link">
                                             <button className="intro-btn"><span>{item.buttonText}</span></button>
                                         </Link>
@@ -47,6 +49,13 @@ class Home extends Component {
                                     <div className="decoration"></div>
                                     <div className="image-container bottom-right">
                                         <img src={item.img} alt={item.buttonText} className="intro-img"></img>
+                                        <div className="intro-img-background" style={{backgroundImage: `url(${item.img})`}}>
+                                            <div className="intro-img-overlay" data-aos="zoom-out">
+                                                <h2>{item.title}</h2>
+                                                <hr></hr>
+                                                <h3>{item.description}</h3>
+                                            </div>
+                                        </div>
                                     </div>
                                     <Link to={item.path} className="intro-link-mobile">
                                         <button className="intro-btn-mobile"><span>{item.buttonText}</span></button>
