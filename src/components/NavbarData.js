@@ -21,7 +21,7 @@ export const NavbarData = [
     },
     {
         title: 'R&D EXPLAINED',
-        path: '/',
+        path: '/r&d_explained',
         cName: 'nav-text'
     },
     {

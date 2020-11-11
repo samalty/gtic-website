@@ -37,7 +37,7 @@ export const HomeData = [
         title: 'R&D Tax Relief explained',
         description:`A generous initiative rewarding innovation within UK industry, Research & Development (R&D) Tax Relief 
                      could provide your business with a competitive advantage and firm foundations for future growth.`,
-        path: '/',
+        path: '/r&d_explained',
         buttonText: 'How it works ',
         img: opportunities
     },

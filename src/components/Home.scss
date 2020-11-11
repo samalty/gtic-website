@@ -388,19 +388,16 @@ h1,h2,h3,h4,h5,p{
             h2{
                 font-size: 20px;
             }
-            .fa-quote-left,
             .fa-quote-right{
-                font-size: 18px;
-                transform: rotate(10deg);
+                margin-top: 20px;
+                font-size: 24px;
             }
             @media screen and (min-width: 850px) {
                 h2{
                     font-size: 26px;
                 }
-                .fa-quote-left,
                 .fa-quote-right{
-                    font-size: 24px;
-                    transform: rotate(10deg);
+                    font-size: 30px;
                 }
             }
             @media screen and (min-width: 1000px) {
@@ -417,29 +414,5 @@ h1,h2,h3,h4,h5,p{
 /* Consultation button */
 
 .consultation{
-    display: block;
-    margin: 30px auto;
-    padding: 20px;
-    background: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    font-size: 16px;
-    -webkit-box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
-    -moz-box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
-    box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
-    transition: 0.5s;
-    outline: none;
-    &:hover{
-        background: #ffffff;
-        color: #666666;
-        cursor: pointer;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        transition: 0.5s;
-    }
-    @media screen and (min-width: 1000px) {
-        padding: 25px;
-        font-size: 20px;
-    }
+    @include consultationButton();
 }
