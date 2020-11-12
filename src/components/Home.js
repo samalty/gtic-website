@@ -38,10 +38,8 @@ class Home extends Component {
                                 <div className="link-container" data-aos="fade-up">
                                     <div className="text-box">
                                         <h2>{item.title}</h2>
-                                        <div className="desc-container">
-                                            <hr></hr>
-                                            <h3>{item.description}</h3>
-                                        </div>
+                                        <hr></hr>
+                                        <h3>{item.description}</h3>
                                         <Link to={item.path} className="intro-link">
                                             <button className="intro-btn"><span>{item.buttonText}</span></button>
                                         </Link>

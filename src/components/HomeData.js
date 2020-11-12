@@ -14,7 +14,7 @@ export const HomeData = [
     },
     {
         page: 'opportunities',
-        title: 'Never miss an opportunity with GTIC',
+        title: 'Never miss an opportunity',
         description:`Our goal is to reward companies of all sectors, sizes and structures for the pioneering work that they 
                      undertake. Achieving this requires specialist knowledge of a broad range of incentives that few other 
                      consultancies possess.`,

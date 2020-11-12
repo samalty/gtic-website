@@ -167,21 +167,6 @@ h1,h2,h3,h4,h5,p{
     padding: 70px 30px;
 }
 
-.testimonials{
-    background-image: url('../media/engineering.jpg');
-    background-repeat: round;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-attachment: fixed;
-    @media screen and (min-width: 1150px) {
-        background-size: 100% auto;
-    }
-    .overlay{
-        background-color: rgba(102, 102, 102, 0.5);
-    }
-}
-
 /* Page intros */
 
 .link-container{
@@ -191,6 +176,7 @@ h1,h2,h3,h4,h5,p{
         display: none;
         h3{
             font-weight: 200;
+            font-size: 20px;
         }
         @media screen and (min-width: 1000px) {
             position: absolute;
@@ -200,12 +186,6 @@ h1,h2,h3,h4,h5,p{
             border-top: 3px solid #004d00;
             z-index: 1;
             @include boxShadow();
-        }
-        .desc-container{
-            display: none;
-            @media screen and (min-width: 1000px) {
-                display: block;
-            }
         }
     }
 
@@ -261,10 +241,13 @@ h1,h2,h3,h4,h5,p{
             background-repeat: round;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: auto 100%;
             min-height: 250px;
             @include boxShadow();
             @include imageMobileWidth();
+            @media screen and (min-width: 565px) {
+                background-size: 100%;
+            }
             @media screen and (min-width: 1000px) {
                 display: none;
             }
@@ -368,7 +351,22 @@ h1,h2,h3,h4,h5,p{
     }
 }
 
-/* Testimonials text */
+/* Testimonials */
+
+.testimonials{
+    background-image: url('../media/engineering.jpg');
+    background-repeat: round;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    @media screen and (min-width: 1150px) {
+        background-size: 100% auto;
+    }
+    .overlay{
+        background-color: rgba(102, 102, 102, 0.5);
+    }
+}
 
 .testimonials-container{
     position: relative;
