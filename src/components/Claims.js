@@ -42,7 +42,7 @@ class Claims extends Component {
                     <div className="link four-five" data-aos="fade-in" data-aos-delay="1000"></div>
                     <div className="step one" data-aos="flip-up">
                         <div className="step-title">
-                            <h2>1. Introduction</h2>
+                            <h3>1. Introduction</h3>
                         </div>
                         <p>We arrange an introductory phone call to discuss your business and the type of work that you undertake. 
                             This helps us to ascertain whether your projects or initiatives qualify for R&D Tax Relief. If your 
@@ -51,7 +51,7 @@ class Claims extends Component {
                     <i className="material-icons md-60">double_arrow</i>
                     <div className="step two" data-aos="flip-up">
                         <div className="step-title">
-                            <h2>2. Workshops to identify opportunities</h2>
+                            <h3>2. Workshops to identify opportunities</h3>
                         </div>
                         <p>Our workshops aim to provide you with all the essential knowledge needed to play your part in a smooth 
                             and rewarding R&D Tax Relief claim. Following a brief presentation detailing the incentive’s background, 
@@ -66,7 +66,7 @@ class Claims extends Component {
                     <i className="material-icons md-60">double_arrow</i>
                     <div className="step three" data-aos="flip-up">
                         <div className="step-title">
-                            <h2>3. Project qualification</h2>
+                            <h3>3. Project qualification</h3>
                         </div>
                         <p>This is where we dive into the detail behind your project. Discussions with your project managers, engineers 
                             and product owners about your project goals and the approach taken will help us to further scope out the 
@@ -77,7 +77,7 @@ class Claims extends Component {
                     <i className="material-icons md-60">double_arrow</i>
                     <div className="step four" data-aos="flip-up">
                         <div className="step-title">
-                            <h2>4. Expenditure analysis</h2>
+                            <h3>4. Expenditure analysis</h3>
                         </div>
                         <p>Having collected documents such as your company accounts and tax returns, we conduct an expenditure analysis 
                             to calculate the available R&D Tax Relief benefit. This is where you find out the eligible costs and discover 
@@ -86,7 +86,7 @@ class Claims extends Component {
                     <i className="material-icons md-60">double_arrow</i>
                     <div className="step five" data-aos="flip-up">
                         <div className="step-title">
-                            <h2>5. Reporting and submission</h2>
+                            <h3>5. Reporting and submission</h3>
                         </div>
                         <p>Upon your approval, we file your completed claim report with HMRC, and either incorporate the R&D Tax Relief 
                             calculation into your Corporation Tax return or assist your accountant in doing so.</p>
