@@ -10,7 +10,7 @@ export const OpportunitiesData = [
                       comprehensive and personal approach promises to maximise the value of your claim, providing the perfect 
                       platform for future growth.`,
         path: '/contact',
-        open: false,
+        open: true,
         cName: 'incentive-desc'
     },
     {

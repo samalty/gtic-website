@@ -124,6 +124,8 @@ h1{
 /* Mobile view */
 
 .incentives-mobile{
+    max-width: 95%;
+    margin: auto;
     transform: translate(-0%, -20%);
     @media screen and (min-width: 1000px) {
         display: none;
@@ -134,37 +136,32 @@ h1{
     padding: 0px;
     margin: 0px;
     background-color: #ffffff;
-}
-
-.incentive-title{
-    position: relative;
-    background-color: #d3d3d3;
-    margin: 0px;
-    padding: 0px 20px;
-    border: 1px solid #ffffff;
-    transition: all 0.7s ease;
-}
-
-.incentive-title:hover{
-    cursor: pointer;
-    background-color: #cccccc;
-    transition: 0.5s;
-}
-
-.incentive-title h2{
-    display: inline-block;
-}
-
-.expand-icon{
-    float: right;
-}
-
-.accordion .incentive-info{
-    opacity: 0;
-    max-height: 0;
-    overflow-y: hidden;
-    text-align: center;
-    transition: all 0.7s ease;
+    .incentive-title{
+        position: relative;
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 0px 20px;
+        border-bottom: 1px solid #000000;
+        transition: all 0.7s ease;
+        &:hover{
+            cursor: pointer;
+            background-color: #f2f2f2;
+            transition: 0.5s;
+        }
+        h3{
+            display: inline-block;
+        }
+        .expand-icon{
+            float: right;
+        }
+    }
+    .incentive-info{
+        opacity: 0;
+        max-height: 0;
+        overflow-y: hidden;
+        text-align: center;
+        transition: all 0.7s ease;
+    }
 }
 
 .accordion.open .incentive-info{
@@ -173,19 +170,7 @@ h1{
     padding: 20px;
     box-sizing: border-box;
     width: 100%;
-}
-
-.accordion-desc{
-    text-align: left;
-}
-
-.fa-arrow-alt-circle-down{
-    display: inline;
-    float: right;
-    margin-right: 20px;
-    margin-top: 0px;
-    font-size: 30px;
-    z-index: 2000;
+    border-bottom: 1px solid #000000;
 }
 
 .find-out-accordion{
@@ -197,15 +182,14 @@ h1{
     -moz-box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
     box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
     transition: 0.5s;
-}
-
-.find-out-accordion:hover{
-    cursor: pointer;
-    color: #004d00;
-    background-color: #ffffff;
-    border: 2px solid #004d00;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    transition: 0.5s;
+    &:hover{
+        cursor: pointer;
+        color: #004d00;
+        background-color: #ffffff;
+        border: 2px solid #004d00;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        transition: 0.5s;
+    }
 }

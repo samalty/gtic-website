@@ -23,13 +23,12 @@ function Accordion() {
                          key={index}
                          onClick={() => toggleAccordion(index)}>
                         <div className="incentive-title">
-                            <h2>{item.title}</h2><h2 className="expand-icon">{(item.open ? '-':'+')}</h2>
+                            <h3>{item.title}</h3><h3 className="expand-icon">{(item.open ? '-':'+')}</h3>
                         </div>
                         <div className="incentive-info">
                             <i className={item.icon}></i>
                             <br></br>
                             <br></br>
-                            <hr></hr>
                             <p className="accordion-desc">{item.description1}</p>
                             <p className="accordion-desc">{item.description2}</p>
                             <Link to={item.path}>
