@@ -123,6 +123,9 @@ th,td{
 
 /* Consultation button */
 
-.consultation{
-    @include consultationButton();
+.button-link{
+    text-decoration: none;
+    .consultation{
+        @include consultationButton();
+    }
 }

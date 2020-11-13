@@ -1,6 +1,6 @@
 export const CaseStudiesData = [
     {
-        industry: 'Software Technology',
+        industry: 'Software',
         turnover: '£3 million',
         employees: '10-50',
         background: `The company uses third party applications and software development kits to build bespoke solutions. 
@@ -23,7 +23,7 @@ export const CaseStudiesData = [
         result: `Successful R&D claim, claiming back £200,000 over two years.`
     },
     {
-        industry: 'Packaging Manufacturer',
+        industry: 'Manufacturing',
         turnover: '£5 million',
         employees: '51-100',
         background: `The company designs and develops packaging for a variety of household products.`,

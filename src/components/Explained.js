@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './Explained.scss';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import opportunities from '../media/opportunities.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -112,7 +111,9 @@ class Explained extends Component {
                                we have the ideal combination of expertise and experience to deliver a maximum value, compliant claim. For a free 30-minute 
                                telephone consultation to gauge a project’s eligibility, and to find out more about how we can optimise your claim, 
                                get in touch by clicking the link below.</p>
-                            <button className="consultation">BOOK A FREE CONSULTATION</button>
+                            <Link className="button-link" to="/contact">
+                                <button className="consultation">BOOK A FREE CONSULTATION</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
