@@ -23,7 +23,9 @@ class Opportunities extends Component {
                     <h1>Never miss an opportunity with GTIC</h1>
                 </div>
                 <div className="intro-container">
-                    <img src={opportunities} alt="Making a claim" className="img"></img>
+                    <div className="img-decoration">
+                        <img src={opportunities} alt="Making a claim" className="intro-img"></img>
+                    </div>
                     <div className="intro">
                         <div className="opening-para">
                             <h3>Our goal is to reward companies of all sectors, sizes and structures for the pioneering work that they 

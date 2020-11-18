@@ -81,6 +81,7 @@
 /* Pages */
 
 @mixin titleContainer {
+    width: 100%;
     max-width: 1200px;
     margin: auto;
     padding: 0px 30px;
@@ -102,16 +103,31 @@
 
 @mixin introContainer {
     display: block;
+    width: 100vw;
     max-width: 1200px;
-    margin: auto;
     height: auto;
     box-sizing: border-box;
-    overflow: auto;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 @mixin introImage {
     display: block;
-    width: 100%;
+    width: 100vw;
+    height: auto;
+    margin: 0px;
+    @media screen and (min-width: 1000px) {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: auto;    
+        transform: translate(-40px, 40px);
+    }
+}
+
+@mixin imgDecoration {
+    display: block;
+    width: 100vw;
     height: auto;
     margin: 0px;
     @media screen and (min-width: 1000px) {
@@ -121,9 +137,9 @@
         height: auto;
         margin-top: 40px;
         float: right;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        box-shadow: 30px 30px #bfbfbf;
+        background-color: #ffffff;
+        background-image: url("https://www.transparenttextures.com/patterns/skeletal-weave.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     }
 }
 

@@ -14,18 +14,18 @@ h1{
     
 .intro-container{
     @include introContainer();
-}
-
-.img{
-    @include introImage();
-}
-
-.intro{
-    @include introText();
-}
-
-.opening-para{
-    @include openingPara();
+    .img-decoration{
+        @include imgDecoration();
+        .intro-img{
+            @include introImage();
+        }
+    }
+    .intro{
+        @include introText();
+        .opening-para{
+            @include openingPara();
+        }
+    }
 }
 
 /* Incentives */
@@ -128,7 +128,7 @@ h1{
 
 .incentives-mobile{
     max-width: 95%;
-    margin: auto;
+    margin: 0 auto;
     transform: translate(-0%, -20%);
     @media screen and (min-width: 1000px) {
         display: none;

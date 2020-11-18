@@ -16,8 +16,12 @@ h1{
     @include introContainer();
 }
 
-.img{
+.intro-img{
     @include introImage();
+}
+
+.img-decoration{
+    @include imgDecoration();
 }
 
 .intro{

@@ -20,7 +20,9 @@ class Claims extends Component {
                     <h1>Making a claim with GTIC</h1>
                 </div>
                 <div className="intro-container">
-                    <img src={claims} alt="Making a claim" className="img"></img>
+                    <div className="img-decoration">
+                        <img src={claims} alt="Making a claim" className="intro-img"></img>
+                    </div>
                     <div className="intro">
                         <div className="opening-para">
                             <h3>A claim with GTIC promises maximum value and total transparency. We have developed a rigorous claims process 
