@@ -35,7 +35,7 @@
                 width: 80%;
             }
             .card-header{
-                background-image: linear-gradient(to bottom, #004d00, #006600);
+                background-image: linear-gradient(to bottom, #004d00, #008000);
                 color: #ffffff;
                 position: relative;
                 width: 100%;
@@ -52,6 +52,22 @@
                         text-align: left;
                         margin: 0px;
                     }
+                    .fas{
+                        display: none;
+                        @media screen and (min-width: 800px) {
+                            display: inline;
+                            float: right;
+                            font-size: 40px;
+                            margin: 10px 0px 0px 0px;
+                        }
+                        @media screen and (min-width: 890px) {
+                            margin: 10px 5px 0px 0px;
+                        }
+                        @media screen and (min-width: 1000px) {
+                            font-size: 48px;
+                            margin: 10px 10px 0px 0px;
+                        }
+                    }
                 }
             }
             .card-detail{
@@ -67,8 +83,8 @@
         height: 50px;
         font-size: 20px;
         color: #ffffff;
-        background-color: #262626;
-        opacity: 0.5;
+        background-color: #004d00;
+        opacity: 0.8;
         border: none;
         border-radius: 50%;
         cursor: pointer;

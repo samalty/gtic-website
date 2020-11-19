@@ -6,9 +6,9 @@ export const CaseStudiesData = [
         background: `The company uses third party applications and software development kits to build bespoke solutions. 
                     The company thought it could not qualify for R&D Tax Relief due to the fact that it used off-the-shelf 
                     technologies.`,
-        action: `GTIC found the company developed integration modules not available from Microsoft or third parties. The 
-                 company also developed solutions to overcome limitations in software development kits. GTIC identified a 
-                 series of middleware developments by working closely with the software development team.`,
+        action: `GTIC found the company developed integration modules not available from third parties. The company also 
+                 developed solutions to overcome limitations in software development kits. Working closely with the software 
+                 development team, GTIC identified a series of middleware developments.`,
         result: `Successful R&D claim, claiming back more than £150,000 over the previous two years.`
     },
     {

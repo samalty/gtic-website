@@ -14,7 +14,7 @@ class Claims extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="background">
                 <Navbar />
                 <div className="header-container">
                     <h1>Making a claim with GTIC</h1>

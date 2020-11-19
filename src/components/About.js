@@ -7,7 +7,7 @@ import about from '../media/about.jpg';
 class About extends Component {
     render() {
         return (
-            <div>
+            <div className="background">
                 <Navbar />
                 <div className="header-container">
                     <h1>Preparing your platform for innovation</h1>

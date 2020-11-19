@@ -2,20 +2,20 @@
 
 /* Banner */
 
-.banner-header{
+html{
     background-image: url('../media/home.jpg');
     background-repeat: round;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
     background-attachment: fixed;
+    background-size: cover;
+}
+
+.banner-header{
     height: 100vh;
     width: 100vw;
     margin: auto;
     overflow: hidden;
-    @media screen and (min-width: 1700px) {
-        background-size: 100% auto;
-    }
     .header-overlay{
         height: 100%;
         background-color: rgba(255,255,255,0.5);
@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,p{
 /* Backgrounds and alternating CSS classes */
 
 .intro-background:nth-child(odd){
-    background-image: linear-gradient(-175deg, #ffffff 50%, #f2f2f2 50%);
+    background-image: linear-gradient(-175deg, #ffffff 50%, #f7f7f7 50%);
     padding: 30px;
     .link-container{
         .text-box{
@@ -132,7 +132,7 @@ h1,h2,h3,h4,h5,p{
 }
 
 .intro-background:nth-child(even){
-    background-image: linear-gradient(175deg, #f2f2f2 50%, #ffffff 50%);
+    background-image: linear-gradient(175deg, #f7f7f7 50%, #ffffff 50%);
     padding: 30px;
     .link-container{
         .text-box{
@@ -153,7 +153,7 @@ h1,h2,h3,h4,h5,p{
             }
         }
         .decoration{
-            background-color: #f2f2f2;
+            background-color: #f7f7f7;
         }
         .image-container{
             bottom: 0px;
@@ -163,8 +163,11 @@ h1,h2,h3,h4,h5,p{
 }
 
 .case-studies{
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     padding: 70px 30px;
+    h1{
+        text-align: center;
+    }
 }
 
 /* Page intros */
@@ -226,6 +229,7 @@ h1,h2,h3,h4,h5,p{
             height: auto;
             opacity: 0.8;
             object-fit: cover;
+            transform: none;
             @include boxShadow();
             @include imageMobileWidth();
             @media screen and (min-width: 1000px) {
@@ -358,11 +362,8 @@ h1,h2,h3,h4,h5,p{
     background-repeat: round;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
     background-attachment: fixed;
-    @media screen and (min-width: 1150px) {
-        background-size: 100% auto;
-    }
     .overlay{
         background-color: rgba(102, 102, 102, 0.5);
     }

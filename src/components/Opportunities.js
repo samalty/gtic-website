@@ -17,7 +17,7 @@ class Opportunities extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="background">
                 <Navbar />
                 <div className="header-container">
                     <h1>Never miss an opportunity with GTIC</h1>

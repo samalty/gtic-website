@@ -66,6 +66,8 @@ class Home extends Component {
                     })}
                 </div>
                 <div className="case-studies">
+                    <h1>Success stories</h1>
+                    <br></br>
                     <CaseStudies />
                 </div>
                 <div className="testimonials">

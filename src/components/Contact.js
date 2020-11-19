@@ -7,7 +7,7 @@ import MapComponent from './Map';
 class Contact extends Component {
     render() {
         return (
-            <div>
+            <div className="background">
                 <Navbar />
                 <div className="header-container">
                     <h1>Get in touch</h1>

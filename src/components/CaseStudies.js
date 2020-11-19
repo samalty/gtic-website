@@ -16,7 +16,6 @@ function CaseStudies() {
     };
     return(
         <div className="carousel-container">
-            <h2>Success stories</h2>
             <div className="carousel">
                 {CaseStudiesData.map((item, index) => {
                     return (
@@ -24,14 +23,17 @@ function CaseStudies() {
                             <div className="inner-card">
                                 <div className="card-header">
                                     <div>
+                                        <i class="fas fa-hard-hat"></i>
                                         <p className="card-header-text">Industry:</p>
                                         <p className="card-header-text">{item.industry}</p>
                                     </div>
                                     <div>
+                                        <i class="fas fa-pound-sign"></i>
                                         <p className="card-header-text">Turnover:</p>
                                         <p className="card-header-text">{item.turnover}</p>
                                     </div>
                                     <div>
+                                        <i class="fas fa-users"></i>
                                         <p className="card-header-text">Employees:</p>
                                         <p className="card-header-text">{item.employees}</p>
                                     </div>
