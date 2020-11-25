@@ -66,7 +66,7 @@ class Home extends Component {
                     })}
                 </div>
                 <div className="insights">
-                    <div className="overlay">
+                    <div className="overlay" data-aos="fade-right">
                         <div className="insights-container">
                             <div className="text">
                                 <h2>Insights</h2>
