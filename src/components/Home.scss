@@ -107,12 +107,13 @@ h1,h2,h3,h4,h5,p{
     }
 }
 
-/* Backgrounds and alternating CSS classes */
+/* Alternating CSS classes */
 
 .intro-background:nth-child(odd){
-    background-image: linear-gradient(-175deg, #ffffff 50%, #f7f7f7 50%);
+    background-image: linear-gradient(-175deg, #ffffff 50%, #f2f2f2 50%);
     padding: 30px;
     .link-container{
+        margin-bottom: 50px;
         .text-box{
             top: 0px;
             left: 0px;
@@ -132,9 +133,10 @@ h1,h2,h3,h4,h5,p{
 }
 
 .intro-background:nth-child(even){
-    background-image: linear-gradient(175deg, #f7f7f7 50%, #ffffff 50%);
+    background-image: linear-gradient(-175deg, #f2f2f2 50%, #ffffff 50%);
     padding: 30px;
     .link-container{
+        margin-bottom: 50px;
         .text-box{
             top: 0px;
             right: 0px;
@@ -159,14 +161,6 @@ h1,h2,h3,h4,h5,p{
             bottom: 0px;
             left: 0px;
         }
-    }
-}
-
-.case-studies{
-    background-color: #f7f7f7;
-    padding: 70px 30px;
-    h1{
-        text-align: center;
     }
 }
 
@@ -352,6 +346,77 @@ h1,h2,h3,h4,h5,p{
                 }
             }
         }
+    }
+}
+
+/* Insights */
+
+.insights{
+    background-image: url('../media/insights.jpg');
+    background-repeat: round;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .overlay{
+        background-color: rgba(102, 102, 102, 0.5);
+        .insights-container{
+            position: relative;
+            max-width: 1300px;
+            height: auto;
+            box-sizing: border-box;
+            padding: 50px 0px;
+            margin: auto;
+            .text,
+            .insights-link{
+                box-sizing: border-box;
+                padding: 40px;
+                display: inline-block;
+                vertical-align: top;
+                width: 49%;
+                top: 50%;
+                h2,h3{
+                    color: #ffffff;
+                }
+                .insights{            
+                    display: block;
+                    margin: 125px auto;
+                    padding: 20px;
+                    background: transparent;
+                    border: 2px solid #ffffff;
+                    color: #ffffff;
+                    font-size: 16px;
+                    -webkit-box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
+                    -moz-box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
+                    box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
+                    transition: 0.5s;
+                    outline: none;
+                    &:hover{
+                        background: #ffffff;
+                        color: #666666;
+                        cursor: pointer;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        transition: 0.5s;
+                    }
+                    @media screen and (min-width: 1000px) {
+                        padding: 25px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Case studies */
+
+.case-studies{
+    background-color: #f7f7f7;
+    padding: 70px 30px;
+    h1{
+        text-align: center;
     }
 }
 

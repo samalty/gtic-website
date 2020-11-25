@@ -40,14 +40,5 @@ export const HomeData = [
         path: '/r&d_explained',
         buttonText: 'How it works ',
         img: opportunities
-    },
-    {
-        page: 'insights',
-        title: 'Insights',
-        description:`Insights is where we share much of our expertise directly with you. If you have a query relating to a 
-                     particular tax incentive or grant, here is where we will hopefully have you covered.`,
-        path: '/',
-        buttonText: 'Insights ',
-        img: claims
     }
 ];
