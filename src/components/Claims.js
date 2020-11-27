@@ -36,6 +36,22 @@ class Claims extends Component {
                             in securing a rewarding R&D Tax Relief claim.</p>
                     </div>
                 </div>
+                <div className="claims-intro-container">
+                    <div className="claims-overlay">
+                        <div className="claims-intro">
+                            <h3>A claim with GTIC promises maximum value and total transparency. We have developed a rigorous claims process 
+                                blueprint which is designed to identify and capitalise on all available opportunities, while keeping you in 
+                                the loop every step of the way.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="claims-text">
+                    <p>For each claim we make, we adapt our blueprint to the individual needs of the client, ensuring a unique 
+                       experience and an approach that caters fully for the claimant regardless of sector, size, or structure.</p>
+                    <p>Our comprehensive claims process underpins the specialist and diverse technical expertise within our team. 
+                       Combined, this enables us to deliver you a high value and compliant claim. Below we explain the steps involved 
+                       in securing a rewarding R&D Tax Relief claim.</p>
+                </div>
                 <br></br>
                 <div className="container">
                     <div className="link one-two" data-aos="fade-in" data-aos-delay="1000"></div>

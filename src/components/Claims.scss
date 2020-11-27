@@ -17,23 +17,89 @@ h1{
 /* Intro */
     
 .intro-container{
-    @include introContainer();
+    display: block;
+    width: 100vw;
+    max-width: 1200px;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+    .img-decoration{
+        @include imgDecoration();
+        @media screen and (min-width: 1000px) {
+            display: none;
+        }
+        .intro-img{
+            @include introImage();
+            @media screen and (min-width: 1000px) {
+                display: none;
+            }
+        }
+    }
+    .intro{
+        @include introText();
+        @media screen and (min-width: 1000px) {
+            display: none;
+        }
+        .opening-para{
+            @include openingPara();
+            @media screen and (min-width: 1000px) {
+                display: none;
+            }
+        }
+    }
 }
 
-.intro-img{
-    @include introImage();
+.claims-intro-container{
+    display: none;
+    @media screen and (min-width: 1000px) {
+        display: block;
+        background-image: url('../media/claims.jpg');
+        background-repeat: round;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: fixed;
+        opacity: 0.7;
+        height: auto;
+        width: 98.7vw;
+        margin: auto;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+    .claims-overlay{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(102, 102, 102, 0.7);
+        border: 1px solid #ffffff;
+        .claims-intro{
+            display: block;
+            height: 100%;
+            width: 80%;
+            max-width: 800px;
+            box-sizing: border-box;
+            padding: 10px 30px;
+            margin: auto;
+            h3{
+                text-align: center;
+                color: #ffffff;
+                text-shadow: 1px 1px 1px rgb(0, 0, 0);
+            }
+        }
+    }
 }
 
-.img-decoration{
-    @include imgDecoration();
-}
-
-.intro{
-    @include introText();
-}
-
-.opening-para{
-    @include openingPara();
+.claims-text{
+    display: none;
+    @media screen and (min-width: 1000px) {
+        display: block;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 /* Claims process */
