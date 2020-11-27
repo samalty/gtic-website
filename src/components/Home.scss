@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,p{
 /* Alternating CSS classes */
 
 .intro-background:nth-child(odd){
-    background-image: linear-gradient(-175deg, #ffffff 50%, #f2f2f2 50%);
+    background-image: linear-gradient(-165deg, #ffffff 90%, #f7f7f7 10%);
     padding: 30px;
     .link-container{
         margin-bottom: 50px;
@@ -133,7 +133,7 @@ h1,h2,h3,h4,h5,p{
 }
 
 .intro-background:nth-child(even){
-    background-image: linear-gradient(-175deg, #f2f2f2 50%, #ffffff 50%);
+    background-image: linear-gradient(15deg, #f7f7f7 90%, #ffffff 10%);
     padding: 30px;
     .link-container{
         margin-bottom: 50px;
@@ -221,7 +221,6 @@ h1,h2,h3,h4,h5,p{
             display: none;
             width: 100%;
             height: auto;
-            opacity: 0.8;
             object-fit: cover;
             transform: none;
             @include boxShadow();
