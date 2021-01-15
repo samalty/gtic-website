@@ -23,8 +23,8 @@ export const NavbarData = [
     },
     {
         title: 'R&D EXPLAINED',
-        //path: '/r&d_explained',
-        path: '/',
+        path: '/r&d_explained',
+        //path: '/',
         cName: 'nav-text'
     },
     {

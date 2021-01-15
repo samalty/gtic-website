@@ -23,6 +23,9 @@ function Navbar() {
     }
     return (
         <div>
+            <div className="contact-banner">
+                <p><i class="fas fa-envelope"></i> solomon@govtaxincentives.com <i class="fas fa-phone"></i> 020 3582 5526</p>
+            </div>
             <div className="navbar" id="nav">
                 <Link to="/">
                     <img src={logo} alt="GTIC" className="navbar-logo"></img>
