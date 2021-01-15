@@ -29,7 +29,6 @@ export const NavbarData = [
     {
         title: 'R&D EXPLAINED',
         path: '/r&d_explained',
-        //path: '/',
         cName: 'nav-text'
     },
     {
@@ -39,8 +38,7 @@ export const NavbarData = [
     },
     {
         title: 'CONTACT',
-        //path: '/contact',
-        path: '/',
+        path: '/contact',
         cName: 'nav-text'
     }
 ]
