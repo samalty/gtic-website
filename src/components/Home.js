@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import './Home.scss';
 import Navbar from './Navbar';
 import CaseStudies from './CaseStudies';
+import Testimonials from './Testimonials';
 import { HomeData } from './HomeData';
 import Footer from './Footer';
 import logo from '../media/logo.png';
@@ -72,7 +73,7 @@ class Home extends Component {
                                 <h2>Insights</h2>
                                 <hr></hr>
                                 <h3>Insights is where we share much of our expertise directly with you. If you have a query relating to a 
-                                    particular tax incentive or grant, here is where we will hopefully have you covered.</h3>
+                                    particular tax incentive or grant, here is where we should have you covered.</h3>
                             </div>
                             <div className="insights-link">
                                 <button className="insights">TAKE ME TO INSIGHTS</button>
@@ -85,26 +86,7 @@ class Home extends Component {
                         <div className="testimonials-container">
                             <div className="testimonials-text">
                                 <h1>What our clients say about us</h1>
-                                <hr></hr>
-                                <div data-aos="fade-up">
-                                    <i className="fas fa-quote-right"></i>
-                                    <h2><i>GTIC have been professional throughout. They learnt about our business, 
-                                        met us many times and have cleverly put in place plans for the future.</i></h2>
-                                    <h4>Engineering Consultancy, East Midlands</h4>
-                                </div>
-                                <div data-aos="fade-up">
-                                    <i className="fas fa-quote-right"></i>
-                                    <h2><i>The team cares about our business and has helped us reclaim significant 
-                                        sums from R&D. They also worked quickly when we needed it and turned around our 
-                                        claim in under two weeks.</i></h2>
-                                    <h4>Software Development House, London</h4>
-                                </div>
-                                <div data-aos="fade-up">
-                                    <i className="fas fa-quote-right"></i>
-                                    <h2><i>GTIC managed our R&D tax credit from start to finish, they were better at 
-                                        finding eligible projects than our previous providers.</i></h2>
-                                    <h4>Packaging Manufacturer, Kent</h4>
-                                </div>
+                                <Testimonials />
                             </div>
                             <button className="consultation">BOOK A FREE CONSULTATION</button>
                         </div>

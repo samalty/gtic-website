@@ -22,6 +22,11 @@ export const NavbarData = [
         cName: 'nav-text'
     },
     {
+        title: 'REFERRALS',
+        path: '/',
+        cName: 'nav-text'
+    },
+    {
         title: 'R&D EXPLAINED',
         path: '/r&d_explained',
         //path: '/',

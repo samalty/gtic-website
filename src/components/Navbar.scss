@@ -10,17 +10,26 @@
     i{
         font-size: 18px;
         margin: 5px 10px 5px 20px;
+        @media screen and (max-width: 525px) {
+            font-size: 16px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
     }
     p{
         color: #ffffff;
         font-size: 18px;
         float: right;
         margin: 5px 30px 5px 0px;
+        @media screen and (max-width: 525px) {
+            font-size: 16px;
+            margin: 6px 25px 6px 20px;
+        }
     }
 }
 
 .navbar{
-    height: 70px;
+    height: 80px;
     width: 100vw;
     margin-top: 40px;
     position: fixed;
@@ -32,6 +41,35 @@
         -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
         box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     }
+    .navbar-logo{
+        margin: 5px;
+        height: 85%;
+        display: inline-block;
+        float: left;
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+    ul{
+        @include navbarUl();
+        li{
+            @include navbarLi();
+            @media screen and (max-width: 1000px) {
+                display: none;
+            }
+            .navbar-link{
+                @include navbarLink();
+                @media screen and (max-width: 1000px) {
+                    display: none;
+                }
+                &:hover{
+                    cursor: pointer;
+                    color: #004d00;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
 }
 
 .scrolled{
@@ -40,38 +78,6 @@
     -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     transition: 1s;
-}
-
-.navbar ul{
-    @include navbarUl();
-}
-
-.navbar li {
-    @include navbarLi();
-    @media screen and (max-width: 1000px) {
-        display: none;
-    }
-}
-
-.navbar-logo{
-    @include navbarLogo();
-    @media screen and (max-width: 1000px) {
-        display: none;
-    }
-}
-
-.navbar-link{
-    @include navbarLink();
-    @media screen and (max-width: 1000px) {
-        display: none;
-    }
-}
-
-.navbar li:hover,
-.navbar-link:hover{
-    cursor: pointer;
-    color: #004d00;
-    transition: 0.5s;
 }
 
 .menu-icon{
