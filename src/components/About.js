@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './About.scss';
+import './styles/About.scss';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import about from '../media/about.jpg';
+import about from './media/about.jpg';
 
 class About extends Component {
     render() {

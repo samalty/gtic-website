@@ -1,38 +1,52 @@
-import React, { useState } from 'react';
-import './Testimonials.scss';
-import { TestimonialsData } from './TestimonialsData';
+import React, { useState, Component } from 'react';
+import './styles/Testimonials.scss';
+import { TestimonialsData } from './data/TestimonialsData';
 
-function Testimonials() {
-    const [x, setX] = useState(0);
-    const handleLeft = () => {
-        if (x === 0) {
-        setX(-100 * (TestimonialsData.length-1));
-            } else setX(x + 100);
+class Testimonials extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            x: 0
+        }
+    }
+    handleLeft = (e) => {
+        if (this.state.x === 0) {
+            this.setState({ x: -100 * (TestimonialsData.length-1) })
+        } else this.setState({ x: this.state.x + 100 })
     };
-    const handleRight = () => {
-        if (x === -100 * (TestimonialsData.length-1)) {
-            setX(0);
-        } else setX(x - 100);
+    handleRight = (e) => {
+        if (this.state.x === -100 * (TestimonialsData.length-1)) {
+            this.setState({ x: 0 })
+        } else this.setState({ x: this.state.x - 100 })
     };
-    return(
-        <div className="carousel-container">
-            <div className="carousel">
-                {TestimonialsData.map((item, index) => {
-                    return (
-                        <div className="card" key={index} style={{transform:`translateX(${x}%)`}}>
-                            <div className="inner-card">
-                                <i className="fas fa-quote-right"></i>
-                                <p className="testimonial-text"><i>{item.testimonial}</i></p>
-                                <p className="source-text">{item.source}</p>
+    render() {
+        return(
+            <div className="carousel-container">
+                <div className="carousel">
+                    {TestimonialsData.map((item, index) => {
+                        return (
+                            <div className="card" key={index} style={{transform:`translateX(${this.state.x}%)`}}>
+                                <div className="inner-card">
+                                    <i className="fas fa-quote-right"></i>
+                                    <p className="testimonial-text"><i>{item.testimonial}</i></p>
+                                    <p className="source-text">{item.source}</p>
+                                </div>
                             </div>
-                        </div>
-                    )
-                })}
-                <button className="carousel-btn left" onClick={handleLeft}><span></span></button>
-                <button className="carousel-btn right" onClick={handleRight}><span></span></button>
+                        )
+                    })}
+                    <button className="carousel-btn left" onClick={this.handleLeft}><span></span></button>
+                    <button className="carousel-btn right" onClick={this.handleRight}><span></span></button>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
+    componentDidMount() {
+        this.interval = setInterval(() => {
+            if (this.state.x === -100 * (TestimonialsData.length-1)) {
+                this.setState({ x: 0 })
+            } else this.setState({ x: this.state.x - 100 })
+        }, 6000)
+    }
 }
 
 export default Testimonials;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Explained.scss';
+import './styles/Explained.scss';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Aos from 'aos';

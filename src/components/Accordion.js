@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Opportunities.scss';
-import { OpportunitiesData } from './OpportunitiesData';
+import './styles/Opportunities.scss';
+import { OpportunitiesData } from './data/OpportunitiesData';
 
 function Accordion() {
     const [items, setItems] = useState(OpportunitiesData);

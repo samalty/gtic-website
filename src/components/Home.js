@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import './Home.scss';
+import './styles/Home.scss';
 import Navbar from './Navbar';
 import CaseStudies from './CaseStudies';
 import Testimonials from './Testimonials';
-import { HomeData } from './HomeData';
+import { HomeData } from './data/HomeData';
 import Footer from './Footer';
-import logo from '../media/logo.png';
+import logo from './media/logo.png';
 
 class Home extends Component {
     componentDidMount() {

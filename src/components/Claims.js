@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Claims.scss';
+import './styles/Claims.scss';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import claims from '../media/claims.jpg';
+import claims from './media/claims.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

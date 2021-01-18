@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './CaseStudies.scss';
-import { CaseStudiesData } from './CaseStudiesData';
+import './styles/CaseStudies.scss';
+import { CaseStudiesData } from './data/CaseStudiesData';
 
 function CaseStudies() {
     const [x, setX] = useState(0);

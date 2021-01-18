@@ -1,6 +1,6 @@
-import about from '../media/about.jpg';
-import opportunities from '../media/opportunities.jpg';
-import claims from '../media/claims.jpg';
+import about from './about.jpg';
+import opportunities from './opportunities.jpg';
+import claims from './claims.jpg';
 
 export const HomeData = [
     {
@@ -39,8 +39,7 @@ export const HomeData = [
         title: 'R&D Tax Relief explained',
         description:`A generous initiative rewarding innovation within UK industry, Research & Development (R&D) Tax Relief 
                      could provide your business with a competitive advantage and firm foundations for future growth.`,
-        //path: '/r&d_explained',
-        path: '/',
+        path: '/r&d_explained',
         buttonText: 'How it works ',
         img: opportunities
     }

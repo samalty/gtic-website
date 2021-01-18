@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Opportunities.scss';
+import './styles/Opportunities.scss';
 import Navbar from './Navbar';
 import Accordion from './Accordion';
 import Footer from './Footer';
-import opportunities from '../media/opportunities.jpg';
+import opportunities from './media/opportunities.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { OpportunitiesData } from './OpportunitiesData';
+import { OpportunitiesData } from './data/OpportunitiesData';
 
 class Opportunities extends Component {
     componentDidMount() {

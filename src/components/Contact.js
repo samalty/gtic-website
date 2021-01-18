@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Contact.scss';
+import './styles/Contact.scss';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import MapComponent from './Map';

@@ -1,6 +1,6 @@
 export const TestimonialsData = [
     {
-        testimonial: `GTIC have been professional throughout. They learnt about our business met us many times and have cleverly 
+        testimonial: `GTIC have been professional throughout. They learnt about our business, met us many times and have cleverly 
                       put in place plans for the future.`,
         source: 'Engineering Consultancy, East Midlands'
     },
