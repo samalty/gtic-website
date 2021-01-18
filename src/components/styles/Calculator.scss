@@ -1,0 +1,52 @@
+@import "./Themes";
+
+.calc-container{
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    .tabs{
+        border: 2px solid black;
+        width: 100%;
+        max-width: 900px;
+        margin: 20px auto;
+        .tab{
+            display: inline-block;
+            list-style: none;
+            border: 1px solid red;
+            margin: 5px;
+            padding: 5px;
+            width: 200px;
+            cursor: pointer;
+        }
+    }
+}
+
+.rdec-form{
+    margin: 20px auto;
+    p{
+        font-size: 24px;
+        input{
+            padding: 10px;
+            width: 80px;
+            font-size: 20px;
+        }
+    }
+    button{
+        color: #ffffff;
+        background-color: #004d00;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+
+.calculation{
+    display: block;
+    transition: 1s;
+}
+
+.invisible{
+    display: none;
+    transition: 1s;
+}
