@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
-import './styles/Calculator.scss';
 import { Tabs, Tab, TabList, TabPanel } from 'react-tabs';
+import './styles/Calculator.scss';
 
 class Calculator extends Component {
+    // TO DO
+    // Form validation for punctuation
+    // Test calculator against outliers
+    // Add punctiation to output
     constructor(props){
         super(props)
         this.state = {
+            SME: true,
             visible: false,
             // SME R&D calculator
-            profitLoss: 'Profit',
+            profitLoss: 'profit',
             profitLossSME: 0,
             expenditureSME: 0,
             uplift: 0,
             originalCT: 0,
             profitMinusUplift: 0,
             revisedCT: 0,
-
+            surrenderableLoss: 0,
+            maxSurrender: 0,
             creditSME: 0,
             // RDEC calculator
             expenditureRDEC: 0,
@@ -24,8 +30,15 @@ class Calculator extends Component {
             creditRDEC: 0
         }
     }
+    toggleSME = () => {
+        if (this.state.SME === false) { this.setState({ SME: true }); }
+        this.setState({ visible: false });
+    }
+    toggleLC = () => {
+        if (this.state.SME === true) { this.setState({ SME: false }); }
+        this.setState({ visible: false });
+    }
     handleInputChange = (event) => {
-        event.preventDefault()
         this.setState({
             [event.target.name]: parseInt(event.target.value, 10)
         });
@@ -37,15 +50,21 @@ class Calculator extends Component {
     }
     handleSMECalculation = (event) => {
         event.preventDefault();
-        if (this.state.profitLoss === 'Profit') {
-            this.setState({ creditSME: this.handleProfitCalculation(this.state.profitLossSME, this.state.expenditureSME) });
+        if (isNaN(this.state.profitLossSME) || isNaN(this.state.expenditureSME)) {
+            alert('Please ensure you have entered a valid sum for both form fields.')
         } else {
-            this.setState({ creditSME: this.handleLossCalculation() });
+            this.setState({ visible: true });
+            console.log(this.state.visible)
+            if (this.state.profitLoss === 'profit') {
+                this.setState({ creditSME: this.handleProfitCalculation(this.state.profitLossSME, this.state.expenditureSME) });
+            } else {
+                // Tax credit at 14.5% is applied to loss calculation here
+                this.setState({ creditSME: this.handleLossCalculation(this.state.profitLossSME, this.state.expenditureSME) * .145 });
+            }
         }
     }
     handleProfitCalculation = () => {
         this.setState({
-            visible: true,
             uplift: this.state.expenditureSME * 1.3,
             originalCT: this.state.profitLossSME * .19,
             profitMinusUplift: this.state.profitLossSME - (this.state.expenditureSME * 1.3)
@@ -66,61 +85,84 @@ class Calculator extends Component {
     }
     handleLossCalculation = () => {
         this.setState({
-            visible: true
+            uplift: this.state.expenditureSME * 1.3,
+            profitMinusUplift: (0 - this.state.profitLossSME) - (this.state.expenditureSME * 1.3),
+            surrenderableLoss: Math.abs((0 - this.state.profitLossSME) - (this.state.expenditureSME * 1.3)),
+            maxSurrender: this.state.expenditureSME + (this.state.expenditureSME * 1.3)
         });
+        if (Math.abs((0 - this.state.profitLossSME) - (this.state.expenditureSME * 1.3)) === 0) {
+            return 'Input here'
+        } else {
+            return Math.min(Math.abs((0 - this.state.profitLossSME) - (this.state.expenditureSME * 1.3)), this.state.expenditureSME + (this.state.expenditureSME * 1.3));
+        }
     }
     handleRDECCalculation = (event) => {
         event.preventDefault();
-        this.setState({
-            visible: true,
-            RDEC: this.state.expenditureRDEC * .12,
-            notionalTax: (this.state.expenditureRDEC * .12) * .19,
-            creditRDEC: this.state.expenditureRDEC * .0972
-        });
+        if (isNaN(this.state.expenditureRDEC)) {
+            alert('Please ensure you have entered a valid sum for your R&D expenditure.');
+        } else {
+            this.setState({
+                visible: true,
+                RDEC: this.state.expenditureRDEC * .12,
+                notionalTax: (this.state.expenditureRDEC * .12) * .19,
+                creditRDEC: this.state.expenditureRDEC * .0972
+            });
+        }
     }
     render() {
         return (
             <div className="calc-container">
                 <h2>R&D Tax Calculator</h2>
                 <p>Use this calculator to estimate the Corporation Tax savings that your company could make from a successful R&D Tax Relief claim.</p>
+                <hr />
+                <p>Does your company qualify as an SME or a large company?</p>
                 <Tabs className="tabs">
-                  <TabList>
-                    <Tab className="tab">SME</Tab>
-                    <Tab className="tab">Large company</Tab>
+                  <TabList className="tablist">
+                    <Tab className={ this.state.SME ? "active-tab" : "inactive-tab" }
+                         onClick={this.toggleSME}>SME</Tab>
+                    <Tab className={ this.state.SME ? "inactive-tab" : "active-tab" }
+                         onClick={this.toggleLC}>Large company</Tab>
                   </TabList>
-                  <TabPanel>
+                  <TabPanel className="tab-panel">
                     <form className="calculator-form" onSubmit={this.handleSMECalculation}>
+                        <p>Is your company making a profit or a loss?</p>
                         <div className="radio">
-                            <label>
+                            <label className="custom-radio">
                                 <input 
                                     type="radio" 
-                                    value="Profit" 
-                                    checked={this.state.profitLoss === "Profit"}
+                                    value="profit" 
+                                    name="radio-btn"
+                                    checked={this.state.profitLoss === "profit"}
                                     onChange={this.handleProfitLoss}
                                 />
-                                Profit
+                                <span className="checkmark"></span>
                             </label>
-                            <label>
+                            <p>Profit</p>
+                            <label className="custom-radio">
                                 <input 
                                     type="radio" 
-                                    value="Loss" 
-                                    checked={this.state.profitLoss === "Loss"}
+                                    value="loss" 
+                                    name="radio-btn"
+                                    checked={this.state.profitLoss === "loss"}
                                     onChange={this.handleProfitLoss}
                                 />
-                                Loss
+                                <span className="checkmark"></span>
                             </label>
+                            <p>Loss</p>
                         </div>
+                        <p>Please enter the {this.state.profitLoss} recorded by your company in its last accounting period.</p>
                         <p>Annual {this.state.profitLoss} £ <input 
                                                                 type="text" 
                                                                 name="profitLossSME" 
                                                                 onChange={this.handleInputChange}></input></p>
+                        <p>Please enter the amount your company spent on R&D in its last accounting period.</p>
                         <p>Annual R&D expenditure £ <input 
                                                         type="text" 
                                                         name="expenditureSME" 
                                                         onChange={this.handleInputChange}></input></p>
                         <button type="submit">Calculate R&D Tax Relief</button>
                     </form>
-                    <div className={ this.state.visible && this.state.profitLoss === 'Profit' ? "calculation" : "invisible" }>
+                    <div className={ this.state.visible && this.state.profitLoss === 'profit' ? "calculation" : "invisible" }>
                         <p>Profit calculation</p>
                         <p>Profit: £{this.state.profitLossSME}</p>
                         <p>Expenditure: £{this.state.expenditureSME}</p>
@@ -128,23 +170,30 @@ class Calculator extends Component {
                         <p>Original Corporation Tax: £{this.state.originalCT}</p>
                         <p>Profit - uplift: £{this.state.profitMinusUplift}</p>
                         <p>Revised CT: £{this.state.revisedCT}</p>
-                        <p>Total tax saving up to: £{this.state.creditSME}</p>
+                        <p>Total tax saving up to <p className="result"><b>£{this.state.creditSME.toFixed(2)}</b></p></p>
                     </div>
-                    <div className={ this.state.visible && this.state.profitLoss === 'Loss' ? "calculation" : "invisible" }>
+                    <div className={ this.state.visible && this.state.profitLoss === 'loss' ? "calculation" : "invisible" }>
                         <p>Loss calculation</p>
-                        <p>Total saving up to: £{this.state.creditSME}</p>
+                        <p>Loss: £{this.state.profitLossSME}</p>
+                        <p>Expenditure: £{this.state.expenditureSME}</p>
+                        <p>Uplift: £{this.state.uplift}</p>
+                        <p>Adjusted loss: £{this.state.profitMinusUplift}</p>
+                        <p>Surrenderable loss: £{this.state.surrenderableLoss}</p>
+                        <p>Maximum to surrender: £{this.state.maxSurrender}</p>
+                        <p>Total tax saving up to <p className="result"><b>£{this.state.creditSME.toFixed(2)}</b></p></p>
                     </div>
                   </TabPanel>
-                  <TabPanel>
+                  <TabPanel className="tab-panel">
                     <form className="calculator-form" onSubmit={this.handleRDECCalculation}>
+                        <p>Please enter the amount your company spent on R&D in its last accounting period.</p>
                         <p>Annual R&D expenditure £ <input 
                                                         type="text" 
                                                         name="expenditureRDEC" 
                                                         onChange={this.handleInputChange}></input></p>
                         <button type="submit">Calculate R&D Tax Relief</button>
                     </form>
-                    <div className={ this.state.visible ? "calculation-RDEC" : "invisible" }>
-                        <p>Total saving up to: £{this.state.creditRDEC.toFixed(2)}</p>
+                    <div className={ this.state.visible ? "calculation" : "invisible" }>
+                        <p>Total tax saving up to <p className="result"><b>£{this.state.creditRDEC.toFixed(2)}</b></p></p>
                     </div>
                   </TabPanel>
                 </Tabs>

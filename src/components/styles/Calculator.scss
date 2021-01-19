@@ -6,30 +6,83 @@
     max-width: 1000px;
     margin: auto;
     .tabs{
-        border: 2px solid black;
+        box-sizing: border-box;
         width: 100%;
         max-width: 900px;
         margin: 20px auto;
-        .tab{
-            display: inline-block;
-            list-style: none;
-            border: 1px solid red;
-            margin: 5px;
-            padding: 5px;
-            width: 200px;
-            cursor: pointer;
+        padding: 0px 20px;
+        .tablist{
+            text-align: center;
+            padding-right: 40px;
+            .inactive-tab{
+                display: inline-block;
+                list-style: none;
+                border: 3px solid #d3d3d3;
+                background-color: #d3d3d3;
+                margin: 5px 5px 0px 5px;
+                padding: 5px;
+                width: 200px;
+                cursor: pointer;
+            }
+            .active-tab{
+                display: inline-block;
+                list-style: none;
+                border: 3px solid #004d00;
+                background-color: #ffffff;
+                margin: 5px 5px 0px 5px;
+                padding: 5px;
+                width: 200px;
+                cursor: pointer;
+            }
         }
     }
 }
 
 .calculator-form{
-    margin: 20px auto;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px 10px;
+    .radio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .custom-radio{
+            width: 25px;
+            height: 25px;
+            border: 2px solid #004d00;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0px 5px 5px 15px;
+            input{
+                display: none;
+            }
+            input:checked + .checkmark{
+                display: inline-block;
+            }
+            .checkmark{
+                width: calc(100% - 6px);
+                height: calc(100% - 6px);
+                border-radius: 50%;
+                background-color: #004d00;
+                display: none;
+            }
+        }
+        p{
+            display: inline;
+        }
+    }
     p{
-        font-size: 24px;
+        font-size: 20px;
         input{
             padding: 10px;
             width: 80px;
             font-size: 20px;
+            &:active{
+                background-color: #ffffff;
+            }
         }
     }
     button{
@@ -37,6 +90,7 @@
         background-color: #004d00;
         border: none;
         padding: 10px 20px;
+        margin: 15px;
         cursor: pointer;
     }
 }
@@ -44,6 +98,14 @@
 .calculation{
     display: block;
     transition: 1s;
+    p{
+        font-size: 20px;
+        .result{
+            font-size: 30px;
+            color: #004d00;
+            display: inline;
+        }
+    }
 }
 
 .invisible{
