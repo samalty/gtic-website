@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/gtic-website/static/css/main.7a57356e.chunk.css",
-    "main.js": "/gtic-website/static/js/main.e5e51d9f.chunk.js",
-    "main.js.map": "/gtic-website/static/js/main.e5e51d9f.chunk.js.map",
+    "main.css": "/gtic-website/static/css/main.5a2d3989.chunk.css",
+    "main.js": "/gtic-website/static/js/main.8a08ba16.chunk.js",
+    "main.js.map": "/gtic-website/static/js/main.8a08ba16.chunk.js.map",
     "runtime-main.js": "/gtic-website/static/js/runtime-main.0cfb8a98.js",
     "runtime-main.js.map": "/gtic-website/static/js/runtime-main.0cfb8a98.js.map",
     "static/css/2.4707e12a.chunk.css": "/gtic-website/static/css/2.4707e12a.chunk.css",
-    "static/js/2.9ec88c32.chunk.js": "/gtic-website/static/js/2.9ec88c32.chunk.js",
-    "static/js/2.9ec88c32.chunk.js.map": "/gtic-website/static/js/2.9ec88c32.chunk.js.map",
+    "static/js/2.535f8f3c.chunk.js": "/gtic-website/static/js/2.535f8f3c.chunk.js",
+    "static/js/2.535f8f3c.chunk.js.map": "/gtic-website/static/js/2.535f8f3c.chunk.js.map",
     "index.html": "/gtic-website/index.html",
-    "precache-manifest.976bb1043227e7280d8aebfd1692e501.js": "/gtic-website/precache-manifest.976bb1043227e7280d8aebfd1692e501.js",
+    "precache-manifest.797b6d600627e56c73c05b4d1eec4347.js": "/gtic-website/precache-manifest.797b6d600627e56c73c05b4d1eec4347.js",
     "service-worker.js": "/gtic-website/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/gtic-website/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.7a57356e.chunk.css.map": "/gtic-website/static/css/main.7a57356e.chunk.css.map",
-    "static/js/2.9ec88c32.chunk.js.LICENSE.txt": "/gtic-website/static/js/2.9ec88c32.chunk.js.LICENSE.txt",
+    "static/css/main.5a2d3989.chunk.css.map": "/gtic-website/static/css/main.5a2d3989.chunk.css.map",
+    "static/js/2.535f8f3c.chunk.js.LICENSE.txt": "/gtic-website/static/js/2.535f8f3c.chunk.js.LICENSE.txt",
     "static/media/about.jpg": "/gtic-website/static/media/about.ef8736a8.jpg",
     "static/media/Claims.scss": "/gtic-website/static/media/claims.d3b2ad14.jpg",
     "static/media/Home.scss": "/gtic-website/static/media/insights.d29e811d.jpg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.0cfb8a98.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.9ec88c32.chunk.js",
-    "static/css/main.7a57356e.chunk.css",
-    "static/js/main.e5e51d9f.chunk.js"
+    "static/js/2.535f8f3c.chunk.js",
+    "static/css/main.5a2d3989.chunk.css",
+    "static/js/main.8a08ba16.chunk.js"
   ]
 }
