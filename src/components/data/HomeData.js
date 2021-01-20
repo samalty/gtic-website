@@ -1,6 +1,6 @@
-import about from './about.jpg';
-import opportunities from './opportunities.jpg';
-import claims from './claims.jpg';
+import about from '../media/about.jpg';
+import opportunities from '../media/opportunities.jpg';
+import claims from '../media/claims.jpg';
 
 export const HomeData = [
     {
