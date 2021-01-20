@@ -54,7 +54,6 @@ class Calculator extends Component {
             alert('Please ensure you have entered a valid sum for both form fields.')
         } else {
             this.setState({ visible: true });
-            console.log(this.state.visible)
             if (this.state.profitLoss === 'profit') {
                 this.setState({ creditSME: this.handleProfitCalculation(this.state.profitLossSME, this.state.expenditureSME) });
             } else {
@@ -163,24 +162,14 @@ class Calculator extends Component {
                         <button type="submit">Calculate R&D Tax Relief</button>
                     </form>
                     <div className={ this.state.visible && this.state.profitLoss === 'profit' ? "calculation" : "invisible" }>
-                        <p>Profit calculation</p>
-                        <p>Profit: £{this.state.profitLossSME}</p>
-                        <p>Expenditure: £{this.state.expenditureSME}</p>
-                        <p>Uplift: £{this.state.uplift}</p>
-                        <p>Original Corporation Tax: £{this.state.originalCT}</p>
-                        <p>Profit - uplift: £{this.state.profitMinusUplift}</p>
-                        <p>Revised CT: £{this.state.revisedCT}</p>
                         <p>Total tax saving up to <p className="result"><b>£{this.state.creditSME.toFixed(2)}</b></p></p>
+                        <p>GTIC fee <p className="result"><b>N/A</b></p></p>
+                        <p>Net saving up to <p className="result"><b>N/A</b></p></p>
                     </div>
                     <div className={ this.state.visible && this.state.profitLoss === 'loss' ? "calculation" : "invisible" }>
-                        <p>Loss calculation</p>
-                        <p>Loss: £{this.state.profitLossSME}</p>
-                        <p>Expenditure: £{this.state.expenditureSME}</p>
-                        <p>Uplift: £{this.state.uplift}</p>
-                        <p>Adjusted loss: £{this.state.profitMinusUplift}</p>
-                        <p>Surrenderable loss: £{this.state.surrenderableLoss}</p>
-                        <p>Maximum to surrender: £{this.state.maxSurrender}</p>
                         <p>Total tax saving up to <p className="result"><b>£{this.state.creditSME.toFixed(2)}</b></p></p>
+                        <p>GTIC fee <p className="result"><b>N/A</b></p></p>
+                        <p>Net saving up to <p className="result"><b>N/A</b></p></p>
                     </div>
                   </TabPanel>
                   <TabPanel className="tab-panel">
@@ -194,6 +183,8 @@ class Calculator extends Component {
                     </form>
                     <div className={ this.state.visible ? "calculation" : "invisible" }>
                         <p>Total tax saving up to <p className="result"><b>£{this.state.creditRDEC.toFixed(2)}</b></p></p>
+                        <p>GTIC fee <p className="result"><b>N/A</b></p></p>
+                        <p>Net saving up to <p className="result"><b>N/A</b></p></p>
                     </div>
                   </TabPanel>
                 </Tabs>
