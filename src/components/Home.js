@@ -66,21 +66,6 @@ class Home extends Component {
                         )
                     })}
                 </div>
-                <div className="insights">
-                    <div className="overlay" data-aos="fade-right">
-                        <div className="insights-container">
-                            <div className="text">
-                                <h2>Insights</h2>
-                                <hr></hr>
-                                <h3>Insights is where we share much of our expertise directly with you. If you have a query relating to a 
-                                    particular tax incentive or grant, here is where we should have you covered.</h3>
-                            </div>
-                            <div className="insights-link">
-                                <button className="insights">TAKE ME TO INSIGHTS</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className="testimonials">
                     <div className="overlay">
                         <div className="testimonials-container">

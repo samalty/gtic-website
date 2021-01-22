@@ -13,7 +13,7 @@ class Contact extends Component {
                     <h1>Get in touch</h1>
                 </div>
                 <div className="intro-container">
-                    <div className="intro">
+                    <div className="contact-intro">
                         <h3>Interested to find out whether the work you undertake qualifies for a government incentive?</h3>
                         <p>Request a free consultation via the contact form. We can assess your eligibility, share expert insight, and 
                            potentially begin preparing your platform for future growth.</p>
