@@ -122,6 +122,7 @@ class Calculator extends Component {
                     <Tab className={ this.state.SME ? "inactive-tab" : "active-tab" }
                          onClick={this.toggleLC}>Large company</Tab>
                   </TabList>
+                  <br></br>
                   <TabPanel className="tab-panel">
                     <form className="calculator-form" onSubmit={this.handleSMECalculation}>
                         <p>Is your company making a profit or a loss?</p>
