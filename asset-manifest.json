@@ -1,32 +1,33 @@
 {
   "files": {
-    "main.css": "/gtic-website/static/css/main.5a2d3989.chunk.css",
-    "main.js": "/gtic-website/static/js/main.8a08ba16.chunk.js",
-    "main.js.map": "/gtic-website/static/js/main.8a08ba16.chunk.js.map",
+    "main.css": "/gtic-website/static/css/main.8f87410f.chunk.css",
+    "main.js": "/gtic-website/static/js/main.545316a9.chunk.js",
+    "main.js.map": "/gtic-website/static/js/main.545316a9.chunk.js.map",
     "runtime-main.js": "/gtic-website/static/js/runtime-main.0cfb8a98.js",
     "runtime-main.js.map": "/gtic-website/static/js/runtime-main.0cfb8a98.js.map",
     "static/css/2.4707e12a.chunk.css": "/gtic-website/static/css/2.4707e12a.chunk.css",
-    "static/js/2.535f8f3c.chunk.js": "/gtic-website/static/js/2.535f8f3c.chunk.js",
-    "static/js/2.535f8f3c.chunk.js.map": "/gtic-website/static/js/2.535f8f3c.chunk.js.map",
+    "static/js/2.9046c836.chunk.js": "/gtic-website/static/js/2.9046c836.chunk.js",
+    "static/js/2.9046c836.chunk.js.map": "/gtic-website/static/js/2.9046c836.chunk.js.map",
     "index.html": "/gtic-website/index.html",
-    "precache-manifest.797b6d600627e56c73c05b4d1eec4347.js": "/gtic-website/precache-manifest.797b6d600627e56c73c05b4d1eec4347.js",
+    "precache-manifest.346d9f3f02956d62a318bd162b555fff.js": "/gtic-website/precache-manifest.346d9f3f02956d62a318bd162b555fff.js",
     "service-worker.js": "/gtic-website/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/gtic-website/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.5a2d3989.chunk.css.map": "/gtic-website/static/css/main.5a2d3989.chunk.css.map",
-    "static/js/2.535f8f3c.chunk.js.LICENSE.txt": "/gtic-website/static/js/2.535f8f3c.chunk.js.LICENSE.txt",
+    "static/css/main.8f87410f.chunk.css.map": "/gtic-website/static/css/main.8f87410f.chunk.css.map",
+    "static/js/2.9046c836.chunk.js.LICENSE.txt": "/gtic-website/static/js/2.9046c836.chunk.js.LICENSE.txt",
     "static/media/about.jpg": "/gtic-website/static/media/about.ef8736a8.jpg",
     "static/media/Claims.scss": "/gtic-website/static/media/claims.d3b2ad14.jpg",
-    "static/media/Home.scss": "/gtic-website/static/media/insights.d29e811d.jpg",
+    "static/media/Home.scss": "/gtic-website/static/media/engineering.af22d772.jpg",
     "static/media/Explained.scss": "/gtic-website/static/media/explained.0aaf4945.jpg",
     "static/media/About.scss": "/gtic-website/static/media/home.36fbe306.jpg",
+    "static/media/insights.jpg": "/gtic-website/static/media/insights.ba1094e4.jpg",
     "static/media/logo.png": "/gtic-website/static/media/logo.4a16871f.png",
     "static/media/opportunities.jpg": "/gtic-website/static/media/opportunities.1868f763.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0cfb8a98.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.535f8f3c.chunk.js",
-    "static/css/main.5a2d3989.chunk.css",
-    "static/js/main.8a08ba16.chunk.js"
+    "static/js/2.9046c836.chunk.js",
+    "static/css/main.8f87410f.chunk.css",
+    "static/js/main.545316a9.chunk.js"
   ]
 }
