@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1b5ed8aeb4d48234feab913b3e2173b",
+    "revision": "64b91d0fefcf04dd0d3f2956e281013f",
     "url": "/gtic-website/index.html"
   },
   {
-    "revision": "0f81fe7e5cb16c4f6a70",
+    "revision": "5a74d16d367c4e4c947e",
     "url": "/gtic-website/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "b6bb6c4481765df8a0d7",
-    "url": "/gtic-website/static/css/main.8f87410f.chunk.css"
+    "revision": "1b1c8157357a4c4aa340",
+    "url": "/gtic-website/static/css/main.14dc6057.chunk.css"
   },
   {
-    "revision": "0f81fe7e5cb16c4f6a70",
-    "url": "/gtic-website/static/js/2.9046c836.chunk.js"
+    "revision": "5a74d16d367c4e4c947e",
+    "url": "/gtic-website/static/js/2.11969216.chunk.js"
   },
   {
     "revision": "b28efdd56deb90065a6ed9c886c45c8b",
-    "url": "/gtic-website/static/js/2.9046c836.chunk.js.LICENSE.txt"
+    "url": "/gtic-website/static/js/2.11969216.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b6bb6c4481765df8a0d7",
-    "url": "/gtic-website/static/js/main.545316a9.chunk.js"
+    "revision": "1b1c8157357a4c4aa340",
+    "url": "/gtic-website/static/js/main.0551b804.chunk.js"
   },
   {
     "revision": "9eefdd66463abf114441",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef8736a83fa1443f25542f991d0d1539",
     "url": "/gtic-website/static/media/about.ef8736a8.jpg"
+  },
+  {
+    "revision": "af9a90c2a052366284f72248e1bf2465",
+    "url": "/gtic-website/static/media/casestudies.af9a90c2.jpg"
   },
   {
     "revision": "d3b2ad140b7a6c2ece3a42873b09d54a",
