@@ -66,11 +66,21 @@ class Home extends Component {
                         )
                     })}
                 </div>
+                <div className="case-studies">
+                    <div className="overlay">
+                        <div className="case-studies-container">
+                            <div className="case-studies-text">
+                                <h2>Success stories</h2>
+                                <CaseStudies />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="testimonials">
                     <div className="overlay">
                         <div className="testimonials-container">
                             <div className="testimonials-text">
-                                <h1>What our clients say about us</h1>
+                                <h2>What our clients say about us</h2>
                                 <Testimonials />
                             </div>
                             <button className="consultation">BOOK A FREE CONSULTATION</button>

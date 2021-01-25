@@ -6,7 +6,7 @@
     }
 }
 
-.carousel{
+.cs-carousel{
     position: relative;
     width: 90vw;
     margin: auto;
@@ -17,13 +17,13 @@
     align-items: center;
     vertical-align: top;
     overflow-x: hidden;
-    .card{
+    .cs-card{
         min-width: 100%;
         height: auto;
         margin: 0;
         transition: 0.5s;
         vertical-align: top;
-        .inner-card{
+        .cs-inner-card{
             vertical-align: top;
             background-color: #e6e6e6;
             width: 95%;
@@ -37,16 +37,16 @@
                 width: 80%;
             }
             .card-header{
-                background-image: linear-gradient(to bottom, #004d00, #008000);
-                color: #ffffff;
+                color: #e6e6e6;
                 position: relative;
                 width: 100%;
                 box-sizing: border-box;
                 @include boxShadow();
                 div{
-                    width: 33%;
+                    width: 33.33%;
                     display: inline-block;
-                    border-left: 1px solid #ffffff;
+                    background-image: linear-gradient(to bottom, #004d00, #008000);
+                    border: 2px solid #e6e6e6;
                     box-sizing: border-box;
                     padding: 15px 30px;
                     .card-header-text{
@@ -74,6 +74,9 @@
             }
             .card-detail{
                 padding: 10px 30px;
+                p{
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -84,9 +87,9 @@
         width: 50px;
         height: 50px;
         font-size: 20px;
-        color: #ffffff;
-        background-color: #004d00;
-        opacity: 0.8;
+        color: #000000;
+        background-color: #ffffff;
+        opacity: 0.7;
         border: none;
         border-radius: 50%;
         cursor: pointer;
