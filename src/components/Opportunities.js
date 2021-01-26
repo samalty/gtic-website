@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Opportunities.scss';
 import Navbar from './Navbar';
+import Cursor from './Cursor';
 import Accordion from './Accordion';
 import Footer from './Footer';
-import opportunities from './media/opportunities.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { OpportunitiesData } from './data/OpportunitiesData';
@@ -19,25 +19,19 @@ class Opportunities extends Component {
         return (
             <div className="background">
                 <Navbar />
+                <Cursor />
                 <div className="header-container">
                     <h1>Never miss an opportunity with GTIC</h1>
                 </div>
-                <div className="intro-container">
-                    <div className="img-decoration">
-                        <img src={opportunities} alt="Making a claim" className="intro-img"></img>
-                    </div>
-                    <div className="intro">
-                        <div className="opening-para">
+                <div className="opportunities-intro-container">
+                    <div className="opportunities-overlay">
+                        <div className="opportunities-intro">
                             <h3>Our goal is to reward companies of all sectors, sizes and structures for the pioneering work that they 
                                 undertake. Achieving this requires specialist knowledge of a broad range of incentives that few other 
                                 consultancies possess.</h3>
                         </div>
-                        <p>From IT to engineering, manufacturing to property, our rare combination of expertise has helped businesses 
-                            across various industries identify and maximise relevant opportunities. Check out some of our areas of 
-                            expertise below to see whether we may be able to help you make the most of your work.</p>
                     </div>
                 </div>
-                <br></br>
                 <div className="incentives-browser">
                     {OpportunitiesData.map((item, index) => {
                         return (

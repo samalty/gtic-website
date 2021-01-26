@@ -41,9 +41,11 @@ html{
     .logo-header{
         width: 100%;
         height: auto;
+        margin: 10px auto;
     }
 
     .tagline {
+        margin: 0 auto;
         font-size: 24px;
         @media screen and (min-width: 700px) {
             font-size: 32px;

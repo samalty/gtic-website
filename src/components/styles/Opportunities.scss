@@ -15,19 +15,22 @@ h1{
 }
 
 /* Intro */
-    
-.intro-container{
-    @include introContainer();
-    .img-decoration{
-        @include imgDecoration();
-        .intro-img{
-            @include introImage();
-        }
+
+.opportunities-intro-container{
+    @include pageIntro();
+    background-image: url('../media/opportunities.jpg');
+    @media screen and (max-width: 460px) {
+        background-size: auto 100%;
     }
-    .intro{
-        @include introText();
-        .opening-para{
-            @include openingPara();
+    .opportunities-overlay{
+        @include pageIntroOverlay();
+        .opportunities-intro{
+            @include pageIntroText();
+            h3{
+                text-align: center;
+                color: #ffffff;
+                text-shadow: 1px 1px 1px rgb(0, 0, 0);
+            }
         }
     }
 }
@@ -49,40 +52,28 @@ h1{
         display: inline-table;
         vertical-align: top;
         width: 49%;
-        color: #ffffff;
         box-sizing: border-box;
         padding: 30px;
+        transition: 1s;
+        &:hover{
+            @include boxShadow();
+            transition: 1s;
+        }
         .find-out{
+            display: inline-block;
             padding: 10px;
             background: transparent;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            -webkit-box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
-            -moz-box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
-            box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
-            transition: 0.5s;
+            border: 2px solid #004d00;
+            color: #004d00;
+            transition: 1s;
             &:hover{
                 cursor: pointer;
-                color: #004d00;
-                background: #ffffff;
-                -webkit-box-shadow: none;
-                -moz-box-shadow: none;
-                box-shadow: none;
+                -webkit-box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
+                -moz-box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
+                box-shadow: 5px 5px 5px -2px rgba(102,102,102,1);
             }
         }
     }
-}
-
-.incentives-browser > div:nth-child(1),
-.incentives-browser > div:nth-child(4) {
-    color: #ffffff;
-    background-image: linear-gradient(to right, #004d00, #006600);
-}
-
-.incentives-browser > div:nth-child(2),
-.incentives-browser > div:nth-child(3) {
-    color: #ffffff;
-    background-image: linear-gradient(to right, #666666, #808080);
 }
 
 .incentives-browser > div:nth-child(1),
@@ -132,8 +123,7 @@ h1{
 
 .incentives-mobile{
     max-width: 95%;
-    margin: 0 auto;
-    transform: translate(-0%, -20%);
+    margin: 25px auto;
     @media screen and (min-width: 1000px) {
         display: none;
     }

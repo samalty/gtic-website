@@ -88,82 +88,41 @@
     }
 }
 
-@mixin introContainer {
+@mixin pageIntro {
     display: block;
-    width: 100vw;
-    max-width: 1200px;
-    height: auto;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-@mixin introImage {
-    display: block;
-    width: 100vw;
-    height: auto;
-    margin: 0px;
-    @media screen and (min-width: 1000px) {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        height: auto;    
-        transform: translate(-40px, 40px);
-    }
-}
-
-@mixin imgDecoration {
-    display: block;
-    width: 100vw;
-    height: auto;
-    margin: 0px;
-    @media screen and (min-width: 1000px) {
-        position: relative;
-        display: inline-block;
-        width: 45%;
-        height: auto;
-        margin-top: 40px;
-        float: right;
-        background-color: #ffffff;
-        background-image: url("https://www.transparenttextures.com/patterns/skeletal-weave.png");
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    }
-}
-
-@mixin introText {
-    display: block;
-    width: 100%;
-    margin: 0px;
-    padding: 20px;
-    transform: translate(-0%, -25%);
-    text-align: center;
-    box-sizing: border-box;
-    @media screen and (min-width: 1000px) {
-        width: 50%;
-        display: inline-block;
-        position: relative;
-        box-sizing: border-box;
-        padding: 20px;
-        transform: none;
-        text-align: left;
-        float: left;
-    }
-}
-
-@mixin openingPara {
-    background-color: #004d00;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     opacity: 0.8;
-    width: 90%;
+    height: auto;
+    width: 100vw;
     margin: auto;
-    color: #ffffff;
-    padding: 5px 25px;
+    margin-top: 0px;
+    overflow: hidden;
+    @media screen and (min-width: 900px) {
+        background-attachment: fixed;
+        margin-top: 50px;
+    }
+}
+
+@mixin pageIntroOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(102, 102, 102, 0.5);
+}
+
+@mixin pageIntroText {
+    display: block;
+    height: 100%;
+    width: 80%;
+    max-width: 800px;
     box-sizing: border-box;
-    @media screen and (min-width: 1000px) {
-        background-color: #ffffff;
-        color: #000000;
-        width: 100%;
-        padding: 0px;
-        box-sizing: border-box;
+    padding: 10px 30px;
+    margin: auto;
+    h3{
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
     }
 }
 

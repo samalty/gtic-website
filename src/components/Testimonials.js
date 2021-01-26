@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import './styles/Testimonials.scss';
 import { TestimonialsData } from './data/TestimonialsData';
 

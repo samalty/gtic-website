@@ -25,6 +25,11 @@ class CaseStudies extends Component {
         Aos.init({
             duration: 2000
         });
+        this.interval = setInterval(() => {
+            if (this.state.x === -100 * (CaseStudiesData.length-1)) {
+                this.setState({ x: 0 })
+            } else this.setState({ x: this.state.x - 100 })
+        }, 12000);
     }
     render() {
         return(
@@ -36,17 +41,17 @@ class CaseStudies extends Component {
                                 <div className="cs-inner-card">
                                     <div className="card-header">
                                         <div data-aos="flip-up">
-                                            <i class="fas fa-hard-hat"></i>
+                                            <i className="fas fa-hard-hat"></i>
                                             <p className="card-header-text">Industry:</p>
                                             <p className="card-header-text">{item.industry}</p>
                                         </div>
                                         <div data-aos="flip-up">
-                                            <i class="fas fa-pound-sign"></i>
+                                            <i className="fas fa-pound-sign"></i>
                                             <p className="card-header-text">Turnover:</p>
                                             <p className="card-header-text">{item.turnover}</p>
                                         </div>
                                         <div data-aos="flip-up">
-                                            <i class="fas fa-users"></i>
+                                            <i className="fas fa-users"></i>
                                             <p className="card-header-text">Employees:</p>
                                             <p className="card-header-text">{item.employees}</p>
                                         </div>
@@ -68,13 +73,6 @@ class CaseStudies extends Component {
                 </div>
             </div>
         )
-    }
-    componentDidMount() {
-        this.interval = setInterval(() => {
-            if (this.state.x === -100 * (CaseStudiesData.length-1)) {
-                this.setState({ x: 0 })
-            } else this.setState({ x: this.state.x - 100 })
-        }, 12000)
     }
 }
 

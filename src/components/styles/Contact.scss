@@ -15,7 +15,13 @@ h1{
 }
 
 .intro-container{
-    @include introContainer();
+    display: block;
+    width: 100vw;
+    max-width: 1200px;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .contact-intro{

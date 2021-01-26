@@ -4,11 +4,12 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './styles/Home.scss';
 import Navbar from './Navbar';
+import Cursor from './Cursor';
 import CaseStudies from './CaseStudies';
 import Testimonials from './Testimonials';
 import { HomeData } from './data/HomeData';
 import Footer from './Footer';
-import logo from './media/logo.png';
+import logo from './media/logo-long.png';
 
 class Home extends Component {
     componentDidMount() {
@@ -20,6 +21,7 @@ class Home extends Component {
         return (
             <div>
                 <Navbar />
+                <Cursor />
                 <div className="banner-header">
                     <div className="header-overlay">
                         <div className="banner-text">

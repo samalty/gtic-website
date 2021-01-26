@@ -54,7 +54,6 @@ export const HomeData = [
     {
         page: 'insights',
         title: 'Insights',
-        //description:`If you have a query relating to a particular tax incentive or grant, here is where we should have you covered.`,
         description:`Do you have a query relating to a particular tax incentive or grant? Insights is where we share much of our
                      expertise directly with you.`,
         path: '/',
