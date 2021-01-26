@@ -24,7 +24,7 @@ function Navbar() {
     return (
         <div>
             <div className="contact-banner">
-                <p><i class="fas fa-envelope"></i> solomon@govtaxincentives.com <i class="fas fa-phone"></i> 020 3582 5526</p>
+                <p className="email"><i className="fas fa-envelope"></i> solomon@govtaxincentives.com</p><p><i className="fas fa-phone"></i> 020 3582 5526</p>
             </div>
             <div className="navbar" id="nav">
                 <Link to="/">

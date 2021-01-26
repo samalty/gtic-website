@@ -19,22 +19,24 @@ h1{
 .explained-intro-container{
     display: block;
     background-image: url('../media/explained.jpg');
-    background-repeat: round;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-attachment: fixed;
     opacity: 0.8;
     height: auto;
-    width: 98.7vw;
+    width: 100vw;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 0px;
     overflow: hidden;
+    @media screen and (min-width: 900px) {
+        background-attachment: fixed;
+        margin-top: 50px;
+        
+    }
     .explained-overlay{
         height: 100%;
         width: 100%;
         background-color: rgba(102, 102, 102, 0.5);
-        border: 1px solid #ffffff;
         .explained-intro{
             display: block;
             height: 100%;
@@ -87,21 +89,25 @@ th,td{
 .explained-cta{
     display: block;
     background-image: url('../media/explained.jpg');
-    background-repeat: round;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
+    background-size: auto 100%;
     opacity: 0.8;
     height: auto;
-    width: 98.7vw;
+    width: 100vw;
     margin: auto;
+    margin-top: 0px;
     overflow: hidden;
+    @media screen and (min-width: 650px) {
+        background-size: 100% auto;
+    }
+    @media screen and (min-width: 900px) {
+        background-attachment: fixed;
+    }
     .explained-overlay{
         height: 100%;
         width: 100%;
         background-color: rgba(102, 102, 102, 0.5);
-        border: 1px solid #ffffff;
         .cta-textbox{
             display: block;
             max-width: 1200px;
