@@ -76,6 +76,12 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="clients">
+                    <div className="clients-container">
+                        <h2>Who we work with</h2>
+                        <p>Client logos to go here</p>
+                    </div>
+                </div>
                 <div className="testimonials">
                     <div className="overlay">
                         <div className="testimonials-container">
