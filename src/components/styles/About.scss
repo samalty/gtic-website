@@ -7,7 +7,7 @@
 
 .about-intro-container{
     @include pageIntro();
-    background-image: url('../media/home.jpg');
+    background-image: url('../media/about.jpg');
     @media screen and (max-width: 475px) {
         background-size: auto 100%;
     }
