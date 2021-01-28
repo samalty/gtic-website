@@ -1,33 +1,33 @@
 {
   "files": {
-    "main.css": "/gtic-website/static/css/main.2e1a902c.chunk.css",
-    "main.js": "/gtic-website/static/js/main.bb3cc2cf.chunk.js",
-    "main.js.map": "/gtic-website/static/js/main.bb3cc2cf.chunk.js.map",
+    "main.css": "/gtic-website/static/css/main.40ee2c06.chunk.css",
+    "main.js": "/gtic-website/static/js/main.7852ff83.chunk.js",
+    "main.js.map": "/gtic-website/static/js/main.7852ff83.chunk.js.map",
     "runtime-main.js": "/gtic-website/static/js/runtime-main.0cfb8a98.js",
     "runtime-main.js.map": "/gtic-website/static/js/runtime-main.0cfb8a98.js.map",
     "static/css/2.4707e12a.chunk.css": "/gtic-website/static/css/2.4707e12a.chunk.css",
-    "static/js/2.11969216.chunk.js": "/gtic-website/static/js/2.11969216.chunk.js",
-    "static/js/2.11969216.chunk.js.map": "/gtic-website/static/js/2.11969216.chunk.js.map",
+    "static/js/2.c45f8d92.chunk.js": "/gtic-website/static/js/2.c45f8d92.chunk.js",
+    "static/js/2.c45f8d92.chunk.js.map": "/gtic-website/static/js/2.c45f8d92.chunk.js.map",
     "index.html": "/gtic-website/index.html",
-    "precache-manifest.0ad66b3fe80e8622dcea8d830409a220.js": "/gtic-website/precache-manifest.0ad66b3fe80e8622dcea8d830409a220.js",
+    "precache-manifest.cefead96b6cff11f761abfdea436e47d.js": "/gtic-website/precache-manifest.cefead96b6cff11f761abfdea436e47d.js",
     "service-worker.js": "/gtic-website/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/gtic-website/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.2e1a902c.chunk.css.map": "/gtic-website/static/css/main.2e1a902c.chunk.css.map",
-    "static/js/2.11969216.chunk.js.LICENSE.txt": "/gtic-website/static/js/2.11969216.chunk.js.LICENSE.txt",
-    "static/media/about.jpg": "/gtic-website/static/media/about.ef8736a8.jpg",
-    "static/media/Home.scss": "/gtic-website/static/media/engineering.af22d772.jpg",
+    "static/css/main.40ee2c06.chunk.css.map": "/gtic-website/static/css/main.40ee2c06.chunk.css.map",
+    "static/js/2.c45f8d92.chunk.js.LICENSE.txt": "/gtic-website/static/js/2.c45f8d92.chunk.js.LICENSE.txt",
+    "static/media/About.scss": "/gtic-website/static/media/about.ef8736a8.jpg",
     "static/media/Claims.scss": "/gtic-website/static/media/claims.d3b2ad14.jpg",
+    "static/media/Home.scss": "/gtic-website/static/media/home.36fbe306.jpg",
     "static/media/Explained.scss": "/gtic-website/static/media/explained.0aaf4945.jpg",
-    "static/media/About.scss": "/gtic-website/static/media/home.36fbe306.jpg",
     "static/media/insights.jpg": "/gtic-website/static/media/insights.ba1094e4.jpg",
-    "static/media/logo.png": "/gtic-website/static/media/logo.4a16871f.png",
-    "static/media/opportunities.jpg": "/gtic-website/static/media/opportunities.1868f763.jpg"
+    "static/media/logo-long.png": "/gtic-website/static/media/logo-long.700c4093.png",
+    "static/media/logo-small.png": "/gtic-website/static/media/logo-small.c09bbcec.png",
+    "static/media/Opportunities.scss": "/gtic-website/static/media/opportunities.1868f763.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0cfb8a98.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.11969216.chunk.js",
-    "static/css/main.2e1a902c.chunk.css",
-    "static/js/main.bb3cc2cf.chunk.js"
+    "static/js/2.c45f8d92.chunk.js",
+    "static/css/main.40ee2c06.chunk.css",
+    "static/js/main.7852ff83.chunk.js"
   ]
 }

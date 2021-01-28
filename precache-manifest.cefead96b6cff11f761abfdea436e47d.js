@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce1004537e903d81d1e8acef6592bc58",
+    "revision": "2c8f88a74fcdc5323af52341a765334f",
     "url": "/gtic-website/index.html"
   },
   {
-    "revision": "5a74d16d367c4e4c947e",
+    "revision": "c7d3728aa66dfba3b6f5",
     "url": "/gtic-website/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "9d751da3bac3306b7216",
-    "url": "/gtic-website/static/css/main.2e1a902c.chunk.css"
+    "revision": "eea325cb0587f958097c",
+    "url": "/gtic-website/static/css/main.40ee2c06.chunk.css"
   },
   {
-    "revision": "5a74d16d367c4e4c947e",
-    "url": "/gtic-website/static/js/2.11969216.chunk.js"
+    "revision": "c7d3728aa66dfba3b6f5",
+    "url": "/gtic-website/static/js/2.c45f8d92.chunk.js"
   },
   {
     "revision": "b28efdd56deb90065a6ed9c886c45c8b",
-    "url": "/gtic-website/static/js/2.11969216.chunk.js.LICENSE.txt"
+    "url": "/gtic-website/static/js/2.c45f8d92.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9d751da3bac3306b7216",
-    "url": "/gtic-website/static/js/main.bb3cc2cf.chunk.js"
+    "revision": "eea325cb0587f958097c",
+    "url": "/gtic-website/static/js/main.7852ff83.chunk.js"
   },
   {
     "revision": "9eefdd66463abf114441",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef8736a83fa1443f25542f991d0d1539",
     "url": "/gtic-website/static/media/about.ef8736a8.jpg"
-  },
-  {
-    "revision": "af9a90c2a052366284f72248e1bf2465",
-    "url": "/gtic-website/static/media/casestudies.af9a90c2.jpg"
   },
   {
     "revision": "d3b2ad140b7a6c2ece3a42873b09d54a",
@@ -56,8 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gtic-website/static/media/insights.ba1094e4.jpg"
   },
   {
-    "revision": "4a16871f34e28cd0b41ee012759227dc",
-    "url": "/gtic-website/static/media/logo.4a16871f.png"
+    "revision": "700c409379b34999c7f799c9a527ffb0",
+    "url": "/gtic-website/static/media/logo-long.700c4093.png"
+  },
+  {
+    "revision": "c09bbcec4666552514c719c9d5cc84dc",
+    "url": "/gtic-website/static/media/logo-small.c09bbcec.png"
   },
   {
     "revision": "1868f76312e0fe093c2783bf1bf489eb",
