@@ -17,8 +17,8 @@ export const HomeData = [
     {
         page: 'opportunities',
         title: 'Never miss an opportunity',
-        description:`Rewarding companies for the pioneering work that they undertake requires specialist knowledge of a range of
-                     incentives that few other consultancies possess.`,
+        description:`Rewarding companies for their pioneering work requires specialist knowledge of a range of incentives that 
+                     few other consultancies possess.`,
         //path: '/opportunities',
         path: '/',
         buttonText: 'Opportunities ',

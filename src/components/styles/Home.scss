@@ -110,73 +110,90 @@ h1,h2,h3,h4,h5,p{
 
 .intro-background:nth-child(odd){
     background-color: #ffffff;
-    padding: 30px;
     @media screen and (min-width: 600px) {
-        background-image: linear-gradient(20deg, rgba(247,247,247,1) 10%, 0%, rgba(255,255,255,1) 90%, 0%, rgba(247,247,247,1) 10%);
+        background: linear-gradient(20deg, rgba(247,247,247,1) 10%, 0%, rgba(255,255,255,1) 90%, 0%, rgba(247,247,247,1) 10%);
     }
-    @media screen and (min-width: 1350px) {
-        background: linear-gradient(90deg, rgba(255,255,255,1) 7.75%, 0%, rgba(0,0,0,0) 92.25%), 
-                    linear-gradient(90deg, rgba(0,77,0,1) 8%, 0%, rgba(0,0,0,0) 92%), 
-                    linear-gradient(90deg, rgba(0,0,0,0) 92.25%, 0%, rgba(255,255,255,1) 7.75%), 
-                    linear-gradient(90deg, rgba(0,0,0,0) 92%, 0%, rgba(0,77,0,1) 8%), 
-                    linear-gradient(15deg, rgba(247,247,247,1) 10%, 0%, rgba(255,255,255,1) 90%, 0%, rgba(247,247,247,1) 10%);
-    }
-    .link-container{
-        margin: 30px auto;
-        .text-box{
-            top: 0px;
-            left: 0px;
-            background-color: #f2f2f2;
-            @media screen and (min-width: 1000px) {
-                border-left: 3px solid #004d00;
+    .intro-container{
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        padding: 30px;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        @media screen and (min-width: 1450px) {
+            width: 85%;
+            max-width: 1500px;
+            border-left: 4px solid #666666;
+            border-right: 4px solid #004d00;
+        }
+        .link-container{
+            margin: 30px auto;
+            .text-box{
+                top: 0px;
+                left: 0px;
+                min-width: 475px;
+                background-color: #f2f2f2;
+                @media screen and (min-width: 1000px) {
+                    border-left: 3px solid #004d00;
+                }
+            }
+            .decoration{
+                background-color: #ffffff;
+            }
+            .image-container{
+                right: 0px;
             }
         }
-        .decoration{
-            background-color: #ffffff;
-        }
-        .image-container{
-            right: 0px;
-        }
     }
+    
 }
 
 .intro-background:nth-child(even){
     background-color: #ffffff;
-    padding: 30px;
     @media screen and (min-width: 600px) {
-        background-image: linear-gradient(20deg, #ffffff 10%, 0%, #f7f7f7 90%, 0%, #ffffff 10%);
+        background: linear-gradient(20deg, #ffffff 10%, 0%, #f7f7f7 90%, 0%, #ffffff 10%);
     }
-    @media screen and (min-width: 1350px) {
-        background: linear-gradient(90deg, rgba(255,255,255,1) 7.75%, 0%, rgba(0,0,0,0) 92.25%), 
-                    linear-gradient(90deg, rgba(0,77,0,1) 8%, 0%, rgba(0,0,0,0) 92%), 
-                    linear-gradient(90deg, rgba(0,0,0,0) 92.25%, 0%, rgba(255,255,255,1) 7.75%), 
-                    linear-gradient(90deg, rgba(0,0,0,0) 92%, 0%, rgba(0,77,0,1) 8%), 
-                    linear-gradient(15deg, rgba(255,255,255,1) 10%, 0%, rgba(247,247,247,1) 90%, 0%, rgba(255,255,255,1) 10%);
-    }
-    .link-container{
-        margin: 30px auto;
-        .text-box{
-            top: 0px;
-            right: 0px;
-            background-color: #ffffff;
-            @media screen and (min-width: 1000px) {
-                border-right: 3px solid #004d00;
-            }
-            .intro-link{
-                .intro-btn{
-                    float: right;
-                    background-color: white;
-                    &:hover{
-                        background-color: #004d00;
+    .intro-container{
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        padding: 30px;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        @media screen and (min-width: 1450px) {
+            width: 85%;
+            max-width: 1500px;
+            border-left: 4px solid #666666;
+            border-right: 4px solid #004d00;
+        }
+        .link-container{
+            margin: 30px auto;
+            .text-box{
+                top: 0px;
+                right: 0px;
+                min-width: 475px;
+                background-color: #ffffff;
+                @media screen and (min-width: 1000px) {
+                    border-right: 3px solid #004d00;
+                }
+                .intro-link{
+                    .intro-btn{
+                        float: right;
+                        background-color: white;
+                        &:hover{
+                            background-color: #004d00;
+                        }
                     }
                 }
             }
-        }
-        .decoration{
-            background-color: #f7f7f7;
-        }
-        .image-container{
-            left: 0px;
+            .decoration{
+                background-color: #f7f7f7;
+            }
+            .image-container{
+                left: 0px;
+            }
         }
     }
 }
@@ -360,35 +377,6 @@ h1,h2,h3,h4,h5,p{
                 &:after{
                     opacity: 1;
                     right: 0;
-                }
-            }
-        }
-    }
-}
-
-/* Case studies */
-
-.case-studies{
-    background-image: url('../media/casestudies.jpg');
-    background-repeat: round;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    .overlay{
-        background-color: rgba(102, 102, 102, 0.5);
-        .case-studies-container{
-            position: relative;
-            height: auto;
-            box-sizing: border-box;
-            padding: 50px 0px;
-            margin: auto;
-            .case-studies-text{
-                h2{
-                    font-size: 40px;
-                    text-align: center;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 10px rgba(0,0,0,1);
                 }
             }
         }

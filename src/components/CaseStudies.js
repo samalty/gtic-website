@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './styles/CaseStudies.scss';
 import { CaseStudiesData } from './data/CaseStudiesData';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 class CaseStudies extends Component {
     constructor(props) {
@@ -22,9 +20,6 @@ class CaseStudies extends Component {
         } else this.setState({ x: this.state.x - 100 })
     };
     componentDidMount() {
-        Aos.init({
-            duration: 2000
-        });
         this.interval = setInterval(() => {
             if (this.state.x === -100 * (CaseStudiesData.length-1)) {
                 this.setState({ x: 0 })
@@ -40,17 +35,17 @@ class CaseStudies extends Component {
                             <div className="cs-card" key={index} style={{transform:`translateX(${this.state.x}%)`}}>
                                 <div className="cs-inner-card">
                                     <div className="card-header">
-                                        <div data-aos="flip-up">
+                                        <div>
                                             <i className="fas fa-hard-hat"></i>
                                             <p className="card-header-text">Industry:</p>
                                             <p className="card-header-text">{item.industry}</p>
                                         </div>
-                                        <div data-aos="flip-up">
+                                        <div>
                                             <i className="fas fa-pound-sign"></i>
                                             <p className="card-header-text">Turnover:</p>
                                             <p className="card-header-text">{item.turnover}</p>
                                         </div>
-                                        <div data-aos="flip-up">
+                                        <div>
                                             <i className="fas fa-users"></i>
                                             <p className="card-header-text">Employees:</p>
                                             <p className="card-header-text">{item.employees}</p>
