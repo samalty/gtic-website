@@ -120,7 +120,6 @@ class Explained extends Component {
                         </div>
                     </div>
                 </div>
-                <Calculator />
                 <Footer />
             </div>
         )
