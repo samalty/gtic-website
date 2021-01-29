@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './styles/Explained.scss';
 import Navbar from './Navbar';
 import Cursor from './Cursor';
-import Calculator from './Calculator';
+//import Calculator from './Calculator';
 import Footer from './Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

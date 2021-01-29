@@ -37,10 +37,38 @@ body{
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: linear;
-    .logo-header{
-        width: 100%;
+    .logo-header-sml{
+        display: block;
+        width: 60px;
         height: auto;
-        margin: 10px auto;
+        margin: 0 auto;
+        @media screen and (min-width: 700px) {
+            display: none;
+        }
+    }
+    .logo-header-sml-text{
+        display: block;
+        @media screen and (min-width: 550px) {
+            display: none;
+        }
+    }
+    .logo-header-med-text{
+        display: none;
+        @media screen and (min-width: 550px) {
+            display: block;
+        }
+        @media screen and (min-width: 700px) {
+            display: none;
+        }
+    }
+    .logo-header-lrg{
+        display: none;
+        @media screen and (min-width: 700px) {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
     }
     .tagline {
         margin: 0 auto;
