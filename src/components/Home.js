@@ -15,7 +15,7 @@ import logoLong from './media/logo-long.png';
 class Home extends Component {
     componentDidMount() {
         Aos.init({
-            duration: 1000
+            duration: 2000
         });
     }
     render() {

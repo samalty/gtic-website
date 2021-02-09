@@ -470,3 +470,57 @@ h1,h2,h3,h4,h5,p{
 .consultation{
     @include consultationButton();
 }
+
+
+/* Margin design demo
+
+.margin-demo{
+    background-color: #ffffff;
+    height: 4000px;
+    width: 100vw;
+    .border{
+        width: 600px;
+        height: 100%;
+        margin: auto;
+        border-right: 4px solid #004d00;
+        border-left: 4px solid #666666;
+        .shape-grey{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            margin-left: -17px;
+            top: 1000px;
+            background-color: #666666;
+            z-index: 999;
+        }
+        .shape-green{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            margin-left: 588px;
+            top: 1200px;
+            background-color: #004d00;
+            z-index: 999;
+        }
+        .shape-grey2{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            margin-left: -17px;
+            top: 1500px;
+            background-color: #666666;
+            z-index: 999;
+        }
+        .shape-green2{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            margin-left: 588px;
+            top: 1700px;
+            background-color: #004d00;
+            z-index: 999;
+        }
+    }
+}
+
+*/

@@ -1,71 +1,73 @@
 @import "./Themes";
 
 .contact-banner{
-    height: 35px;
-    width: 100vw;
-    position: fixed;
-    z-index: 1000;
-    background: linear-gradient(to right, #404040, #666666);
-    border-bottom: 5px solid #004d00;
-    i{
-        font-size: 16px;
-        margin: 6px 10px;
-        @media screen and (min-width: 525px) {
+    display: none;
+    @media screen and (min-width: 1100px) {
+        display: block;
+        height: 35px;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+        background: linear-gradient(to right, #404040, #666666);
+        border-bottom: 5px solid #004d00;
+        i{
             font-size: 18px;
             margin: 5px 10px 5px 20px;
         }
-    }
-    p{
-        color: #ffffff;
-        font-size: 16px;
-        float: right;
-        margin: 6px 25px 6px 20px;
-        @media screen and (min-width: 525px) {
+        p{
+            color: #ffffff;
             font-size: 18px;
+            float: right;
             margin: 5px 30px 5px 0px;
         }
-    }
-    .email{
-        display: none;
-        @media screen and (min-width: 500px) {
+        .email{
             display: inline;
         }
     }
 }
 
 .navbar{
-    height: 80px;
+    height: 60px;
     width: 100vw;
-    margin-top: 40px;
     position: fixed;
-    z-index: 1000;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    z-index: 2000;
     transition: 1s;
-    @media screen and (max-width: 1100px) {
-        background: #ffffff;
-        -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-        -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
-        box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    @media screen and (min-width: 700px) {
+        height: 80px;
+    }
+    @media screen and (min-width: 1100px) {
+        margin-top: 40px;
+        background: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
     .navbar-logo{
-        margin: 5px;
-        height: 85%;
-        display: inline-block;
-        float: left;
-        @media screen and (max-width: 1100px) {
-            display: none;
+        display: none;
+        @media screen and (min-width: 1100px) {
+            margin: 5px;
+            height: 85%;
+            display: inline-block;
+            float: left;
         }
     }
     ul{
         @include navbarUl();
         li{
-            @include navbarLi();
-            @media screen and (max-width: 1100px) {
-                display: none;
+            display: none;
+            @media screen and (min-width: 1100px) {
+                display: inline-block;
+                @include navbarLi();
             }
             .navbar-link{
-                @include navbarLink();
-                @media screen and (max-width: 1100px) {
-                    display: none;
+                display: none;
+                @media screen and (min-width: 1100px) {
+                    display: inline-block;
+                    @include navbarLink();
                 }
                 &:hover{
                     cursor: pointer;
@@ -84,21 +86,23 @@
     box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
     transition: 1s;
 }
-
+/*
 .menu-icon{
-    display: none;
-    @media screen and (max-width: 1100px) {
-        display: inline-block;
-        margin-right: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    @media screen and (min-width: 1100px) {
+        display: none;
     }
-}
+}*/
 
 /* Sidebar */
 
 .menu-bars{
     color: #666666;
     margin: 40px 20px;
-    font-size: 34px;
+    @media screen and (min-width: 700px) {
+        margin: 40px 20px;
+    }
     @media screen and (min-width: 1100px) {
         display: none;
     }
@@ -107,7 +111,14 @@
         color: #004d00;
     }
     .fa-bars{
-        margin-top: 25px;
+        margin-top: 16px;
+        font-size: 30px;
+        transition: 1s;
+        @media screen and (min-width: 700px) {
+            margin-top: 25px;
+            font-size: 34px;
+            transition: 1s;
+        }
     }
 }
 
@@ -119,7 +130,6 @@
     background-color: #ffffff;
     width: 250px;
     height: 100vh;
-    margin-top: 40px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -134,8 +144,11 @@
         display: none;
     }
     .nav-menu-items{
-        margin-top: 15px;
+        margin-top: 0px;
         width: 100%;
+        @media screen and (min-width: 700px) {
+            margin-top: 15px;
+        }
         .navbar-toggle{
             background-color: #ffffff;
             width: 100%;
@@ -150,6 +163,20 @@
 .nav-menu.active{
     left: 0;
     transition: 0.5s;
+}
+
+.nav-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1999;
+    display: none;
+}
+
+.nav-overlay.active{
+    display: block;
 }
 
 .nav-text{

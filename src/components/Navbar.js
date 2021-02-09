@@ -59,6 +59,7 @@ function Navbar() {
                     })}
                  </ul>
             </nav>
+            <div className={sidebar ? 'nav-overlay active' : 'nav-overlay'}></div>
             <button id="scrollTop" className="scroll-top" onClick={scrollTop}>
                 <i className="fas fa-arrow-up"></i>
             </button>
