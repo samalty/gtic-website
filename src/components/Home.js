@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import './styles/Home.scss';
 import Navbar from './Navbar';
 import Cursor from './Cursor';
-import CaseStudies from './CaseStudies';
+//import CaseStudies from './CaseStudies';
 import Testimonials from './Testimonials';
 import { HomeData } from './data/HomeData';
 import Footer from './Footer';
