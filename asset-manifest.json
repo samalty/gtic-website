@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gtic-website/static/css/main.9e0c6dc6.chunk.css",
-    "main.js": "/gtic-website/static/js/main.2a13bbd8.chunk.js",
-    "main.js.map": "/gtic-website/static/js/main.2a13bbd8.chunk.js.map",
+    "main.js": "/gtic-website/static/js/main.0fa3d404.chunk.js",
+    "main.js.map": "/gtic-website/static/js/main.0fa3d404.chunk.js.map",
     "runtime-main.js": "/gtic-website/static/js/runtime-main.0cfb8a98.js",
     "runtime-main.js.map": "/gtic-website/static/js/runtime-main.0cfb8a98.js.map",
     "static/css/2.4707e12a.chunk.css": "/gtic-website/static/css/2.4707e12a.chunk.css",
     "static/js/2.3ab4cee7.chunk.js": "/gtic-website/static/js/2.3ab4cee7.chunk.js",
     "static/js/2.3ab4cee7.chunk.js.map": "/gtic-website/static/js/2.3ab4cee7.chunk.js.map",
     "index.html": "/gtic-website/index.html",
-    "precache-manifest.de7e0d645e85f06cae6b6d93ebd643fe.js": "/gtic-website/precache-manifest.de7e0d645e85f06cae6b6d93ebd643fe.js",
+    "precache-manifest.5a6f1b585b4ddbc53f1bf622045c8ed9.js": "/gtic-website/precache-manifest.5a6f1b585b4ddbc53f1bf622045c8ed9.js",
     "service-worker.js": "/gtic-website/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/gtic-website/static/css/2.4707e12a.chunk.css.map",
     "static/css/main.9e0c6dc6.chunk.css.map": "/gtic-website/static/css/main.9e0c6dc6.chunk.css.map",
@@ -29,6 +29,6 @@
     "static/css/2.4707e12a.chunk.css",
     "static/js/2.3ab4cee7.chunk.js",
     "static/css/main.9e0c6dc6.chunk.css",
-    "static/js/main.2a13bbd8.chunk.js"
+    "static/js/main.0fa3d404.chunk.js"
   ]
 }
