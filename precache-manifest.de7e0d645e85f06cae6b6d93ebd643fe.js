@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6362f55fd2f898e203ca0c62e812f03b",
+    "revision": "5b759edc9b48b124a5276a05e3a43a76",
     "url": "/gtic-website/index.html"
   },
   {
-    "revision": "c7d3728aa66dfba3b6f5",
+    "revision": "8f0a63b7fa441bdfb3bc",
     "url": "/gtic-website/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "d41e93d7dd54facd0d6c",
-    "url": "/gtic-website/static/css/main.40ee2c06.chunk.css"
+    "revision": "2a1d1fa7c385a3b3e3b7",
+    "url": "/gtic-website/static/css/main.9e0c6dc6.chunk.css"
   },
   {
-    "revision": "c7d3728aa66dfba3b6f5",
-    "url": "/gtic-website/static/js/2.c45f8d92.chunk.js"
+    "revision": "8f0a63b7fa441bdfb3bc",
+    "url": "/gtic-website/static/js/2.3ab4cee7.chunk.js"
   },
   {
     "revision": "b28efdd56deb90065a6ed9c886c45c8b",
-    "url": "/gtic-website/static/js/2.c45f8d92.chunk.js.LICENSE.txt"
+    "url": "/gtic-website/static/js/2.3ab4cee7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d41e93d7dd54facd0d6c",
-    "url": "/gtic-website/static/js/main.dd2d4dc8.chunk.js"
+    "revision": "2a1d1fa7c385a3b3e3b7",
+    "url": "/gtic-website/static/js/main.2a13bbd8.chunk.js"
   },
   {
     "revision": "9eefdd66463abf114441",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "36fbe3060d7a5966dfa0def0bebe4926",
     "url": "/gtic-website/static/media/home.36fbe306.jpg"
+  },
+  {
+    "revision": "d26c1bbca0d2a171715b5995b0bbdad4",
+    "url": "/gtic-website/static/media/icon.d26c1bbc.png"
   },
   {
     "revision": "ba1094e40889b58ffe06b51cc5e8ba34",
