@@ -38,8 +38,7 @@ export const NavbarData = [
     },
     {
         title: 'CONTACT',
-        //path: '/contact',
-        path: '/',
+        path: '/contact',
         cName: 'nav-text'
     }
 ]
