@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Explained.scss';
 import Navbar from './Navbar';
-import Cursor from './Cursor';
-//import Calculator from './Calculator';
+import Calculator from './Calculator';
 import Footer from './Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -18,7 +17,6 @@ class Explained extends Component {
         return (
             <div className="background">
                 <Navbar />
-                <Cursor />
                 <div className="header-container">
                     <h1>R&D Tax Relief explained</h1>
                 </div>
@@ -120,6 +118,7 @@ class Explained extends Component {
                         </div>
                     </div>
                 </div>
+                <Calculator />
                 <Footer />
             </div>
         )

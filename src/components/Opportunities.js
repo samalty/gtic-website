@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Opportunities.scss';
 import Navbar from './Navbar';
-import Cursor from './Cursor';
 import Accordion from './Accordion';
 import Footer from './Footer';
 import Aos from 'aos';
@@ -19,7 +18,6 @@ class Opportunities extends Component {
         return (
             <div className="background">
                 <Navbar />
-                <Cursor />
                 <div className="header-container">
                     <h1>Never miss an opportunity with GTIC</h1>
                 </div>

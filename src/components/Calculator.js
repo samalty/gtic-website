@@ -4,18 +4,17 @@ import './styles/Calculator.scss';
 
 class Calculator extends Component {
     // TO DO
-    // Form validation for punctuation
     // Test calculator against outliers
-    // Add punctiation to output
     constructor(props){
         super(props)
         this.state = {
+            calcDisplay: false,
             SME: true,
             visible: false,
             // SME R&D calculator
             profitLoss: 'profit',
-            profitLossSME: 0,
-            expenditureSME: 0,
+            profitLossSME: 500000,
+            expenditureSME: 500000,
             uplift: 0,
             originalCT: 0,
             profitMinusUplift: 0,
@@ -24,11 +23,14 @@ class Calculator extends Component {
             maxSurrender: 0,
             creditSME: 0,
             // RDEC calculator
-            expenditureRDEC: 0,
+            expenditureRDEC: 500000,
             RDEC: 0,
             notionalTax: 0,
             creditRDEC: 0
         }
+    }
+    displayCalculator = () => {
+        this.setState({ calcDisplay: true });
     }
     toggleSME = () => {
         if (this.state.SME === false) { this.setState({ SME: true }); }
@@ -39,14 +41,19 @@ class Calculator extends Component {
         this.setState({ visible: false });
     }
     handleInputChange = (event) => {
-        this.setState({
-            [event.target.name]: parseInt(event.target.value, 10)
-        });
+        this.setState({ [event.target.name]: parseInt(event.target.value, 10) });
+    }
+    handleProfitLossRange = (event) => {
+        this.setState({ profitLossSME: event.target.value });
     }
     handleProfitLoss = (event) => {
-        this.setState({
-            profitLoss: event.target.value
-        });
+        this.setState({ profitLoss: event.target.value });
+    }
+    handleExpenditureSME = (event) => {
+        this.setState({ expenditureSME: event.target.value });
+    }
+    handleExpenditureRDEC = (event) => {
+        this.setState({ expenditureRDEC: event.target.value });
     }
     handleSMECalculation = (event) => {
         event.preventDefault();
@@ -108,87 +115,124 @@ class Calculator extends Component {
             });
         }
     }
+    formatOutput(n) {
+        return n.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+    }
     render() {
         return (
             <div className="calc-container">
-                <h2>R&D Tax Calculator</h2>
-                <p>Use this calculator to estimate the Corporation Tax savings that your company could make from a successful R&D Tax Relief claim.</p>
-                <hr />
-                <p>Does your company qualify as an SME or a large company?</p>
-                <Tabs className="tabs">
-                  <TabList className="tablist">
-                    <Tab className={ this.state.SME ? "active-tab" : "inactive-tab" }
-                         onClick={this.toggleSME}>SME</Tab>
-                    <Tab className={ this.state.SME ? "inactive-tab" : "active-tab" }
-                         onClick={this.toggleLC}>Large company</Tab>
-                  </TabList>
-                  <br></br>
-                  <TabPanel className="tab-panel">
-                    <form className="calculator-form" onSubmit={this.handleSMECalculation}>
-                        <p>Is your company making a profit or a loss?</p>
-                        <div className="radio">
-                            <label className="custom-radio">
-                                <input 
-                                    type="radio" 
-                                    value="profit" 
-                                    name="radio-btn"
-                                    checked={this.state.profitLoss === "profit"}
-                                    onChange={this.handleProfitLoss}
-                                />
-                                <span className="checkmark"></span>
-                            </label>
-                            <p>Profit</p>
-                            <label className="custom-radio">
-                                <input 
-                                    type="radio" 
-                                    value="loss" 
-                                    name="radio-btn"
-                                    checked={this.state.profitLoss === "loss"}
-                                    onChange={this.handleProfitLoss}
-                                />
-                                <span className="checkmark"></span>
-                            </label>
-                            <p>Loss</p>
-                        </div>
-                        <p>Please enter the {this.state.profitLoss} recorded by your company in its last accounting period.</p>
-                        <p>Annual {this.state.profitLoss} £ <input 
-                                                                type="text" 
-                                                                name="profitLossSME" 
+                <div className="calc-intro">
+                    <h2>R&D Tax Calculator</h2>
+                    <p>Try out our calculator to estimate the Corporation Tax savings that your company could make from a successful R&D Tax Relief claim.</p>
+                </div>
+                <button onClick={this.displayCalculator} className={ this.state.calcDisplay ? "invisible" : "intro-btn" }><span>Get started</span></button>
+                <div className={ this.state.calcDisplay ? "calculator" : "invisible" }>
+                    <p>Does your company qualify as an SME or a large company?</p>
+                    <Tabs className="tabs">
+                    <TabList className="tablist">
+                        <Tab className={ this.state.SME ? "active-tab" : "inactive-tab" }
+                            onClick={this.toggleSME}>SME</Tab>
+                        <Tab className={ this.state.SME ? "inactive-tab" : "active-tab" }
+                            onClick={this.toggleLC}>Large company</Tab>
+                    </TabList>
+                    <br></br>
+                    <TabPanel className="tab-panel">
+                        <form className="calculator-form" onSubmit={this.handleSMECalculation}>
+                            <p>Is your company making a profit or a loss?</p>
+                            <div className="radio">
+                                <label className="custom-radio">
+                                    <input type="radio" 
+                                        value="profit" 
+                                        name="radio-btn"
+                                        checked={this.state.profitLoss === "profit"}
+                                        onChange={this.handleProfitLoss} />
+                                    <span className="checkmark"></span>
+                                </label>
+                                <p>Profit</p>
+                                <label className="custom-radio">
+                                    <input type="radio" 
+                                        value="loss" 
+                                        name="radio-btn"
+                                        checked={this.state.profitLoss === "loss"}
+                                        onChange={this.handleProfitLoss} />
+                                    <span className="checkmark"></span>
+                                </label>
+                                <p>Loss</p>
+                            </div>
+                            <p>Please enter the {this.state.profitLoss} recorded by your company and the amount spent on R&D in its last accounting period.</p>
+                            <div className="range-container">
+                                <p>Annual {this.state.profitLoss} £ <input type="text" 
+                                                                        name="profitLossSME" 
+                                                                        value={this.formatOutput(this.state.profitLossSME)}
+                                                                        onChange={this.handleInputChange}></input></p>
+                                <input type="range"
+                                    className="slider"
+                                    min={0} 
+                                    max={1000000}
+                                    step={25000}
+                                    value={this.state.profitLossSME }
+                                    onChange={this.handleProfitLossRange} />
+                            </div>
+                            <div className="range-container">
+                                <p>Annual R&D expenditure £ <input type="text" 
+                                                                name="expenditureSME"
+                                                                value={this.formatOutput(this.state.expenditureSME)}
                                                                 onChange={this.handleInputChange}></input></p>
-                        <p>Please enter the amount your company spent on R&D in its last accounting period.</p>
-                        <p>Annual R&D expenditure £ <input 
-                                                        type="text" 
-                                                        name="expenditureSME" 
-                                                        onChange={this.handleInputChange}></input></p>
-                        <button type="submit">Calculate R&D Tax Relief</button>
-                    </form>
-                    <div className={ this.state.visible && this.state.profitLoss === 'profit' ? "calculation" : "invisible" }>
-                        <p>Total tax saving up to <p className="result"><b>£{this.state.creditSME.toFixed(2)}</b></p></p>
-                        <p>GTIC fee <p className="result"><b>N/A</b></p></p>
-                        <p>Net saving up to <p className="result"><b>N/A</b></p></p>
-                    </div>
-                    <div className={ this.state.visible && this.state.profitLoss === 'loss' ? "calculation" : "invisible" }>
-                        <p>Total tax saving up to <p className="result"><b>£{this.state.creditSME.toFixed(2)}</b></p></p>
-                        <p>GTIC fee <p className="result"><b>N/A</b></p></p>
-                        <p>Net saving up to <p className="result"><b>N/A</b></p></p>
-                    </div>
-                  </TabPanel>
-                  <TabPanel className="tab-panel">
-                    <form className="calculator-form" onSubmit={this.handleRDECCalculation}>
-                        <p>Please enter the amount your company spent on R&D in its last accounting period.</p>
-                        <p>Annual R&D expenditure £ <input 
-                                                        type="text" 
-                                                        name="expenditureRDEC" 
-                                                        onChange={this.handleInputChange}></input></p>
-                        <button type="submit">Calculate R&D Tax Relief</button>
-                    </form>
-                    <div className={ this.state.visible ? "calculation" : "invisible" }>
-                        <p>Total tax saving up to <p className="result"><b>£{this.state.creditRDEC.toFixed(2)}</b></p></p>
-                        <p>GTIC fee <p className="result"><b>N/A</b></p></p>
-                        <p>Net saving up to <p className="result"><b>N/A</b></p></p>
-                    </div>
-                  </TabPanel>
-                </Tabs>
+                                <input type="range"
+                                    className="slider"
+                                    min={0} 
+                                    max={1000000}
+                                    step={25000}
+                                    value={this.state.expenditureSME }
+                                    onChange={this.handleExpenditureSME} />
+                            </div>
+                            <br></br>
+                            <button type="submit">Calculate R&D Tax Relief</button>
+                        </form>
+                        <div className={ this.state.visible && this.state.profitLoss === 'profit' ? "calculation" : "invisible" }>
+                            <p>You could claim a total tax saving of up to:</p>
+                            <p className="result"><b>£{this.formatOutput(this.state.creditSME.toFixed(2))}</b></p>
+                            <p><b>Please note:</b> This R&D Tax Relief calculator provides an estimate of the Corporation Tax savings that your company 
+                                may be entitled to, based on your estimated figures. Accurate figures are calculated by our experts upon receipt of your
+                                expenditure details.</p>
+                        </div>
+                        <div className={ this.state.visible && this.state.profitLoss === 'loss' ? "calculation" : "invisible" }>
+                            <p>You could claim a total tax saving of up to:</p>
+                            <p className="result"><b>£{this.formatOutput(this.state.creditSME.toFixed(2))}</b></p>
+                            <p><b>Please note:</b> This R&D Tax Relief calculator provides an estimate of the Corporation Tax savings that your company 
+                                may be entitled to, based on your estimated figures. Accurate figures are calculated by our experts upon receipt of your
+                                expenditure details.</p>
+                        </div>
+                    </TabPanel>
+                    <TabPanel className="tab-panel">
+                        <form className="calculator-form" onSubmit={this.handleRDECCalculation}>
+                            <p>Please enter the amount your company spent on R&D in its last accounting period.</p>
+                            <div className="range-container">
+                                <p>Annual R&D expenditure £ <input type="text" 
+                                                                name="expenditureRDEC"
+                                                                value={this.formatOutput(this.state.expenditureRDEC)}
+                                                                onChange={this.handleInputChange}></input></p>
+                                <input type="range"
+                                    className="slider"
+                                    min={0} 
+                                    max={1000000}
+                                    step={25000}
+                                    value={this.state.expenditureRDEC }
+                                    onChange={this.handleExpenditureRDEC} />
+                            </div>
+                            <br></br>
+                            <button type="submit">Calculate R&D Tax Relief</button>
+                        </form>
+                        <div className={ this.state.visible ? "calculation" : "invisible" }>
+                            <p>You could claim a total tax saving of up to:</p>
+                            <p className="result"><b>£{this.formatOutput(this.state.creditRDEC.toFixed(2))}</b></p>
+                            <p><b>Please note:</b> This R&D Tax Relief calculator provides an estimate of the Corporation Tax savings that your company 
+                                may be entitled to, based on your estimated figures. Accurate figures are calculated by our experts upon receipt of your
+                                expenditure details.</p>
+                        </div>
+                    </TabPanel>
+                    </Tabs>
+                </div>
             </div>
         );
     }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './styles/Contact.scss';
 import Navbar from './Navbar';
-import Cursor from './Cursor';
 import Footer from './Footer';
 import MapComponent from './Map';
 
@@ -10,7 +9,6 @@ class Contact extends Component {
         return (
             <div className="background">
                 <Navbar />
-                <Cursor />
                 <div className="header-container">
                     <h1>Get in touch</h1>
                 </div>

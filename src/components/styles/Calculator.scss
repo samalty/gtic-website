@@ -1,41 +1,55 @@
 @import "./Themes";
 
 .calc-container{
+    box-sizing: border-box;
     text-align: center;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    .tabs{
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 900px;
-        margin: 20px auto;
-        padding: 0px 20px;
-        .tablist{
-            text-align: center;
-            padding-right: 40px;
-            .inactive-tab{
-                display: inline-block;
-                list-style: none;
-                border: 3px solid #d3d3d3;
-                background-color: #d3d3d3;
-                margin: 5px 5px 0px 5px;
-                padding: 5px;
-                width: 200px;
-                cursor: pointer;
-            }
-            .active-tab{
-                display: inline-block;
-                list-style: none;
-                border: 3px solid #004d00;
-                background-color: #ffffff;
-                margin: 5px 5px 0px 5px;
-                padding: 5px;
-                width: 200px;
-                cursor: pointer;
-            }
+    width: 100vw;
+    padding: 30px;
+    background-image: linear-gradient(to right, #f2f2f2, #ffffff);
+    .calc-intro{
+        margin: 0 auto;
+        max-width: 1000px;
+        h2{
+            color: #004d00;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
         }
     }
+    .intro-btn{
+        @include introButtons();
+    }
+    .calculator{
+        .tabs{
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0px 20px;
+            .tablist{
+                text-align: center;
+                padding-right: 40px;
+                .inactive-tab{
+                    display: inline-block;
+                    list-style: none;
+                    border: 3px solid #d3d3d3;
+                    background-color: #d3d3d3;
+                    margin: 5px 5px 0px 5px;
+                    padding: 5px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+                .active-tab{
+                    display: inline-block;
+                    list-style: none;
+                    border: 3px solid #004d00;
+                    background-color: #ffffff;
+                    margin: 5px 5px 0px 5px;
+                    padding: 5px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
 }
 
 .calculator-form{
@@ -74,13 +88,43 @@
             display: inline;
         }
     }
-    p{
-        input{
-            padding: 10px;
-            width: 80px;
-            font-size: 20px;
-            &:active{
-                background-color: #ffffff;
+    .range-container{
+        display: inline-block;
+        width: 49%;
+        @media screen and (max-width: 850px) {
+            width: 100%;
+        }
+        p{
+            input{
+                padding: 10px;
+                width: 90px;
+                font-size: 20px;
+                text-align: center;
+                &:active{
+                    background-color: #ffffff;
+                }
+            }
+        }
+        .slider{
+            -webkit-appearance: none;
+            width: 80%;
+            height: 5px;
+            background: #666666;
+            outline: none;
+            margin-bottom: 25px;
+            @media screen and (max-width: 850px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 650px) {
+                width: 70%;
+            }
+            &::-webkit-slider-thumb{
+                -webkit-appearance: none;
+                appearance: none;
+                width: 10px;
+                height: 25px;
+                background: #004d00;
+                cursor: pointer;
             }
         }
     }
@@ -89,21 +133,23 @@
         background-color: #004d00;
         border: none;
         padding: 10px 20px;
-        margin: 15px;
+        margin: 25px 0px;
         cursor: pointer;
     }
 }
 
 .calculation{
     display: block;
+    padding: 10px;
     transition: 1s;
+    border: 3px solid #004d00;
     p{
         font-size: 20px;
-        .result{
-            font-size: 26px;
-            color: #004d00;
-            display: inline;
-        }
+    }
+    .result{
+        font-size: 26px;
+        color: #004d00;
+        display: inline;
     }
 }
 

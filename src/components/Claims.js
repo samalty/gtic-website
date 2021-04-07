@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './styles/Claims.scss';
 import Navbar from './Navbar';
-import Cursor from './Cursor';
 import Footer from './Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -16,7 +15,6 @@ class Claims extends Component {
         return (
             <div className="background">
                 <Navbar />
-                <Cursor />
                 <div className="header-container">
                     <h1>Making a claim with GTIC</h1>
                 </div>

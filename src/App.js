@@ -6,6 +6,7 @@ import About from './components/About';
 import Opportunities from './components/Opportunities';
 import Claims from './components/Claims';
 import Explained from './components/Explained';
+import Insights from './components/Insights';
 import Contact from './components/Contact';
 
 class App extends Component {
@@ -16,7 +17,8 @@ class App extends Component {
         <Route exact path="/about" component={About} />
         <Route exact path="/opportunities" component={Opportunities} />
         <Route exact path="/making_a_claim" component={Claims} />
-        <Route expact path="/r&d_explained" component={Explained} />
+        <Route exact path="/r&d_explained" component={Explained} />
+        <Route exact path="/insights" component={Insights} />
         <Route exact path="/contact" component={Contact} />
       </div>
     )

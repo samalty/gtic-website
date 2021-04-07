@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './styles/About.scss';
 import Navbar from './Navbar';
-import Cursor from './Cursor';
 import Footer from './Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -17,7 +16,6 @@ class About extends Component {
         return (
             <div className="background">
                 <Navbar />
-                <Cursor />
                 <div className="header-container">
                     <h1>Preparing your platform for innovation</h1>
                 </div>
