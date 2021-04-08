@@ -7,6 +7,15 @@ import { CaseStudiesData } from './data/CaseStudiesData';
 import Footer from './Footer';
 
 class Insights extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            caseStudy: 1
+        }
+    }
+    toggleTab = (item) => {
+        this.setState({ caseStudy: item.id });
+    }
     render() {
         return (
             <div className="background">
@@ -60,19 +69,19 @@ class Insights extends Component {
                             <h2>Case studies</h2>
                             <Tabs className="tabs">
                                 <TabList className="tablist">
-                                    {CaseStudiesData.map((item, index) => {
+                                    {CaseStudiesData.map((item) => {
                                         return (
-                                            <Tab onClick={this.activeTab} className="inactive-tab">{item.industry} {item.id}</Tab>
+                                            <Tab key={item.id} onClick={this.toggleTab.bind(this,item)} className={ this.state.caseStudy === item.id ? "active-tab" : "inactive-tab" }>{item.title}</Tab>
                                         )
                                     })}
                                 </TabList>
-                                {CaseStudiesData.map((item, index) => {
+                                {CaseStudiesData.map((item) => {
                                     return (
-                                        <TabPanel className="tab-panel">
+                                        <TabPanel className="tab-panel" key={item.id}>
                                             <h2>{item.intro}</h2>
                                             <div className="case-study-info">
                                                 <div className="info-header">
-                                                    <i class="fas fa-industry"></i>
+                                                    <i className="fas fa-industry"></i>
                                                     <h2>Background</h2>
                                                 </div>
                                                 <div className="info-body">
@@ -81,7 +90,7 @@ class Insights extends Component {
                                             </div>
                                             <div className="case-study-info">
                                                 <div className="info-header">
-                                                    <i class="fas fa-exclamation-circle"></i>
+                                                    <i className="fas fa-exclamation-circle"></i>
                                                     <h2>Action</h2>
                                                 </div>
                                                 <div className="info-body">
@@ -90,7 +99,7 @@ class Insights extends Component {
                                             </div>
                                             <div className="case-study-info">
                                                 <div className="info-header">
-                                                    <i class="fas fa-handshake"></i>
+                                                    <i className="fas fa-handshake"></i>
                                                     <h2>Result</h2>
                                                 </div>
                                                 <div className="info-body">

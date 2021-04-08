@@ -69,6 +69,7 @@ h1{
                 padding: 15px 20px;
                 margin-top: 0px;
                 height: 100%;
+                min-height: 130px;
                 background-color: rgba(102, 102, 102, 0.5);
                 transition: 1s;
                 @media screen and (min-width: 500px) {
@@ -137,7 +138,7 @@ h1{
     }
     .case-studies{
         @media screen and (min-width: 600px) {
-            background: linear-gradient(20deg, #f7f7f7 90%, 0%, #ffffff 10%);
+            background-color: #f7f7f7;
         }
         .case-studies-container{
             text-align: center;
@@ -155,7 +156,6 @@ h1{
                     .inactive-tab{
                         display: inline-block;
                         list-style: none;
-                        border: 3px solid #d3d3d3;
                         background-color: #d3d3d3;
                         margin: 5px 5px 0px 5px;
                         padding: 5px;
@@ -175,7 +175,6 @@ h1{
                 }
                 .tab-panel{
                     h2{
-                        text-align: left;
                         font-weight: 500;
                     }
                     .case-study-info{
@@ -198,8 +197,16 @@ h1{
                                 color: #ffffff;
                                 display: inline;
                                 float: left;
-                                margin-top: 8px;
-                                margin-left: 15px;
+                                margin-top: 7px;
+                                margin-left: 10px;
+                                font-size: 24px;
+                                @media screen and (min-width: 700px) {
+                                    margin-left: 15px;
+                                    font-size: 30px;
+                                }
+                                @media screen and (min-width: 1000px) {
+                                    margin-top: 10px;
+                                }
                             }
                             h2{
                                 color: #ffffff;

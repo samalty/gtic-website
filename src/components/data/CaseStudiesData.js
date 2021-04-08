@@ -1,6 +1,7 @@
 export const CaseStudiesData = [
     {
-        id: '1',
+        id: 1,
+        title: 'Case study #1',
         industry: 'Software',
         turnover: '£3 million',
         employees: '10-50',
@@ -14,7 +15,8 @@ export const CaseStudiesData = [
         result: `Successful R&D claim, claiming back more than £150,000 over the previous two years.`
     },
     {
-        id: '2',
+        id: 2,
+        title: 'Case study #2',
         industry: 'Oil & Gas',
         turnover: '£2.5 million',
         employees: '10-50',
@@ -27,7 +29,8 @@ export const CaseStudiesData = [
         result: `Successful R&D claim, claiming back £200,000 over two years.`
     },
     {
-        id: '3',
+        id: 3,
+        title: 'Case study #3',
         industry: 'Manufacturing',
         turnover: '£5 million',
         employees: '51-100',

@@ -122,7 +122,7 @@ class Calculator extends Component {
         return (
             <div className="calc-container">
                 <div className="calc-intro">
-                    <h2>R&D Tax Calculator</h2>
+                    <h2>R&D Tax Calculator</h2><i class="fas fa-calculator"></i>
                     <p>Try out our calculator to estimate the Corporation Tax savings that your company could make from a successful R&D Tax Relief claim.</p>
                 </div>
                 <button onClick={this.displayCalculator} className={ this.state.calcDisplay ? "invisible" : "intro-btn" }><span>Get started</span></button>
@@ -135,7 +135,6 @@ class Calculator extends Component {
                         <Tab className={ this.state.SME ? "inactive-tab" : "active-tab" }
                             onClick={this.toggleLC}>Large company</Tab>
                     </TabList>
-                    <br></br>
                     <TabPanel className="tab-panel">
                         <form className="calculator-form" onSubmit={this.handleSMECalculation}>
                             <p>Is your company making a profit or a loss?</p>
