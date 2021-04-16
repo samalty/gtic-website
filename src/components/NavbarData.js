@@ -11,7 +11,8 @@ export const NavbarData = [
     },
     {
         title: 'OPPORTUNITIES',
-        path: '/opportunities',
+        path: '/',
+        //path: '/opportunities',
         cName: 'nav-text'
     },
     {
@@ -31,7 +32,8 @@ export const NavbarData = [
     },
     {
         title: 'INSIGHTS',
-        path: '/insights',
+        path: '/',
+        //path: '/insights',
         cName: 'nav-text'
     },
     {
