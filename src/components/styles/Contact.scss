@@ -71,6 +71,9 @@ h1{
                 border-bottom: 1px solid #666666;
                 width: 100%;
                 font-size: 16px;
+                // CSS to remove IOS styling
+                -webkit-appearance: none;
+                border-radius: 0;
                 @media screen and (min-width: 700px) {
                   font-size: 18px;
                 }
@@ -100,6 +103,9 @@ h1{
                 background-color: #ffffff;
                 border: 2px solid #004d00;
                 transition: 0.5s;
+                // CSS to remove IOS styling
+                -webkit-appearance: none;
+                border-radius: 0;
                 &:hover{
                     color: #ffffff;
                     background-color: #004d00;

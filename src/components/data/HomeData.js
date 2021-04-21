@@ -10,7 +10,6 @@ export const HomeData = [
         description:`We provide expert advice to pioneering UK businesses, helping them to compliantly capitalise on available 
                      government grants and incentives.`,
         path: '/about',
-        path: '/',
         buttonText: 'About us ',
         img: about
     },
@@ -19,8 +18,7 @@ export const HomeData = [
         title: 'Never miss an opportunity',
         description:`Rewarding companies for their pioneering work requires specialist knowledge of a range of incentives that 
                      few other consultancies possess.`,
-        //path: '/opportunities',
-        path: '/',
+        path: '/opportunities',
         buttonText: 'Opportunities ',
         img: opportunities
     },
@@ -56,7 +54,7 @@ export const HomeData = [
         title: 'Insights',
         description:`Do you have a query relating to a particular tax incentive or grant? Insights is where we share much of our
                      expertise directly with you.`,
-        //path: '/insights',
+        path: '/insights',
         path: '/',
         buttonText: 'Go to insights ',
         img: insights

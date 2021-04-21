@@ -10,6 +10,8 @@ import Calculator from './Calculator';
 import Footer from './Footer';
 import logo from './media/icon.png';
 import logoLong from './media/logo-long.png';
+import marginGreen from './media/margin-green.png';
+import marginGrey from './media/margin-grey.png';
 
 class Home extends Component {
     componentDidMount() {
@@ -41,6 +43,10 @@ class Home extends Component {
                         return (
                             <div className="intro-background" key={index}>
                                 <div className="intro-container">
+                                    <img src={marginGreen} alt="green" className="margin-green green-1" data-aos="flip-right"></img>
+                                    <img src={marginGreen} alt="green" className="margin-green green-2" data-aos="flip-right"></img>
+                                    <img src={marginGrey} alt="grey" className="margin-grey grey-1" data-aos="flip-right"></img>
+                                    <img src={marginGrey} alt="grey" className="margin-grey grey-2" data-aos="flip-right"></img>
                                     <div className="link-container" data-aos="fade-up">
                                         <div className="text-box">
                                             <h2>{item.title}</h2>

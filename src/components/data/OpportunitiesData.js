@@ -46,8 +46,8 @@ export const OpportunitiesData = [
                       designing, producing and testing qualifying games. The relief available is worth up to 20% of production costs. 
                       Alternatively, companies can surrender some or all of the losses made on games for a payable tax credit at a 
                       rate of 25%.`,
-        description2:`Beyond simply processing your claim, our specialists can advise on measures to ensure eligibility, streamline 
-                      the process and maximise your available relief.`,
+        description2:`Beyond simply processing your claim, our specialists advise on measures to ensure eligibility, streamline the 
+                      process and maximise your available relief.`,
         path: '/contact',
         open: false,
         cName: 'incentive-desc'

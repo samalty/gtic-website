@@ -173,7 +173,7 @@ class Calculator extends Component {
                                     onChange={this.handleProfitLossRange} />
                             </div>
                             <div className="range-container">
-                                <p>Annual R&D expenditure £ <input type="text" 
+                                <p>R&D expenditure £ <input type="text" 
                                                                 name="expenditureSME"
                                                                 value={this.formatOutput(this.state.expenditureSME)}
                                                                 onChange={this.handleInputChange}></input></p>
@@ -207,7 +207,7 @@ class Calculator extends Component {
                         <form className="calculator-form" onSubmit={this.handleRDECCalculation}>
                             <p>Please enter the amount your company spent on R&D in its last accounting period.</p>
                             <div className="range-container">
-                                <p>Annual R&D expenditure £ <input type="text" 
+                                <p>R&D expenditure £ <input type="text" 
                                                                 name="expenditureRDEC"
                                                                 value={this.formatOutput(this.state.expenditureRDEC)}
                                                                 onChange={this.handleInputChange}></input></p>
