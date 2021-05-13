@@ -21,7 +21,7 @@ export const NavbarData = [
     },
     {
         title: 'REFERRALS',
-        path: '/',
+        path: '/referrals',
         cName: 'nav-text'
     },
     {

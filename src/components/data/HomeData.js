@@ -36,7 +36,7 @@ export const HomeData = [
         title: 'Partnering with GTIC',
         description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis suscipit sem quis vehicula. Ut non 
                      hendrerit sapien. Morbi sit.`,
-        path: '/',
+        path: '/referrals',
         buttonText: 'Referrals ',
         img: opportunities
     },
