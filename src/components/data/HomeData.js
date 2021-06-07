@@ -34,8 +34,8 @@ export const HomeData = [
     {
         page: 'referrals',
         title: 'Partnering with GTIC',
-        description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis suscipit sem quis vehicula. Ut non 
-                     hendrerit sapien. Morbi sit.`,
+        description:`Referring a client to us helps maximise the potential of their R&D activity while providing you with the expertise 
+                     underpinning your own added-value service.`,
         path: '/referrals',
         buttonText: 'Referrals ',
         img: opportunities
@@ -43,8 +43,7 @@ export const HomeData = [
     {
         page: 'explained',
         title: 'R&D Tax Relief explained',
-        description:`Research & Development (R&D) Tax Relief could provide your business with a competitive advantage and firm 
-                     foundations for future growth.`,
+        description:`R&D Tax Relief could provide your business with a competitive advantage and firm foundations for future growth.`,
         path: '/r&d_explained',
         buttonText: 'How it works ',
         img: claims

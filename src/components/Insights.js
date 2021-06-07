@@ -116,7 +116,7 @@ class Insights extends Component {
                 <div className="insights-cta">
                     <div className="insights-overlay">
                         <div className="cta-textbox">
-                            <h2>Subhead</h2>
+                            <h2>Just ask!</h2>
                             <p>Can’t find exactly what you’re looking for? Speak directly to one of our expert advisors, today.</p>
                             <Link className="button-link" to="/contact">
                                 <button className="consultation">GET IN TOUCH</button>

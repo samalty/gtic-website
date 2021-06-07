@@ -82,7 +82,11 @@ h1{
         transform: none;
     }
     @media screen and (min-width: 1100px) {
-        height: 2220px;
+        height: 2380px;
+    }
+    h2{
+        text-align: center;
+        margin-top: 0px;
     }
     .link{
         display: none;
@@ -98,51 +102,51 @@ h1{
     }
     .one-two{
         @media screen and (min-width: 1000px) {
-            top: 115px;
+            top: 245px;
             height: 500px;
             border-left: 8px solid #004d00;
             border-bottom-right-radius: 0%;
             border-top-left-radius: 0%;
         }
         @media screen and (min-width: 1100px) {
-            top: 260px;
+            top: 400px;
         }
     }
     .two-three{
         @media screen and (min-width: 1000px) {
-            top: 450px;
+            top: 580px;
             height: 480px;
             border-right: 8px solid #004d00;
             border-bottom-left-radius: 0%;
             border-top-right-radius: 0%;
         }
         @media screen and (min-width: 1100px) {
-            top: 640px;
+            top: 790px;
             height: 500px;
         }
     }
     .three-four{
         @media screen and (min-width: 1000px) {
-            top: 770px;
+            top: 930px;
             height: 500px;
             border-left: 8px solid #004d00;
             border-bottom-right-radius: 0%;
             border-top-left-radius: 0%;
         }
         @media screen and (min-width: 1100px) {
-            top: 1050px;
+            top: 1240px;
         }
     }
     .four-five{
         @media screen and (min-width: 1000px) {
-            top: 1140px;
+            top: 1305px;
             height: 500px;
             border-right: 8px solid #004d00;
             border-bottom-left-radius: 0%;
             border-top-right-radius: 0%;
         }
         @media screen and (min-width: 1100px) {
-            top: 1465px;
+            top: 1690px;
         }
     }
     .material-icons{
@@ -186,43 +190,43 @@ h1{
         }
     }
     .one{
-        top: 0px;
+        top: 130px;
         left: 0px;
     }
     .two{
         @media screen and (min-width: 1000px) {
-            top: 460px;
+            top: 590px;
             right: 0px;
         }
         @media screen and (min-width: 1100px) {
-            top: 590px;
+            top: 715px;
         }
     }
     .three{
         @media screen and (min-width: 1000px) {
-            top: 795px;
+            top: 925px;
             left: 0px;
         }
         @media screen and (min-width: 1100px) {
-            top: 965px;
+            top: 1115px;
         }
     }
     .four{
         @media screen and (min-width: 1000px) {
-            top: 1095px;
+            top: 1225px;
             right: 0px;
         }
         @media screen and (min-width: 1100px) {
-            top: 1335px;
+            top: 1485px;
         }
     }   
     .five{
         @media screen and (min-width: 1000px) {
-            top: 1465px;
+            top: 1665px;
             left: 0px;
         }
         @media screen and (min-width: 1100px) {
-            top: 1785px;
+            top: 2010px;
         }
     }
 }

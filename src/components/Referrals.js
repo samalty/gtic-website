@@ -16,21 +16,20 @@ class Referrals extends Component {
             <div className="background">
                 <Navbar />
                 <div className="header-container">
-                    <h1>Making a claim with GTIC</h1>
+                    <h1>R&D Tax Relief referral programme</h1>
                 </div>
                 <div className="claims-intro-container">
                     <div className="claims-overlay">
                         <div className="claims-intro">
-                            <h3>GTI Consultants’ R&D Tax Relief referral programme gives accountants the insight and assistance needed 
-                                to offer valuable R&D services to their clients. Along with expertise underpinning your own added-value 
-                                service, referring a client to us provides everything you need to ensure your clients are maximising the 
-                                potential of their R&D activity.</h3>
+                            <h3>We give accountants the insight and assistance needed to offer valuable R&D services. Referring a 
+                                client to us helps maximise the potential of their R&D activity while providing you with the 
+                                expertise underpinning your own added-value service.</h3>
                         </div>
                     </div>
                 </div>
                 <br></br>
                 <div className="referrals-text">
-                    <h2>Why partner with GTI Consultants?</h2>
+                    <h2>Why partner with GTIC?</h2>
                     <div className="advantages-container">
                         <div className="advantages" data-aos="zoom-in">
                             <i class="fas fa-handshake"></i>
@@ -49,8 +48,8 @@ class Referrals extends Component {
                         </div>
                     </div>
                 </div>
-                <br></br>
                 <div className="referral-process-container">
+                    <h2>How it works</h2>
                     <div className="link one-two" data-aos="fade-in" data-aos-delay="1000"></div>
                     <div className="link two-three" data-aos="fade-in" data-aos-delay="1000"></div>
                     <div className="link three-four" data-aos="fade-in" data-aos-delay="1000"></div>
@@ -59,7 +58,7 @@ class Referrals extends Component {
                         <div className="step-title">
                             <h3>1. Getting acquainted</h3>
                         </div>
-                        <p>From the offset, our specialist advisors will set aside time to educate you on R&D, understand the needs of you and your referee, 
+                        <p>From the offset, our specialist advisors will set aside time to share specialist expertise, understand the needs of you and your referee, 
                             and hopefully establish a long and fruitful partnership.</p>
                         <p>Joining your referee at one of our R&D Tax Relief workshops can help enhance your relationship while improving your understanding 
                             of your client’s business. It also shares greater insight into the incentive, as well as further information that can add value 
@@ -70,9 +69,9 @@ class Referrals extends Component {
                         <div className="step-title">
                             <h3>2. Compiling an R&D claim</h3>
                         </div>
-                        <p>Following the introduction, we apply a rigorous process to understand your referee’s business and their R&D activity. Pending 
-                            your referee’s approval, we ask you to disclose their relevant financial information. The resulting insight informs a 
-                            maximum-value R&D claim report that is effectively protected against risk.</p>
+                        <p>Following the introduction, we apply an established process to understand your referee’s business and their R&D activity. Pending your 
+                            referee’s approval, we ask you to remain a key point of contact for financial matters. The resulting insight informs a maximum-value 
+                            R&D claim that compliments your existing engagement.</p>
                     </div>
                     <i className="material-icons md-60">double_arrow</i>
                     <div className="step three" data-aos="flip-up">
@@ -86,12 +85,12 @@ class Referrals extends Component {
                     <i className="material-icons md-60">double_arrow</i>
                     <div className="step four" data-aos="flip-up">
                         <div className="step-title">
-                            <h3>4. Educating your team</h3>
+                            <h3>4. Continued professional development</h3>
                         </div>
-                        <p>Our referral programme is designed to empower you to help your clients identify R&D Tax Relief opportunities. The provision 
-                            of specialist training for your organisation, in addition to assistance with new prospects and incentives advice on request, 
-                            ensures we keep this promise. You are also welcome to attend workshops and access relevant educational materials to further 
-                            aid your understanding.</p>
+                        <p>Our referral programme is designed to empower you to help your clients identify R&D Tax Relief opportunities, while keeping you 
+                            informed of any relevant legislative changes. The provision of specialist training for your organisation, in addition to 
+                            assistance with new prospects and incentives advice on request, ensures we keep this promise. You can also attend workshops 
+                            and access relevant educational materials to further aid your understanding.</p>
                     </div>
                     <i className="material-icons md-60">double_arrow</i>
                     <div className="step five" data-aos="flip-up">
@@ -100,7 +99,7 @@ class Referrals extends Component {
                         </div>
                         <p>Whereas your client stands to receive a potentially game-changing source of funding, you also benefit financially as we share 
                             a portion of our fee as an acknowledgement of your time and effort. This puts the finishing touch on a mutually beneficial 
-                            relationship for all involved, specifically, the businesses using the incentive to trigger growth and innovation.</p>
+                            relationship for all involved.</p>
                     </div>
                 </div>
                 <Footer />
