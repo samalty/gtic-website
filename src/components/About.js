@@ -22,8 +22,8 @@ class About extends Component {
                 <div className="about-intro-container">
                     <div className="about-overlay">
                         <div className="about-intro">
-                            <h3>At Gov Tax Incentive Consultants, we provide expert advice to pioneering UK businesses, helping them 
-                                to compliantly capitalise on available government grants and incentives. </h3>
+                            <h3>We provide expert advice to pioneering UK businesses, helping them to 
+                                compliantly capitalise on available government grants and incentives. </h3>
                         </div>
                     </div>
                 </div>

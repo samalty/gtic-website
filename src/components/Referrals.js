@@ -29,7 +29,7 @@ class Referrals extends Component {
                 </div>
                 <br></br>
                 <div className="referrals-text">
-                    <h2>Why partner with GTIC?</h2>
+                    <h2 className="referrals-header">Why partner with GTIC?</h2>
                     <div className="advantages-container">
                         <div className="advantages" data-aos="zoom-in">
                             <i class="fas fa-handshake"></i>
@@ -49,7 +49,7 @@ class Referrals extends Component {
                     </div>
                 </div>
                 <div className="referral-process-container">
-                    <h2>How it works</h2>
+                    <h2 className="referrals-header">How it works</h2>
                     <div className="link one-two" data-aos="fade-in" data-aos-delay="1000"></div>
                     <div className="link two-three" data-aos="fade-in" data-aos-delay="1000"></div>
                     <div className="link three-four" data-aos="fade-in" data-aos-delay="1000"></div>

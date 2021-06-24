@@ -145,11 +145,12 @@
 /* Pages */
 
 @mixin titleContainer {
-    width: 100%;
+    width: 100vw;
     max-width: 1200px;
     margin: auto;
     padding: 70px 30px 0px 30px;
     border-bottom: 5px solid #004d00;
+    border-bottom: 5px solid red;
     @media screen and (min-width: 700px) {
         padding-top: 95px;
     }
