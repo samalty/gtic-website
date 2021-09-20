@@ -17,8 +17,8 @@ export const OpportunitiesData = [
         title: 'Patent Box',
         icon: 'far fa-lightbulb',
         description1:`The Patent Box aims to encourage UK businesses to keep and commercialise intellectual property. If your company 
-                      holds a patent for an invention or innovation, the Patent Box may enable you to apply a reduced 10% rate of 
-                      Corporation Tax on profits attributable to the patented intellectual property.`,
+                      holds a patent for an invention or innovation, the Patent Box could yield considerable savings by enabling you to 
+                      apply a reduced 10% rate of Corporation Tax on profits attributable to the patented intellectual property.`,
         description2:`Many patentable innovations are simply minor technical improvements on existing products or processes. Our 
                       specialists are experts at identifying such innovations, meaning exploring an opportunity with GTIC could 
                       significantly broaden the scope of your claim.`,
