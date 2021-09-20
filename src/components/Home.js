@@ -27,8 +27,8 @@ class Home extends Component {
                     <div className="header-overlay">
                         <div className="banner-text">
                             <img src={logo} alt="GITC" className="logo-header-sml"></img>
-                            <h1 className="logo-header-sml-text">GTI Consultants</h1>
-                            <h1 className="logo-header-med-text">GT Incentive Consultants</h1>
+                            <h1 className="logo-header-sml-text"><b>GTI Consultants</b></h1>
+                            <h1 className="logo-header-med-text"><b>GT Incentive Consultants</b></h1>
                             <img src={logoLong} alt="GITC" className="logo-header-lrg"></img>
                             <h1 className="tagline">Attentive, accessible, affordable tax incentive consultancy.</h1>
                             <h3 className="intro-text">We provide pioneering UK companies with optimised, tailored guidance, helping them 

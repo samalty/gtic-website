@@ -1,6 +1,8 @@
-import about from '../media/about.jpg';
+import about from '../media/about-intro.jpg';
 import opportunities from '../media/opportunities.jpg';
 import claims from '../media/claims.jpg';
+import partner from '../media/partner.jpg';
+import explained from '../media/explained-intro.jpg';
 import insights from '../media/insights.jpg';
 
 export const HomeData = [
@@ -38,7 +40,7 @@ export const HomeData = [
                      underpinning your own added-value service.`,
         path: '/referrals',
         buttonText: 'Referrals ',
-        img: opportunities
+        img: partner
     },
     {
         page: 'explained',
@@ -46,7 +48,7 @@ export const HomeData = [
         description:`R&D Tax Relief could provide your business with a competitive advantage and firm foundations for future growth.`,
         path: '/r&d_explained',
         buttonText: 'How it works ',
-        img: claims
+        img: explained
     },
     {
         page: 'insights',
@@ -54,7 +56,7 @@ export const HomeData = [
         description:`Do you have a query relating to a particular tax incentive or grant? Insights is where we share much of our
                      expertise directly with you.`,
         path: '/insights',
-        path: '/',
+        path: '/insights',
         buttonText: 'Go to insights ',
         img: insights
     }

@@ -48,7 +48,7 @@ class About extends Component {
                        businesses secure various forms of valuable relief, providing a gateway to growth and further development.</p>
                     <p>Our combined experience covers a wealth of grants and incentives, including R&D Tax Relief and Patent Box, making 
                        us better placed than most to help businesses identify and make the most of relevant opportunities.</p>
-                    <p>With former KPMG consultants within our ranks, we deliver a ‘Big Four’ approach for an affordable price, making 
+                    <p>With former 'Big Four' consultants within our ranks, we deliver an elite service for an affordable price, making 
                        quality consultancy more widely accessible.</p>
                     <p>Both our efficiencies and our competitive prices are aided by the fact that we place technology at the core of our 
                        processes. We circumvent the labour associated with manual processes and the expense incurred through outsourcing 

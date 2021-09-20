@@ -18,9 +18,9 @@ class Referrals extends Component {
                 <div className="header-container">
                     <h1>R&D Tax Relief referral programme</h1>
                 </div>
-                <div className="claims-intro-container">
-                    <div className="claims-overlay">
-                        <div className="claims-intro">
+                <div className="referrals-intro-container">
+                    <div className="referrals-overlay">
+                        <div className="referrals-intro">
                             <h3>We give accountants the insight and assistance needed to offer valuable R&D services. Referring a 
                                 client to us helps maximise the potential of their R&D activity while providing you with the 
                                 expertise underpinning your own added-value service.</h3>
