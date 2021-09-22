@@ -161,29 +161,31 @@ class Calculator extends Component {
                             <p>Please enter the {this.state.profitLoss} recorded by your company and the amount spent on R&D in its last accounting period.</p>
                             <div className="range-container">
                                 <p>Annual {this.state.profitLoss} £ <input type="text" 
-                                                                        name="profitLossSME" 
-                                                                        value={this.formatOutput(this.state.profitLossSME)}
-                                                                        onChange={this.handleInputChange}></input></p>
+                                                                            name="profitLossSME" 
+                                                                            value={this.formatOutput(this.state.profitLossSME)}
+                                                                            readOnly="readonly"
+                                                                            onChange={this.handleInputChange}></input></p>
                                 <input type="range"
-                                    className="slider"
-                                    min={0} 
-                                    max={1000000}
-                                    step={25000}
-                                    value={this.state.profitLossSME }
-                                    onChange={this.handleProfitLossRange} />
+                                        className="slider"
+                                        min={0} 
+                                        max={1000000}
+                                        step={25000}
+                                        value={this.state.profitLossSME }
+                                        onChange={this.handleProfitLossRange} />
                             </div>
                             <div className="range-container">
                                 <p>R&D expenditure £ <input type="text" 
-                                                                name="expenditureSME"
-                                                                value={this.formatOutput(this.state.expenditureSME)}
-                                                                onChange={this.handleInputChange}></input></p>
+                                                            name="expenditureSME"
+                                                            value={this.formatOutput(this.state.expenditureSME)}
+                                                            readOnly="readonly"
+                                                            onChange={this.handleInputChange}></input></p>
                                 <input type="range"
-                                    className="slider"
-                                    min={0} 
-                                    max={1000000}
-                                    step={25000}
-                                    value={this.state.expenditureSME }
-                                    onChange={this.handleExpenditureSME} />
+                                        className="slider"
+                                        min={0} 
+                                        max={1000000}
+                                        step={25000}
+                                        value={this.state.expenditureSME }
+                                        onChange={this.handleExpenditureSME} />
                             </div>
                             <br></br>
                             <button type="submit">Calculate R&D Tax Relief</button>
@@ -208,16 +210,17 @@ class Calculator extends Component {
                             <p>Please enter the amount your company spent on R&D in its last accounting period.</p>
                             <div className="range-container">
                                 <p>R&D expenditure £ <input type="text" 
-                                                                name="expenditureRDEC"
-                                                                value={this.formatOutput(this.state.expenditureRDEC)}
-                                                                onChange={this.handleInputChange}></input></p>
+                                                            name="expenditureRDEC"
+                                                            value={this.formatOutput(this.state.expenditureRDEC)}
+                                                            readOnly="readonly"
+                                                            onChange={this.handleInputChange}></input></p>
                                 <input type="range"
-                                    className="slider"
-                                    min={0} 
-                                    max={1000000}
-                                    step={25000}
-                                    value={this.state.expenditureRDEC }
-                                    onChange={this.handleExpenditureRDEC} />
+                                        className="slider"
+                                        min={0} 
+                                        max={1000000}
+                                        step={25000}
+                                        value={this.state.expenditureRDEC }
+                                        onChange={this.handleExpenditureRDEC} />
                             </div>
                             <br></br>
                             <button type="submit">Calculate R&D Tax Relief</button>
