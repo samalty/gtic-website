@@ -80,7 +80,7 @@ class Home extends Component {
                 </div>
                 <div className="clients">
                     <div className="clients-container">
-                        <h2>we are trusted by</h2>
+                        <h2>We are trusted by</h2>
                         <p>Client logos to go here</p>
                     </div>
                 </div>
