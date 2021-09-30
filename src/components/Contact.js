@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
 import './styles/Contact.scss';
 import Navbar from './Navbar';
-import Footer from './Footer';
+import emailjs from 'emailjs-com';
 import MapComponent from './Map';
+import Footer from './Footer';
 
 class Contact extends Component {
+    sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_zepw0sx', 'template_dg2wopv', e.target, 'user_VikgK2snrTIxEEcobaKqc')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        alert("Thank you for your message. We will be in touch with you shortly.");
+        e.target.reset();
+    }
     render() {
         return (
             <div className="background">
@@ -20,7 +32,7 @@ class Contact extends Component {
                         <p>Alternatively, call 020 3959 8332 to speak to one of our expert advisors.</p>
                     </div>
                     <div className="form-container">
-                        <form>
+                        <form onSubmit={this.sendEmail}>
                             <input type="text" name="name" placeholder="Name" className="name"></input>
                             <input type="text" name="number" placeholder="Phone No." className="number"></input><br></br>
                             <input type="text" name="email" placeholder="Email"></input><br></br>

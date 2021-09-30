@@ -6,7 +6,7 @@ import './styles/Home.scss';
 import Navbar from './Navbar';
 import Testimonials from './Testimonials';
 import { HomeData } from './data/HomeData';
-import Calculator from './Calculator';
+import { PartnersData } from './data/PartnersData';
 import Footer from './Footer';
 import logo from './media/icon.png';
 import logoLong from './media/logo-long.png';
@@ -80,8 +80,12 @@ class Home extends Component {
                 </div>
                 <div className="clients">
                     <div className="clients-container">
-                        <h2>We are trusted by</h2>
-                        <p>Client logos to go here</p>
+                        <h2>Trusted by</h2>
+                        {PartnersData.map((item, index) => {
+                            return (
+                                <img src={item.img} className="partners" data-aos="zoom-in"></img>
+                            )
+                        })}
                     </div>
                 </div>
                 <div className="testimonials">
@@ -95,7 +99,6 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <Calculator />
                 <Footer />
             </div>
         )

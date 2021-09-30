@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
-class MapComponent extends Component {
+export class MapComponent extends Component {
     render() {
         const mapStyles = {
             width: '100%',
