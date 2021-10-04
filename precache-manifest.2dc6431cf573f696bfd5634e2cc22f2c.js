@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "194556c07c74b68cca333e4493940fda",
+    "revision": "83f6e0eeb9bbf359ef18d092d962fa7d",
     "url": "/gtic-website/index.html"
   },
   {
-    "revision": "c69afed046c27c04db5f",
+    "revision": "886f65610a1f863179eb",
     "url": "/gtic-website/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "0955e3f326f31d692e74",
-    "url": "/gtic-website/static/css/main.dd0db495.chunk.css"
+    "revision": "bea0dc2cb39eea319b88",
+    "url": "/gtic-website/static/css/main.5646d378.chunk.css"
   },
   {
-    "revision": "c69afed046c27c04db5f",
-    "url": "/gtic-website/static/js/2.789c9232.chunk.js"
+    "revision": "886f65610a1f863179eb",
+    "url": "/gtic-website/static/js/2.4f095d37.chunk.js"
   },
   {
     "revision": "b28efdd56deb90065a6ed9c886c45c8b",
-    "url": "/gtic-website/static/js/2.789c9232.chunk.js.LICENSE.txt"
+    "url": "/gtic-website/static/js/2.4f095d37.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0955e3f326f31d692e74",
-    "url": "/gtic-website/static/js/main.f651df9b.chunk.js"
+    "revision": "bea0dc2cb39eea319b88",
+    "url": "/gtic-website/static/js/main.a40b87ab.chunk.js"
   },
   {
     "revision": "9eefdd66463abf114441",
