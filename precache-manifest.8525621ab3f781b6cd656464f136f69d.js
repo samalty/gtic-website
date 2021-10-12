@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83f6e0eeb9bbf359ef18d092d962fa7d",
+    "revision": "c7802b214faaec22ecd5892794dc3e8e",
     "url": "/gtic-website/index.html"
   },
   {
-    "revision": "886f65610a1f863179eb",
+    "revision": "5616d685eec7bc7d351d",
     "url": "/gtic-website/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "bea0dc2cb39eea319b88",
-    "url": "/gtic-website/static/css/main.5646d378.chunk.css"
+    "revision": "ed2e29a62a188812307d",
+    "url": "/gtic-website/static/css/main.797af22a.chunk.css"
   },
   {
-    "revision": "886f65610a1f863179eb",
-    "url": "/gtic-website/static/js/2.4f095d37.chunk.js"
+    "revision": "5616d685eec7bc7d351d",
+    "url": "/gtic-website/static/js/2.b5d7d213.chunk.js"
   },
   {
     "revision": "b28efdd56deb90065a6ed9c886c45c8b",
-    "url": "/gtic-website/static/js/2.4f095d37.chunk.js.LICENSE.txt"
+    "url": "/gtic-website/static/js/2.b5d7d213.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bea0dc2cb39eea319b88",
-    "url": "/gtic-website/static/js/main.a40b87ab.chunk.js"
+    "revision": "ed2e29a62a188812307d",
+    "url": "/gtic-website/static/js/main.4b8678ab.chunk.js"
   },
   {
     "revision": "9eefdd66463abf114441",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ad1e9ddfdb10701332c614afa79c78c6",
     "url": "/gtic-website/static/media/explained.ad1e9ddf.jpg"
+  },
+  {
+    "revision": "54f93dc7cbd722cf7d7225180e14a1dd",
+    "url": "/gtic-website/static/media/gmt.54f93dc7.png"
   },
   {
     "revision": "83cb718025f0d91985be6733d1762e5f",
